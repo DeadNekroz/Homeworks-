@@ -40,6 +40,9 @@ h2 span{
   letter-spacing: 1px;
  
 }
+.paragraph{
+  max-width: 50%;
+}
 .list{
  font-size: 26px;
 }
