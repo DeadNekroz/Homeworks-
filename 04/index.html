@@ -34,11 +34,11 @@
         </div>
         <div class="name">
           <label for="user-name">First name:</label>
-          <input type="text" name="user-name" placeholder="Kyle" required />
+          <input type="text" id="user-name" placeholder="Kyle" required />
           <label for="user-fullname">Full name:</label>
           <input
             type="text"
-            name="user-fullname"
+            id="user-fullname"
             placeholder="Broflovski"
             required />
         </div>
@@ -46,21 +46,21 @@
           <h2>Your contacts</h2>
           <div class="mail">
             <label for="user-email">Email:</label>
-            <input type="email" name="user-email" value="@gmail.com" required />
+            <input type="email" id="user-email" value="@gmail.com" required />
           </div>
           <label for="user-phone">Phone number:</label>
-          <input type="tel" name="user-phone" value="+380" required />
+          <input type="tel" id="user-phone" value="+380" required />
         </div>
         <div class="password">
           <label for="user-password">Your password:</label>
           <input
             type="password"
-            name="user-password"
+            id="user-password"
             minlength="8"
             required
             placeholder="8+symbols" />
           <label for="user-password-again">Confirm your password:</label>
-          <input type="password" name="user-password-again" required />
+          <input type="password" id="user-password-again" required />
         </div>
         <div class="gender">
           <h3>Choose your gender</h3>
@@ -118,28 +118,28 @@
           <fieldset>
             <h2>Please,add meta for this form(anyway)</h2>
             <label for="date">date</label>
-            <input type="date" />
+            <input type="date" id="date"/>
             <label for="datetime">Period of year</label>
-            <input type="datetime" />
-            <input type="month" />
-            <input type="datetime-local" />
-            <input type="week" />
+            <input type="datetime" id="datetime"/>
+            <input type="month" id="month"/>
+            <input type="datetime-local" id="datetime-local"/>
+            <input type="week" id="week"/>
           </fieldset>
         </div>
         <input type="hidden" />
         <div class="additional-info">
           <h2>Additional information about you:</h2>
           <label for="user-color">favorite color</label>
-          <input class="color" type="color" name="user-color" />
+          <input class="color" type="color" id="user-color" />
           <label for="user-pref-numb"> favorite number </label>
           <input
             type="number"
-            name="user-pref-numb"
+            id="user-pref-numb"
             placeholder="first number you had just think about" />
           <label for="user-url" class="url">your profiles wherever </label>
           <input
             type="url"
-            name="user-url"
+            id="user-url"
             class="url"
             placeholder="https://" />
           <textarea
