@@ -41,7 +41,10 @@ margin-bottom: 20px;
 }
 
 .nav_link.black{
-  color: #000;
+ 
+}
+.nav_link:hover{
+  color: #000;  
 }
 
 .nav_item{
