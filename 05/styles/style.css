@@ -130,16 +130,20 @@ margin-bottom: 20px;
   text-align: center;
  
 }
-
+.skill_list{
+  font-size: 0;
+}
 .skill_item{
-  margin-right: 97px;
+  margin-right: 96px;
   vertical-align:top;
   height: 50%;
   display: inline-block;
- 
+  width: 170px;
  
 }
- 
+ .skill_item:last-child{
+  margin-right: 0px;
+ }
 .skill_img{
   width: 80px;
   margin: 0 auto 25px;
