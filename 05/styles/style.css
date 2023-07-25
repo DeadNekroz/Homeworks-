@@ -2,10 +2,9 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-section{
   font-size: 18px;
 }
+
 .page_wrapper{
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
@@ -34,16 +33,13 @@ margin-bottom: 20px;
 .nav_link {
   text-transform: capitalize;
   color: #828282;
-  font-size: 18px;
 
   font-weight: 400;
   padding: 25px 20px;
   display: inline-block;
 }
 
-.nav_link.black{
- 
-}
+
 .nav_link:hover{
   color: #000;  
   font-weight: bold;
@@ -213,10 +209,7 @@ margin-bottom: 20px;
   padding-bottom: 100px;
   
 }
-.site_heading {
 
-}
- 
 .site_sub_heading {
   margin-bottom: 70px;
 
@@ -230,8 +223,6 @@ margin-bottom: 20px;
 }
 
 .button {
-  text-align: top;
-  border: 1px solid #000;
   border-radius: 22px;
   padding: 11px;
   margin-bottom: 30px;
@@ -240,10 +231,14 @@ margin-bottom: 20px;
   color: #FFFFFF;
   text-align: center;
   letter-spacing: 2px;
-  font-weight: bold;
   font-size: 18px;
-  font-family: 'Open-Sans', sans-serif;
  
+  font-weight:bold;
+}
+.message{
+  font-family: 'Open-Sans', serif;
+  font-weight: bold;
+  font-size: 22px;
 }
 .button_container{
 text-align: center;
@@ -255,10 +250,6 @@ margin-top: 60px;
   color: #000;
 }
  
-.social-icons-list{
-
-
-}
 .social-icons_item{
   display: inline-block;
   margin-right: 50px;
