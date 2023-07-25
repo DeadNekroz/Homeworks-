@@ -3,11 +3,9 @@
   padding: 0;
   scroll-behavior: smooth;
   font-size: 18px;
-}
-
-.page_wrapper{
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+ 
  
 .container {
   width: 90%;
@@ -237,11 +235,7 @@ margin-bottom: 20px;
  
   font-weight:bold;
 }
-.message{
-  font-family: 'Open Sans', serif;
-  font-weight: bold;
-  font-size: 21px;
-}
+ 
 .button_container{
 text-align: center;
 margin-top: 60px;
