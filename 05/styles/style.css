@@ -121,11 +121,13 @@ margin-bottom: 20px;
  
 }
 .skills{
+
   padding: 100px 0;
  
   text-align: center;
 }
 .skill_content{
+  margin: 0 auto;
   margin-top: 50px;
 }
 .site_sub_heading{
@@ -134,7 +136,7 @@ margin-bottom: 20px;
 }
 
 .skill_item{
-  margin-right: 83px;
+  margin-right: 97px;
   vertical-align:top;
   height: 50%;
   display: inline-block;
@@ -228,7 +230,7 @@ margin-bottom: 20px;
 }
 
 .button {
- vertical-align: top;
+  text-align: top;
   border: 1px solid #000;
   border-radius: 22px;
   padding: 11px;
@@ -252,6 +254,7 @@ margin-top: 60px;
   background-color: #F6F6F6;
   color: #000;
 }
+ 
 .social-icons-list{
 
 
