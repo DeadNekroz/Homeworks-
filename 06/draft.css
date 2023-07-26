@@ -94,8 +94,8 @@ div>.div:active{
 .lil_s{
   display: inline;
   font-size: 11px;
-  padding-bottom: 20px;
-  line-height: 22px;
+  padding-bottom: 18px;
+ 
 }
 .fake_check{
   display: inline-block;
@@ -105,13 +105,22 @@ div>.div:active{
   margin-right: 16px;
 }
 
-.div>label{
+/* .div>label{
     margin: 12px;
     margin-bottom: 16px;
     margin-right: 16px;
     vertical-align: middle;
-}
- 
+   /* display: none; 
+}*/
+
+  label::after{
+      content: '';
+    display: block;
+  
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+ }
 input[type='checkbox']:checked + .fake_check{
   background-color: #ffffff;
   background-image: url(../assets/image/done.svg);
@@ -140,9 +149,10 @@ input[type='checkbox']:checked + .fake_check>[class$='s']{
  input[type='checkbox']:checked + .fake_check>*[class^='product']::before{
  position: absolute;
  content: "";
- margin-top: 10px;
+ margin-top: 11px;
  position: absolute;
 
+ 
  width: 110%;
  height: 1px;
  background-color: #9B96AC;
@@ -151,9 +161,9 @@ input[type='checkbox']:checked + .fake_check>[class$='s']{
   height: 48px;
   width: 532px;
   position: absolute;
- 
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  display: none;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
 }
  
 .footer{
