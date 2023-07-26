@@ -1,3 +1,4 @@
+/* #region Global selectors */
 *{ 
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -38,8 +39,9 @@
 }
 .list_container>.div{
   height: 45px;
- 
 }
+/* #endregion */
+/* #region DIV selectors  */
 div.div{
   background-color: rgba(122, 117, 147, 1);
   border: 2px solid rgba(136, 131, 158, 1);
@@ -69,6 +71,8 @@ div>.div:active{
   background-color: rgba(255, 137, 132, 1);
   border: 2px solid #ffffff;
 }
+/* #endregion */
+/* #region Products */
 .product{
   line-height: 18px;
   display: inline-block;
@@ -104,7 +108,8 @@ div>.div:active{
   background-color:#ffffff;
   margin-right: 16px;
 }
-
+/* #endregion */
+/* #region Inputs selectors  */
 .div>label{
     margin: 12px;
     margin-bottom: 16px;
@@ -118,25 +123,8 @@ input[type='checkbox']:checked + .fake_check{
   background-repeat: no-repeat;
   background-position: center;
   color: #9B96AC;
- 
-}
-/* input[type='checkbox']:checked + .fake_check>[class*='product']{
-  display:none;
- 
 }
 
-input[type='checkbox']:checked + .fake_check>[class$='s']{
- display: inline-block;
-  color: #9B96AC;
-  line-height: 18px;
-  margin-bottom: 18px;
-}
-input[type='checkbox']:checked + .fake_check>[class$='s']{
-  display: inline-block;
-   color: #9B96AC;
-   line-height: 18px;
-   margin-bottom: 18px;
- } */
  input[type='checkbox']:checked + .fake_check>*[class^='product']::before{
  position: absolute;
  content: "";
@@ -156,6 +144,27 @@ input[type='checkbox']:checked + .fake_check>[class$='s']{
   -moz-appearance: none;
 }
  
+/* #endregion */
+/* #region Drafts and notes */
+/* input[type='checkbox']:checked + .fake_check>[class*='product']{
+  display:none;
+ 
+}
+
+input[type='checkbox']:checked + .fake_check>[class$='s']{
+ display: inline-block;
+  color: #9B96AC;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+input[type='checkbox']:checked + .fake_check>[class$='s']{
+  display: inline-block;
+   color: #9B96AC;
+   line-height: 18px;
+   margin-bottom: 18px;
+ } */
+ /* #endregion */
+/* #region Footer */
 .footer{
  line-height: 45px;
   text-align: center;
@@ -164,3 +173,4 @@ input[type='checkbox']:checked + .fake_check>[class$='s']{
   color: rgba(255, 137, 132, 1);
   height: 45px;
 }
+/* #endregion */
