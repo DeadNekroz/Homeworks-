@@ -66,7 +66,7 @@ div>.div:hover{
   border: 2px solid #ffffff;
 }
 div>.div:active{
-  background-color: rgba(98, 94, 119, 1);
+  background-color: rgba(255, 137, 132, 1);
   border: 2px solid #ffffff;
 }
 .product{
