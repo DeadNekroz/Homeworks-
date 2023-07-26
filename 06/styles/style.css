@@ -131,7 +131,7 @@ input[type='checkbox']:checked + .fake_check{
  margin-top: 10px;
  position: absolute;
 
- width: 110%;
+ width: 100%;
  height: 1px;
  background-color: #9B96AC;
  }
@@ -139,7 +139,7 @@ input[type='checkbox']:checked + .fake_check{
   height: 48px;
   width: 532px;
   position: absolute;
- 
+ /* побачив такий метод і вирішив спробувати так, заодно і дізнатись + -  */
   -webkit-appearance: none;
   -moz-appearance: none;
 }
