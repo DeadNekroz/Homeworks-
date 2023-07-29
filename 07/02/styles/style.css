@@ -25,7 +25,6 @@
  }
  
  .header_container{
-  display: inline-block;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -33,11 +32,7 @@
  .mt28{
   margin-top: 28px;
  }
- .logo_container{
- display: inline-block;
- 
- 
- }
+
  .home_link{
   display: inline-block;
   position: absolute;
@@ -150,7 +145,7 @@ margin-bottom: 20px;
 .get_started_button{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
- justify-content: start;
+  justify-content: start;
   display: block;
  
   background-color: #FF9900;
@@ -338,12 +333,13 @@ vertical-align: top;
 text-align: left
 height: 209px;
 }
-.logo_container {
+  
+.logo_container{
+ display: inline-block;
+ width: 20%;
  
-  display: flex;
-  vertical-align: top;
-  width: 20%;
-}
+ 
+ }
 .home_link {
 
 }
