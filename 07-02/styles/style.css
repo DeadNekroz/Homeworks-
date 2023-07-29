@@ -1,23 +1,23 @@
  *{
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  box-sizing: border-box;
- 
+
 /* font-family: 'Poppins', sans-serif; */
  }
  button{
   border-radius: 4%;
  }
+.section{
+  width: 100%;
+}
  .page_container{
   text-align: center;
   width: 1440px;
- 
   margin: 0 auto;
  }
- section{
-  margin-bottom: 100px;
- }
+ /* #region Header Styles */
  .header{
+  width: 100%;
   height: 80px;
   margin: 0 auto; 
   text-transform:capitalize;
@@ -27,15 +27,16 @@
  .header_container{
   display: inline-block;
   text-align: center;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
  }
+ .mt28{
+  margin-top: 28px;
+ }
  .logo_container{
-  margin-top: 17px;
  display: inline-block;
- text-align: start;
  
-  width: 200px;
+ 
  }
  .home_link{
   display: inline-block;
@@ -55,7 +56,7 @@
  }
 .nav{
   display: inline-block;
-  margin: 0 100px;
+  margin: 0 198px;
 }
  .navigate_menu{
   margin: 0 auto;
@@ -98,7 +99,8 @@
   background-color: #FF9900;
   
 }
-
+/* #endregion */
+/* #region First screen */
 .first_screen{
   width: 100%;
   height: 100%;
@@ -106,15 +108,15 @@
 }
 .first_screen_container{
  display: inline-block;
- padding-bottom: 100px;
+ 
   margin: 0 auto;
 
 }
 .left_part_first_screen{
  display: inline-block;
- width: 49%;
+ 
  vertical-align: top;
- max-width: 600px;
+ 
 }
 .title{
   font-size: 44px ;
@@ -126,6 +128,9 @@
   text-align: start;
   margin-bottom: 30px;
 }
+.first_title{
+text-align: left;
+}
 .subheading{
 display: block;
 width: 500px;
@@ -135,7 +140,7 @@ margin-bottom: 20px;
 }
 .right_part_first_screen{
  display: inline-block;
- width: 49%;
+ 
 }
 .bold_button_font{
   font-family: 'Poppins', sans-serif;
@@ -154,27 +159,35 @@ margin-bottom: 20px;
   height: 50px;
 }
 .img_right{
-  width: 500px;
+  width: 644px;
+  height: 495px;
 }
 
- 
+ /* #endregion */
 .design_tools_screen{
   background-image: url(../assets/images/bg.svg);
   background-size:cover;
   background-position: center;
 
  
-  max-width: 1150px;
+  height: 510px;
+  flex-shrink: 0;
+ 
   margin:0 auto ;
-  margin-bottom: 100px;
+ 
 }
 .title{
-  text-align: center;
+
  font-size: 36px;
  margin-bottom: 50px;
 }
-
- 
+.mb50{
+  margin-bottom: 50px;
+}
+.first_sub{
+  margin-bottom: 20px;
+}
+ /* #region Tools Styles */
 .tools_list {
   margin: 0 auto;
   display: inline;
@@ -185,34 +198,41 @@ margin-bottom: 20px;
   height: 270px;
   width:21%;
   display: inline-block;
-  margin-right: 40px;
+  vertical-align: top;
 }
 .tools_list:last-child{
   margin-right: 0px;
 }
 .tools_icon {
+
   margin-bottom: 30px;
   width: 51px;
   height: 50px;
   display: block;
 }
 .tools_name {
+  text-align: left;
   font-weight:500; 
   font-size: 22px;
+  margin-bottom: 16px;
 }
 .tools_description {
   font-size: 16px;
   font-weight: normal;
+  text-align: left;
 }
+/* #endregion */
 .now_button{
 width: 180px;
 height: 50px;
-margin-bottom: 104px;
+margin-bottom: 78px;
+display: block;
+margin: 0 auto;
 }
 
 .thirdpart_left{
   text-align: left;
-  width: 525px;
+ 
   line-height: 26px;
 }
 
@@ -250,16 +270,141 @@ color: #544837;
 margin-bottom: 30px;
 }
 .img_right_third{
-  width: 562px;
+width: 562px;
 height: 573px;
 flex-shrink: 0;
 }
-.footer{
-  display: flex;
-width: 1200px;
-height: 209px;
-padding-bottom: 0px;
-justify-content: space-between;
-align-items: flex-start;
-flex-shrink: 0;
+/* #region Manager Styles */
+ .Managers_text_right{
+  text-align: left;
+  display: inline-block;
+ 
+  margin-left: 125px;
+ 
+  height: 574px;
+ }
+ .manager_custom_marked_list{
+margin-left: 40px;
+  list-style: url(../assets/images/icon.png);
+ }
+ .manager_li_item{
+  margin-bottom: 30px;
+  padding-left: 20px;
+ }
+ .manager_title{
+  text-align: left;
+  margin-bottom: 20px;
+ }
+.managers_img_left{
+  display: inline-block;
+ 
+  width: 570px;
+  height: 519px;
+  flex-shrink: 0;
 }
+.manager_subheading{
+  text-align: left;
+  color: #544837;
+ 
+  font-weight: 500;
+  
+}
+/* #endregion */
+ /* #region Footer Styles */
+.marketers{
+ 
+}
+ .footer{
+  text-align: left;
+  padding-top: 70px;
+ display: flex;
+ margin: 0 auto;
+ margin-top: 70px;
+ padding-bottom: 70px;
+}
+.footer_bold{
+  color: #2F281E;
+ 
+  font-size: 20px;
+ 
+  font-weight: 700;
+  line-height: 30px; 
+  display: inline-block;
+
+}
+.footer_container{
+display: inline-block;
+vertical-align: top;
+text-align: left
+height: 209px;
+}
+.logo_container {
+ 
+  display: flex;
+  vertical-align: top;
+  width: 20%;
+}
+.home_link {
+
+}
+.logo {
+ 
+}
+.logo_2 {
+ 
+}
+.quick_links_container {
+ 
+  width: 25%;
+  display: inline-block;
+}
+ 
+.quick_links_list {
+  vertical-align: top;
+ 
+  margin-bottom: 15px;
+  text-align: left
+}
+.quick_links_item {
+  margin-bottom: 15px;
+}
+.legal_stuff_container {
+  width: 25%;
+  display: inline-block;
+
+ 
+}
+
+.legal_stuff_list {
+  vertical-align: top;
+ 
+   text-align: left
+}
+.legal_stuff_item {
+ 
+  margin-bottom: 15px;
+}
+.footer_title {
+  padding-bottom: 30px;
+  }
+.energy_deal_form_container {
+  width: 25%;
+  display: inline-block;
+ text-align: start;
+}
+ 
+.phone_input {
+  margin-bottom: 25px;
+  width: 340px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #BCD0E5;
+  padding: 0px 10px;
+  align-items: center;
+  gap: 10px;
+}
+.sign_button {
+}
+.up {
+}
+/* #endregion */
