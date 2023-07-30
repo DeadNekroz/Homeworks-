@@ -12,6 +12,10 @@
   width: 1440px;
    margin: 0 auto;
  }
+ @font-face {
+  font-family: Gotham;
+  src: url(../fonts/Gotham-Black.ttf);
+ }
  /* #region Header Styles */
  .header {
  height: 80px;
@@ -157,9 +161,11 @@ width: 539px;
 }
 
 .tools_icon{
+  display: inline-block;
   width: 50px;
   height: 50px;
-  margin-bottom: 30px;
+  border-radius: 15px;
+
 }
 .tools_name{
 margin-bottom: 16px;
@@ -374,30 +380,35 @@ font-weight: 600;
 /* #region Footer Styles*/
 
 .footer {
+
+}
+.footer_container {
   display: flex;
   justify-content: space-between;
+flex-direction: row;
   align-items: center;
   padding-bottom: 70px;
 
-}
-
-.footer_container {
 
 }
 
 .logo {
-
+display: flex;
+align-self: baseline;
 }
-
+.footer_logo{
+  
+}
 .footer_list{
 
 }
 
 .footer_titles{
+ 
   color: #2F281E;
   font-family: Gotham;
   font-size: 20px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 30px; 
 }
@@ -427,7 +438,7 @@ flex-direction: column;
 .sign_up {
 
 }
-
+ 
 .footer_button {
  
   width: 180px;
@@ -435,3 +446,4 @@ flex-direction: column;
   
  
 }
+ 
