@@ -9,197 +9,175 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet" />
+      <link rel="stylesheet" href="./assets/font-awesome/css/fontawesome.css">
+      <link rel="stylesheet" href="./assets/font-awesome/css/brands.css">
+      <link rel="stylesheet" href="./assets/font-awesome/css/solid.css">
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Design</title>
   </head>
   <body id="home">
     <div class="page_container">
       <!-- #region Header -->
       <header class="header">
-        <div class="header_container">
-          <div class="logo_container mt28">
-            <a class="home_link" href="#home"></a>
-            <img class="logo" src="./assets/images/logo.png" alt="log" />
-            <img
-              class="logo_2"
-              src="./assets/images/logo_2.png"
-              alt="Productly_logo"
-              class="logo2" />
-          </div>
-          <nav class="nav">
-            <ul class="navigate-menu">
-              <li class="nav_item">
-                <a href="#product" class="nav_link">product</a>
-              </li>
-              <li class="nav_item">
-                <div class="nav_container"></div>
-                <a href="#customers" class="nav_link">customers</a>
-              </li>
-              <li class="nav_item">
-                <div class="nav_container"></div>
-                <a href="#pricing" class="nav_link">pricing</a>
-              </li>
-              <li class="nav_item">
-                <div class="nav_container"></div>
-                <a href="#resourses" class="nav_link">resourses</a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="navigation_container">
+          <img
+            src="./assets/images/Logo.svg"
+            alt="Productly_logo"
+            class="logo" />
+
+          <ul class="menu">
+            <li class="menu_item"><a href="#">Product</a></li>
+            <li class="menu_item"><a href="#">Customers</a></li>
+            <li class="menu_item"><a href="#">Pricing</a></li>
+            <li class="menu_item"><a href="#">Resources</a></li>
+          </ul>
           <div class="sign_container">
-            <button class="sign_button in">sign in</button>
-            <button class="sign_button up">sign up</button>
+            <button type="button" class="sign_in button">Sign In</button>
+            <button type="button" class="sign_up button">Sign Up</button>
           </div>
-        </div>
+        </nav>
       </header>
       <!-- #endregion -->
       <!-- #region First Screen -->
       <section class="first_screen">
         <div class="first_screen_container">
-          <div class="left_part_first_screen">
-            <h2 class="heading title first_title">The Design Thinking superpowers</h2>
-            <p class="subheading first_sub">
+          <div class="first_screen_left_part">
+            <h1 class="first_screen_heading">
+              The Design Thinking superpowers
+            </h1>
+            <p class="first_screen_subheading">
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <button class="get_started_button">Get started</button>
+            <button class="get_started button">Get started</button>
           </div>
-          <div class="right_part_first_screen">
+          <div class="first_screen_right_part">
             <img
-              class="img_right"
-              src="./assets/images/right_side.png"
-              alt="laughing_men" />
+              src="./assets/images/first_screen_right_part.png"
+              alt="first_screen_right_part" />
           </div>
         </div>
       </section>
       <!-- #endregion -->
       <!-- #region Tools -->
-      <section class="design_tools_screen">
-        <h2 class="title mb50">
-          We design tools to unveil<br />
-          your superpowers
-        </h2>
-        <ul class="tools_list">
-          <li class="tools-item">
-            <img
-              src="./assets/images/tools-icons/icon1.png"
-              alt="tools_icon1"
-              class="tools_icon" />
-            <p class="tools_name">First click tests</p>
-            <p class="tools_description">
-              While most people enjoy casino gambling,
-            </p>
-          </li>
-          <li class="tools-item">
-            <img
-              src="./assets/images/tools-icons/icon2.png"
-              alt="tools_icon2"
-              class="tools_icon" />
-            <p class="tools_name">Design surveys</p>
-            <p class="tools_description">
-              Sports betting, lottery and bingo playing for the fun
-            </p>
-          </li>
-          <li class="tools-item">
-            <img
-              src="./assets/images/tools-icons/icon3.png"
-              alt="tools_icon3"
-              class="tools_icon" />
-            <p class="tools_name">Preference tests</p>
-            <p class="tools_description">
-              The Myspace page defines the individual.
-            </p>
-          </li>
-          <li class="tools-item">
-            <img
-              src="./assets/images/tools-icons/icon4.png"
-              alt="tools_icon4"
-              class="tools_icon" />
-            <p class="tools_name">Five second tests</p>
-            <p class="tools_description">
-              Personal choices and the overall personality of the person.
-            </p>
-          </li>
-        </ul>
-        <button class="up now_button bold_button_font">Sign up Now</button>
+      <section class="tools">
+        <div class="tools_container">
+          <h2 class="tools_heading">
+            We design tools to unveil your superpowers
+          </h2>
+          <ul class="tools_list">
+            <li class="tools_item">
+              <span class="tools_icon tlz_icon_clr1"><i class="fa-solid fa-arrow-pointer" style="color: #ffffff;"></i> </span>
+              <p class="tools_name">First click tests</p>
+              <p class="tools_description">
+                While most people enjoy casino gambling,
+              </p>
+            </li>
+            <li class="tools_item">
+              <span class="tools_icon tlz_icon_clr2"><i class="fa-brands fa-stumbleupon" style="color: #ffffff;"></i></span>
+              <p class="tools_name">Design surveys</p>
+              <p class="tools_description">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </li>
+            <li class="tools_item">
+              <span class="tools_icon tlz_icon_clr3"><i class="fa-solid fa-heart" style="color: #ffffff;"></i> </span>
+              <p class="tools_name">Preference tests</p>
+              <p class="tools_description">
+                The Myspace page defines the individual.
+              </p>
+            </li>
+            <li class="tools_item">
+              <span class="tools_icon tlz_icon_clr4"><i class="fa-regular fa-hourglass-half" style="color: #ffffff;"></i> </span>
+
+              <p class="tools_name">Five second tests</p>
+              <p class="tools_description">
+                Personal choices and the overall personality of the person.
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="sign_up tools_button button">
+            Sign up Now
+          </button>
+        </div>
       </section>
       <!-- #endregion -->
-      <!-- #region Design Proffesionals -->
-      <section class="design_proff">
-        <div class="first_screen_container">
-          <div class="right_part_first_screen thirdpart_left">
-            <p class="lil_subheading">Effortless Validation for</p>
-            <h2 class="design_proff_title">Design Professionals</h2>
-            <p class="subheading">
+      <!-- #region Design Professionals -->
+      <section class="designer">
+        <div class="designer_container">
+          <div class="designer_left_part">
+            <p class="designer_subheading">Effortless Validation for</p>
+            <h2 class="designer_heading">Design Professionals</h2>
+
+            <p class="designer_about">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
-            <h3 class="lil_heading">Accessory makers</h3>
-
-            <p class="lil_p">
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
-            </p>
-
-            <h3 class="lil_heading">Alterationists</h3>
-
-            <p class="lil_p">
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
-
-            <h3 class="lil_heading">Custom Design designers</h3>
-
-            <p class="lil_p">
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
+            <ul class="designer_list">
+              <li class="designer_item">
+                <p class="designer_item_name">Accessory makers</p>
+                <p class="designer_item_description">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <li class="designer_item">
+                <p class="designer_item_name">Alterationists</p>
+                <p class="designer_item_description">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+              <li class="designer_item">
+                <p class="designer_item_name">Custom Design designers</p>
+                <p class="designer_item_description">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="left_part_first_screen">
+          <div class="designer_right_part">
             <img
-              class="img_right_third"
-              src="./assets/images/3rd_right.png"
-              alt="right_part_bg_a_man_With_messages" />
+              class="designer_img"
+              src="./assets/images/designer.png"
+              alt="designer_be_like" />
           </div>
         </div>
       </section>
       <!-- #endregion -->
       <!-- #region Product Managers -->
-      <section class="Product_Managers">
-        <div class="first_screen_container">
-          <div class="managers_img_left">
+      <section class="Managers">
+        <div class="managers_container">
+          <div class="managers_left_part">
             <img
-              class="img_managers"
-              src="./assets/images/4rd_left.png"
-              alt="chilling_manager" />
+              src="./assets/images/product_manager.png"
+              alt="product_manager_be_like"
+              class="managers_img" />
           </div>
-          '
-          <div class="Managers_text_right">
+          <div class="managers_right_part">
             <p class="manager_subheading">Easier decision making for</p>
-            <h2 class="manager_title title">Product Managers</h2>
-            <p class="subheading">
+            <h2 class="manager_heading">Product Managers</h2>
+
+            <p class="manager_about">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
 
-            <ul class="manager_custom_marked_list">
-              <li class="manager_li_item">
-                <p class="lil_p">
-                  Never worry about overpaying for your energy bill again.
-                </p>
+            <ul class="manager_list">
+              <li class="manager_item">
+                <span class="checkmark_bg"><span class="checkmark"><i class="fa-regular fa-check"></i></span></span> Never worry about overpaying for your energy bill again.
               </li>
-              <li class="manager_li_item">
-                <p class="lil_p">
-                  We will only switch you to energy companies that we trust and
-                  will treat you right.
-                </p>
-              </li  >
-              <li class="manager_li_item">
-                <p class="lil_p">
-                  We track the markets daily and know where the savings are.
-                </p>
+              <li class="manager_item">
+                <span class="checkmark_bg"><span class="checkmark"><i class="fa-regular fa-check"></i></span></span>We will only switch you to energy companies that we trust and
+                will treat you right.
+              </li>
+              <li class="manager_item">
+                 <span class="checkmark_bg"><span class="checkmark"><i class="fa-regular fa-check"></i></span></span>We track the markets daily and know where the savings are.
               </li>
             </ul>
           </div>
@@ -207,80 +185,86 @@
       </section>
       <!-- #endregion -->
       <!-- #region Marketers -->
-      <section class="Marketers">
-        <div class="first_screen_container">
-          <div class="left_part_first_screen thirdpart_left">
-            <p class="lil_subheading">Optimisation for</p>
-            <h2 class="design_proff_title">Marketers</h2>
-            <p class="subheading">
+      <section class="marketers">
+        <div class="marketers_container">
+          <div class="marketers_left_part">
+            <p class="marketers_subheading">Optimisation for</p>
+            <h2 class="marketers_heading">Marketers</h2>
+
+            <p class="marketers_about">
               Few would argue that, despite the advancements of feminism over
               the past three decades, women still face a double standard when it
               comes to their behavior.
             </p>
-            <h3 class="lil_heading">Accessory makers</h3>
-
-            <p class="lil_p">
-              While most people enjoy casino gambling, sports betting, lottery
-              and bingo playing for the fun
-            </p>
-
-            <h3 class="lil_heading">Alterationists</h3>
-
-            <p class="lil_p">
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
-
-            <h3 class="lil_heading">Custom Design designers</h3>
-
-            <p class="lil_p">
-              If you are looking for a new way to promote your business that
-              won’t cost you more money,
-            </p>
+            <ul class="marketers_list">
+              <li class="marketers_item">
+                <p class="marketers_item_name">Accessory makers</p>
+                <p class="marketers_item_description">
+                  While most people enjoy casino gambling, sports betting,
+                  lottery and bingo playing for the fun
+                </p>
+              </li>
+              <li class="marketers_item">
+                <p class="marketers_item_name">Alterationists</p>
+                <p class="marketers_item_description">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+              <li class="marketers_item">
+                <p class="marketers_item_name">Custom Design designers</p>
+                <p class="marketers_item_description">
+                  If you are looking for a new way to promote your business that
+                  won’t cost you more money,
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="right_part_first_screen">
+          <div class="marketers_right_part">
             <img
-              class="img_right_third"
-              src="./assets/images/5th_right.png"
-              alt="right_part_bg_a_man_With_messages" />
+              class="marketers_img"
+              src="./assets/images/marketer.png"
+              alt="marketers_be_like" />
           </div>
         </div>
       </section>
       <!-- #endregion -->
       <!-- #region Footer -->
+
       <footer class="footer">
-        <div class="logo_container">
-          <a class="home_link" href="#home"></a>
-          <img class="logo" src="./assets/images/logo.png" alt="log" />
+        <div class="footer_container">
           <img
-            class="logo_2"
-            src="./assets/images/logo_2.png"
+            src="./assets/images/Logo.svg"
             alt="Productly_logo"
-            class="logo2" />
-        </div>
-        <div class="quick_links_container ">
-          <p class="footer_title  footer_bold" >Quick Links</p>
-          <ul class="quick_links_list">
-            <li class="quick_links_item">About Us</li>
-            <li class="quick_links_item">Blog</li>
-            <li class="quick_links_item">Contact</li>
-            <li class="quick_links_item">FAQ</li>
-          </ul>
-        </div>
-        <div class="legal_stuff_container">
-          <p class="footer_title footer_bold">Legal Stuff</p>
-          <ul class="legal_stuff_list">
-            <li class="legal_stuff_item">Disclaimer</li>
-            <li class="legal_stuff_item">Financing</li>
-            <li class="legal_stuff_item">Privacy Policy</li>
-            <li class="legal_stuff_item">Terms of Service</li>
-          </ul>
-        </div>
-        <div class="energy_deal_form_container">
-          <p class="footer_title footer_bold">Knowing you're always on the best energy deal. 
-          </p>
-          <input class="phone_input" type="tel" placeholder="Enter your phone Number">
-          <button class="sign_button up">Sign up Now</button>
+            class="logo footer_logo" />
+          <div class="footer_list_container">
+            <p class="footer_titles">Quick Links</p>
+            <ul class="footer_lists">
+              <li class="footer_list_items">About Us</li>
+              <li class="footer_list_items">Blog</li>
+              <li class="footer_list_items">Contact</li>
+              <li class="footer_list_items">FAQ</li>
+            </ul>
+          </div>
+          <div class="footer_list_container">
+            <p class="footer_titles">Legal Stuff</p>
+            <ul class="footer_lists">
+              <li class="footer_list_items">Disclaimer</li>
+              <li class="footer_list_items">Financing</li>
+              <li class="footer_list_items">Privacy Policy</li>
+              <li class="footer_list_items">Terms of Service</li>
+            </ul>
+          </div>
+          <div class="form_container">
+            <p class="footer_titles">
+              Knowing you're always on the best energy deal.
+            </p>
+            <input
+              class="phone_input"
+              type="tel"
+              placeholder="Enter your phone Number" />
+            <button class="sign_up footer_button button">Sign up Now</button>
+          </div>
         </div>
       </footer>
       <!-- #endregion -->
