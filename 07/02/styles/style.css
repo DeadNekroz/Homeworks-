@@ -56,9 +56,13 @@ justify-content:space-between;
 gap: 20px;
 }
 
-.menu_item:hover{
-color: #FF9900;
-}
+a:hover{
+  opacity: 0.6;
+} 
+
+.menu a:hover{
+  color: #FF9900;
+} 
 
  
 
@@ -573,24 +577,22 @@ color: #ffffff;
 /* #region Footer Styles*/
 
 .footer {
+
 justify-content: space-between;
 }
+
 .footer_container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 70px;
 
-
 }
 
- 
-.footer_logo{
- 
+.footer_a:hover{
+  color: #FF9900;
 }
-.footer_list{
 
-}
 
 .footer_titles{
  
@@ -600,16 +602,20 @@ justify-content: space-between;
   margin-bottom: 30px;
   font-weight: 700;
   line-height: 30px; 
+
 }
-
-
-
+.footer_titles:hover{
+  color: #ff9900e8;
  
+}
 .footer_list_items {
+  transform: translateX( -20%);
 margin-bottom: 15px;
+
 }
 
 .form_container {
+
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -619,6 +625,7 @@ width: 280px;
 }
 
 .phone_input {
+
   margin-bottom: 25px;
   width: 340px;
   height: 50px;
@@ -629,17 +636,18 @@ width: 280px;
   gap: 10px;
 }
 .sign_up:active{
+
   opacity: 0.7;
+
 }
 
  
 .footer_button {
+
   width: 180px;
   height: 50px;
   font-family: 'Poppins', sans-serif; 
  
 }
-.footer_button:active{
-   
-}
+
  /* #endregion */
