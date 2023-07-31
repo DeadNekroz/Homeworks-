@@ -451,7 +451,7 @@ color: #ffffff;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
-    color:rgba(rgba(255, 255, 255, 0), green, blue, alpha);
+
     
   }
   .hidden_but_real_checkbox:checked + .label-fake_but_working_checkbox>.bg_of_the_custom_checkmark>.checkmark>.text_for_a_checkbox{
