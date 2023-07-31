@@ -388,7 +388,8 @@ color: #ffffff;
     font-weight: 500;
     line-height: 26px; /* 162.5% */
     position: absolute;
-    transform: translateX(+8%);
+    transform: translate(+8%, -15%);
+
     max-width: 440px;
   }
   .checkbox_div {
@@ -427,6 +428,7 @@ color: #ffffff;
   .bg_of_the_custom_checkmark{
     width: 35px;
     height: 35px;
+    font-size: 0px;
     background-color: #FF9900 ;
     display:flex;
     justify-content: center;
@@ -434,6 +436,7 @@ color: #ffffff;
     border-radius: 10px;
   }
   .checkmark{
+    text-align: left;
     width: 16px;
     height: 16px;
     gap: 30px;
@@ -448,7 +451,11 @@ color: #ffffff;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
-    color:rgba(rgba(255, 255, 255, 0), green, blue, alpha)
+    color:rgba(rgba(255, 255, 255, 0), green, blue, alpha);
+    
+  }
+  .hidden_but_real_checkbox:checked + .label-fake_but_working_checkbox>.bg_of_the_custom_checkmark>.checkmark>.text_for_a_checkbox{
+    
   }
   /* #endregion */
 /* #endregion */
