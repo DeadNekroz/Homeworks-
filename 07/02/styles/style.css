@@ -388,7 +388,7 @@ color: #ffffff;
     font-weight: 500;
     line-height: 26px; /* 162.5% */
     position: absolute;
-    transform: translate(+8%, -15%);
+    transform: translate(+15%, -20%);
 
     max-width: 440px;
   }
