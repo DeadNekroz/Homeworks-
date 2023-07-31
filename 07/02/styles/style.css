@@ -4,8 +4,10 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
-/* */
+  scroll-behavior: smooth ;
  }
+/* */
+
  section{
   padding-bottom: 100px;
  
@@ -88,7 +90,7 @@ background-color: #FF9900;
 
 /* #endregion */
 
-/*region Pop-Up Menu Styles */
+/*#region Pop-Up Menu Styles */
 .pop_up{
   font-family: 'Poppins', sans-serif; 
   font-size: 16px;
@@ -99,7 +101,7 @@ background-color: #FF9900;
   right: 0;
   left: 0;
   transform: translateX(-100%);
-  transition: transform 500ms;
+  transition: transform 700ms;
   box-sizing: border-box;
   height: 100vh;
   padding: 64px 120px;
