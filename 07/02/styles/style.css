@@ -88,6 +88,30 @@ background-color: #FF9900;
 
 /* #endregion */
 
+/*region Pop-Up Menu Styles */
+.pop_up_container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 64px 120px;
+  background:#E5E5E5;
+}
+
+.pop_up_container:target{
+  transform: translateX(-0%);
+
+} 
+
+.pop_up_container{
+
+}
+/* #endregion */
+
 /* #region First Screen */
 .first_screen {
   margin-bottom: 100px;
