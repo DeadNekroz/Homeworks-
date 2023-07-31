@@ -76,7 +76,10 @@ gap: 32px;
 color: #000000;
 border: 1px solid #BCD0E5;
 }
-
+.sign_in:active{
+ border-color: #FF9900;
+  opacity: 0.9;
+}
 .sign_up {
   color: #ffff;
 background-color: #FF9900;
@@ -126,6 +129,10 @@ width: 180px;
 height: 50px;
 font-weight: 700;
 font-family: 'Poppins', sans-serif; 
+}
+.get_started:active{
+  opacity: 0.7;
+
 }
  
 .first_screen_right_part {
@@ -581,14 +588,18 @@ width: 280px;
   align-items: center;
   gap: 10px;
 }
-.sign_up {
-
+.sign_up:active{
+  opacity: 0.7;
 }
+
  
 .footer_button {
   width: 180px;
   height: 50px;
   font-family: 'Poppins', sans-serif; 
  
+}
+.footer_button:active{
+   
 }
  /* #endregion */
