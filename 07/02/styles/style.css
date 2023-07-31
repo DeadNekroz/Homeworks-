@@ -349,19 +349,21 @@ font-weight: 600;
   margin-bottom: 40px;
 }
 .manager_list {
- 
+  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
 }
-  .manager_item{
  
+  .manager_item{
+  color: #ffffff;
 }
 .checkmark{
 display: flex;
 color: #ffffff;
+ 
 }
 .checkmark_bg{
   margin-right: 20px;
@@ -435,16 +437,18 @@ color: #ffffff;
     width: 16px;
     height: 16px;
     gap: 30px;
+   
   }
   
   .hidden_but_real_checkbox:checked + .label-fake_but_working_checkbox>.bg_of_the_custom_checkmark>.checkmark{
     display: flex;
-    background-image: url(../assets/images/check-solid.svg);
+    background-image: url(../assets/images/check-solid-white.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
+    color:rgba(rgba(255, 255, 255, 0), green, blue, alpha)
   }
   /* #endregion */
 /* #endregion */
