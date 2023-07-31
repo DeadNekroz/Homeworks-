@@ -89,6 +89,10 @@ background-color: #FF9900;
 /* #endregion */
 
 /*region Pop-Up Menu Styles */
+.pop_up{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 16px;
+}
 .pop_up_container{
   position: fixed;
   top: 0;
@@ -109,6 +113,16 @@ background-color: #FF9900;
 
 .pop_up_container{
 
+}
+.btn-primary{
+  background-color: #ff9900; 
+  color: #ffffff;
+  border-color:#ffffff;
+  
+}
+.input-group-text{
+  background-color: #ff9900d0;
+  color: #ffffff;
 }
 /* #endregion */
 
