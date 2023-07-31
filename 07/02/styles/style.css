@@ -149,12 +149,13 @@ font-weight: 700;
 
 }
 .tools_heading {
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: #2F281E;
-font-feature-settings: 'clig' off, 'liga' off;
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 50px;
-width: 539px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  width: 539px;
 }
 .tools_list {
   flex-direction: row;;
@@ -238,8 +239,8 @@ font-weight: 600;
 /* #region Designer Professionals Styles */
 .designer_container{
   display: flex;
-  justify-content: space-around;
-align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
 }
 .designer_left_part{
@@ -303,7 +304,7 @@ align-items: center;
 .designer_img {
   width: 562px;
   height: 573px;
-  flex-shrink: 0;
+ 
 }
 
 
@@ -313,25 +314,19 @@ align-items: center;
  
 .managers_container {
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: space-between;
+  align-items: center;
 }
 .managers_left_part {
- 
- 
-}
-.managers_img {
   width: 570px;
   height: 519.6px;
+}
+.managers_img {
  
 }
 .managers_right_part {
- 
+  width: 505px;
   line-height: 26px;
-
-  align-items: start;
-  display: flex;
-  justify-content: left;
   flex-direction: column;
   font-size: 16px;
 }
@@ -347,29 +342,24 @@ align-items: center;
   margin-bottom: 20px;
 }
 .manager_about {
-  width: 440px;
   color: #544837;
   font-weight: 500;
   margin-bottom: 40px;
 }
-
 .manager_list {
   list-style-position: outside;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   gap: 30px;
-  
 }
   .manager_item{
-    width: 440px;
-    
+    width: 460px;
 }
-
 .checkmark{
 display: flex;
 color: #ffffff;
-
 }
 .checkmark_bg{
   margin-right: 20px;
@@ -380,14 +370,12 @@ color: #ffffff;
   height: 35px;
   border-radius: 10px;
   background-color: #FF9900;
- 
 }
 /* #endregion */
-
 /* #region Marketers Styles */
 .marketers_container{
   display: flex;
-  justify-content: space-be;
+  justify-content: space-between;
   align-items: center;
 }
 .marketers_left_part{
