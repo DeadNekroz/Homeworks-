@@ -8,7 +8,7 @@
  }
 /* */
 
- section{
+ .pb100 {
   padding-bottom: 100px;
  
  }
@@ -189,7 +189,6 @@ font-family: 'Poppins', sans-serif;
 /* #endregion */
 
 /* #region Tools  Styles*/
-
 .tools_container{
  
   display: flex;
@@ -197,9 +196,11 @@ font-family: 'Poppins', sans-serif;
   align-items: center;
   flex-direction: column;
   background-image: url(../assets/images/bg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+ 
   padding-bottom: 74px;
+  background-repeat: no-repeat;
+  background-position:center;
+  
  
 }
 .tools_heading {
