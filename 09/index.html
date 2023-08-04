@@ -18,17 +18,38 @@
       <header class="header">
         <div class="header_container container">
           <div class="header_left">
-            <a href="#" class="language_btn">ENG</a>
+            <a href="#lang_btn_roll" class="language_btn btn-ok" id="btn-ok">ENG</a>
             <a href="#" class="documentation">Documentation / Who's using</a>
           </div>
 
-          <div class="header_logo">
-            <img src="./assets/images/logo.svg" alt="logo" />
+          <div class="header_logo btn-stop" >
+            <img src="./assets/images/logo.svg " alt="logo" />
           </div>
         </div>
       </header>
       <!-- #endregion -->
       <!-- #region Chapter1 -->
+      <div class="lang_btn_roll" id="lang_btn_roll">
+        <video id="fon">
+          <source src="/09/assets/images/roll.mp4" type="video/mp4">
+          </video>
+          
+         
+          <script>
+            const btnOk = document.querySelector('.btn-ok');
+            const btnStop = document.querySelector('.btn-stop');
+            const wrapperVideo = document.getElementById('fon');
+            
+            btnOk.addEventListener('click',function(){
+              wrapperVideo.play();
+            });
+            
+            btnStop.addEventListener('click',function(){
+              wrapperVideo.pause();
+            });</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
+        <button  id="showHideContent">Показать/Скрыть</button>
+      </div>
       <section class="chapter1">
         <div class="container_chp chp1">
           <h2 class="chapter_heading">
@@ -121,6 +142,8 @@
           <p class="chapter_p">For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way:  &#127829. So the sentence "Hello there Bob" would be translated as "&#127829  &#127829".</p>
         </div>
       </section>
+ 
+    
       <!-- #endregion -->
     </div>
   </body>
