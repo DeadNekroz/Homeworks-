@@ -82,7 +82,9 @@
 html{
   width: 100%
 }
-
+section{
+  margin-bottom: 70px;
+}
 .page_wrapper {
   width: 100%;
   max-width: 1200px;
@@ -93,6 +95,8 @@ html{
   width: 100%;
   max-width: 1200px;
   color: #000;
+ 
+
 }
 /* #endregion */
 
@@ -190,6 +194,7 @@ text-decoration: none;
 .italic{
   font-family: 'pt_sansitalic', sans-serif;
   font-style: italic;
+  
 }
 
 .bold{
