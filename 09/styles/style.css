@@ -201,21 +201,8 @@ text-decoration: none;
   font-family: 'pt_sansbold';
   font-weight: 700;
 }
-
-.lang_btn_roll{
-  position: absolute;
-  top: 500;
-  left: 0;
-  width: 100%;
-  opacity: 0;
-}
-.lang_btn_roll:target{
-  z-index: 100;
-  opacity: 10;
-  left: 0;
- transform: translateX(+50%) translateY(+50%) ;
- transition: 20s;
- 
+.bg_grey{
+  background-color: lightgray;
 }
  
 /* #endregion */

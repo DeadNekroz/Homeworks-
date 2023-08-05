@@ -12,10 +12,10 @@
       rel="stylesheet" /> -->
     <title>web-fonts</title>
   </head>
-  <body id="home">
+  <body>
     <div class="page_wrapper">
       <!-- #region Header -->
-      <header class="header" id="header">
+      <header class="header" >
         <div class="header_container container">
           <div class="header_left">
             <a href="#lang_btn_roll" class="language_btn btn-ok" id="btn-ok">ENG</a>
@@ -29,27 +29,7 @@
       </header>
       <!-- #endregion -->
       <!-- #region Chapter1 -->
-      <div class="lang_btn_roll" id="lang_btn_roll">
-        <video id="fon">
-          <source src="/09/assets/images/roll.mp4" type="video/mp4">
-          </video>
-          
-         
-          <script>
-            const btnOk = document.querySelector('.btn-ok');
-            const btnStop = document.querySelector('.btn-stop');
-            const wrapperVideo = document.getElementById('fon');
-            
-            btnOk.addEventListener('click',function(){
-              wrapperVideo.play();
-            });
-            
-            btnStop.addEventListener('click',function(){
-              wrapperVideo.pause();
-            });</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script>
-        <button  id="showHideContent">Показать/Скрыть</button>
-      </div>
+ 
       <section class="chapter1">
         <div class="container_chp chp1">
           <h2 class="chapter_heading">
@@ -107,13 +87,13 @@
           <p class="chapter_p">
             <span class="bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write
             elements inside JavaScript like so:
-            <Text>Hello, I am your cat!</Text>.
+             <span class="bg_grey"><<span>Text</span>>Hello, I am your cat! <<span>/Text</span>></span>
           </p>
           <p class="chapter_p">
             The React docs have <a href="#"  class="underline">a comprehensive guide to JSX</a> you can refer to
             learn even more. Because JSX is JavaScript, you can use variables
-            inside it. Here you are declaring a name for the cat, name, and
-            embedding it with curly braces inside <Text></Text>
+            inside it. Here you are declaring a <span class="bg_grey">name</span> for the cat, name, and
+            embedding it with curly braces inside <span class="bg_grey"><<span>Text</span>></span> 
           </p>
           <p class="chapter_p"><span class="bold">+ props.</span> Props is short for “properties”.</p>
           <p class="chapter_p">
@@ -139,8 +119,8 @@
             time the text changed, and an onSubmitEditing prop that takes a
             function to be called when the text is submitted.
           </p>
-          <p class="chapter_p">For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way:  &#127829. So the sentence "Hello there Bob" would be translated as "&#127829  &#127829".</p>
-        </div>
+          <p class="chapter_p">For example, let's say that as the user types, you're translating their words into a different language. In this new language, every single word is written the same way:  &#127829 . So the sentence "Hello there Bob" would be translated as "&#127829  &#127829".</p>
+        </div> 
       </section>
  
     
