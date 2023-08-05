@@ -154,11 +154,11 @@ section{
 .bg_picture{
   z-index: -1;
   gap: 70px;
-  position: absolute;
+  position: fixed;
   width: 760px;
   height: 760px;
   left:50%;
-  top: 11%;
+  top: 20%;
   color: #EAEAEA;
 }
 /* #endregion */
