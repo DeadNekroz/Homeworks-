@@ -172,12 +172,13 @@ section{
 }
 .header_container{
   position: fixed;
+    margin-top: 13px;
   top: 0;
   display: flex;
   justify-content: space-between;
   text-align: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   
 }
 .header_left{
