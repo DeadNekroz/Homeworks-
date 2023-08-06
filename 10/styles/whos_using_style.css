@@ -246,7 +246,7 @@ margin:  10px;
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
   }
   
 
@@ -278,7 +278,7 @@ margin:  10px;
   .flip-card-back {
     background-color: #1A1A1A;
     color: white;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
