@@ -199,14 +199,14 @@ padding-bottom: 84px;
 .header_refs>a{
 margin:  10px;
   }
-.header_logo{
-}
+ 
 /* #endregion */
 
 
 /* #region Card Styles */
 .head_div{
   width: 326px;
+  margin-bottom: 60px;
 }
 .logos_container{
     align-items: center;
