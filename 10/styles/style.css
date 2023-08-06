@@ -199,7 +199,7 @@ letter-spacing: 0.88px;
 .documentation{
 display: flex;
 align-items: center;
-width: 100%;
+ 
 justify-self: start;
 color: #000;
 font-family: 'staatlichesregular';
@@ -211,8 +211,23 @@ letter-spacing: 0.66px;
 text-decoration: none;
 
 }
-.header_logo{
-}
+.header_refs{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-self: start;
+  color: #000;
+  font-family: 'staatlichesregular';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.66px;
+  text-decoration: none;
+  }
+.header_refs>a{
+margin:  10px;
+  }
 /* #endregion */
 
 /* #region Chapter styles*/
