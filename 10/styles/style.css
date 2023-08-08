@@ -82,6 +82,7 @@
 html{
   width: 100%;
   scroll-behavior: smooth;
+
 }
 
 section{
@@ -106,7 +107,6 @@ section{
 .main{
   margin-top: 83px;
   order: 2;
-  grid-column: 1/2 2fr;
   grid-row: 2/3 ;
   width: 100%;
   display: flex;
@@ -114,6 +114,8 @@ section{
   align-items: flex-start;
   gap: 40px;
   align-self: stretch;
+
+ 
 }
 /* #endregion */
 
@@ -156,11 +158,12 @@ section{
 /* #region BG Picture */
 .bg_picture{
   z-index: -1;
+  object-fit:contain;
  
   position: fixed;
   width: 760px;
   height: 760px;
-  left:55%;
+  left:50%;
   top: 20%;
   color: #EAEAEA;
 }
