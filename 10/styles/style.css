@@ -128,7 +128,7 @@ section{
   font-family: 'francois_oneregular';
   font-size: 36px;
   line-height: 48px;  
-  letter-spacing: 1.44px;
+  letter-spacing: 1.24px;
   text-transform: uppercase;
    
 }
@@ -145,6 +145,10 @@ section{
   align-items: flex-start;
   gap: 80px;
  
+}
+.side-bar_item{
+  border-bottom: 1px solid var(--gray-4, #BDBDBD);
+  width: 100%;
 }
  
 /* #endregion */
