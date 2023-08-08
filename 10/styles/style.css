@@ -152,13 +152,19 @@ section{
 /* #region BG Picture */
 .bg_img_container{
   z-index: -1;
- 
   position: fixed;
   width: 760px;
   height: 760px;
   left:55%;
   top: 20%;
   color: #EAEAEA;
+}
+.bg_img{
+  object-fit: cover;
+  object-position: 50% 50%
+width: 100%;
+height: 100%;
+padding-right: 25%
 }
 /* #endregion */
 
