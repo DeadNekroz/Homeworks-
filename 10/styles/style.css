@@ -105,7 +105,7 @@ section{
 }
 .main{
   background-image: url(/assets/images/bg-picture.svg);
-  background-size: 760px  760px;
+  background-size: 760px 760px;
   background-repeat: no-repeat;
   background-position:  left 80% top 1%;
   margin-top: 83px;
