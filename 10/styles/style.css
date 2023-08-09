@@ -188,7 +188,6 @@ section{
 
  /* #region Header Syles */
 .header {
-  z-index: 1;
   height: 80px;
   margin-top: 13px;
   grid-row: 1;
@@ -196,7 +195,6 @@ section{
   
 }
 .header_container{
-  z-index: 0;
   position: fixed;
     margin-top: 13px;
   top: 0;
