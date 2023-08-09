@@ -97,7 +97,7 @@ section{
   margin: 0 auto;
   display: grid;
   gap: 40px;
-  grid-template-columns: 385px 785px ;
+  grid-template-columns: 385px 2fr ;
   grid-template-rows: 90px 1fr;
  
  }
