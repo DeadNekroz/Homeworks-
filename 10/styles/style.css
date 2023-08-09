@@ -90,7 +90,7 @@ section{
 }
 .page_wrapper {
 
-  z-index: -1;
+ 
   position: relative;
   width: 100%;
   max-width: 1440px;
@@ -109,7 +109,7 @@ section{
 .main{
 
    
-  
+/*   
 
   z-index: 1;
   background-image: url(../assets/images/bg-picture.svg);
@@ -119,7 +119,7 @@ section{
   background-attachment: fixed;
   background-position: center;
   background-position-x: 700px;
-  background-position-y: 210px;
+  background-position-y: 210px; */
 
   margin-top: 83px;
   order: 2;
@@ -136,7 +136,7 @@ section{
 /* #endregion */
 
 /* #region BG Picture */
-/* .bg_picture{
+.bg_picture{
   z-index: -1;
   object-fit:contain;
  
@@ -146,7 +146,7 @@ section{
   left: 49%;
   top: 200px;
   color: #EAEAEA;
-} */
+}
 /* #endregion */
 
 /* #region Side-bar */
@@ -188,7 +188,7 @@ section{
 
  /* #region Header Syles */
 .header {
-  z-index: 0;
+  z-index: 1;
   height: 80px;
   margin-top: 13px;
   grid-row: 1;
