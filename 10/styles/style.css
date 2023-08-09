@@ -115,10 +115,10 @@ section{
   background-image: url(../assets/images/bg-picture.svg);
   
   background-repeat: no-repeat;
-  background-size: 1fr;
+  background-size: 760px;
   background-attachment: fixed;
   background-position: center;
-  background-position-x: 800px;
+  background-position-x: 700px;
   background-position-y: 200px;
 
   margin-top: 83px;
