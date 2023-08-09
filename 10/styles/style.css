@@ -89,8 +89,9 @@ section{
   margin-bottom: 70px;
 }
 .page_wrapper {
+
+  z-index: -1;
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -106,6 +107,20 @@ section{
   color: #000;
 }
 .main{
+
+   
+  
+
+  z-index: 1;
+  background-image: url(../assets/images/bg-picture.svg);
+  
+  background-repeat: no-repeat;
+  background-size: 1fr;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-x: 800px;
+  background-position-y: 200px;
+
   margin-top: 83px;
   order: 2;
   grid-row: 2/3 ;
@@ -118,6 +133,20 @@ section{
 
  
 }
+/* #endregion */
+
+/* #region BG Picture */
+/* .bg_picture{
+  z-index: -1;
+  object-fit:contain;
+ 
+  position: fixed;
+  width: 760px;
+  height: 760px;
+  left: 49%;
+  top: 200px;
+  color: #EAEAEA;
+} */
 /* #endregion */
 
 /* #region Side-bar */
@@ -155,22 +184,11 @@ section{
  
 /* #endregion */
 
-/* #region BG Picture */
-.bg_picture{
-  z-index: -1;
-  object-fit:contain;
- 
-  position: fixed;
-  width: 760px;
-  height: 760px;
-  left: 49%;
-  top: 200px;
-  color: #EAEAEA;
-}
-/* #endregion */
+
 
  /* #region Header Syles */
 .header {
+  z-index: 0;
   height: 80px;
   margin-top: 13px;
   grid-row: 1;
@@ -178,6 +196,7 @@ section{
   
 }
 .header_container{
+  z-index: 0;
   position: fixed;
     margin-top: 13px;
   top: 0;
@@ -239,10 +258,10 @@ margin:  10px;
 /* #region Chapter styles*/
 .divider{
   width: 100px;
- background-color: #000;
+  background-color: #000;
   height: 8px;
-position: relative;
-bottom: 20px;
+  position: relative;
+ margin-bottom: 20px;
 }
 .container_chp {
   width: 100%;
