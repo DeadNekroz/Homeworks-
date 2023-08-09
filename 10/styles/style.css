@@ -97,8 +97,8 @@ section{
   margin: 0 auto;
   display: grid;
   gap: 40px;
-  grid-template-columns: 385px 2fr ;
-  grid-template-rows: 120px 1fr;
+  grid-template-columns: 385px 785px ;
+  grid-template-rows: 90px 1fr;
  
  }
  .container{
@@ -119,7 +119,7 @@ section{
   background-attachment: fixed;
   background-position: center;
   background-position-x: 700px;
-  background-position-y: 200px;
+  background-position-y: 210px;
 
   margin-top: 83px;
   order: 2;
