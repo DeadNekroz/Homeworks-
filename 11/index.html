@@ -13,30 +13,68 @@
     <title>HW11</title>
   </head>
   <body>
-    <div class="page_wrapper">
-      <h1 class="heading">Creat an Account</h1>
-    </div>
-    <div class="name_container">
-      <div class="first-name"></div>
-      <div class="last-name"></div>
-    </div>
+    <div class="page__wrapper">
+      <div class="account-form__container">
+        <form class="form" action="#">
+          <h2 class="heading">Create an Account</h2>
+          <div class="name__container">
+            <div class="first-name__wrapper">
+              <label for="firstname" class="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" />
+            </div>
+            <div class="last-name__wrapper">
+              <label for="lastname" class="last-name">Last Name</label>
+              <input type="text" name="lastname" id="lastname" />
+            </div>
+          </div>
+          <div class="email__container">
+            <label class="lb-email" for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="email"/>
+            <p class="email_disclaimer">
+              We'll never share your email with anyone else.
+            </p>
+          </div>
+          <div class="sex__container">
+            <div class="male__wrapper">
+            <input type="radio" name="male" id="male" class="male__radio"/
+            checked value="male" >
+            <label class="male-fake__radio" for="male">Male</label>
+          </div>
+          <div class="female__wrapper">
+            <input type="radio" name="male" id="female" class="male__radio"/
+            value="female">
+            <label class="female-fake__radio" for="female">Female</label>
+          </div>
+          </div>
 
-    <div class="e-mail_contaner"></div>
+          <div class="address__container">
+            <div class="country__container">
+              <label class="what-to-select" for="country__slct">Country</label>
+              <select name="Country" id="country " class="country__slct">
+                <option class="country__option" value="1" disabled selected>Select</option>
+                <option class="country__option" value="2">Ukraine</option>
+                <option class="country__option" value="3">USA</option>
+                <option class="country__option" value="4">Mexico</option>
+              </select>
+            </div>
+            <div class="city__container">
+              <label for="what-to-select">City</label>
+              <input type="text" name="City" id="city" class="city__inp" />
+            </div>
+          </div>
+          <div class="sign-up__container">
+            <button type="button" class="sign-up_btn">sign up</button>
+          </div>
+          <div class="disclaimer__container">
+            <p class="disclaimer">
+              By clicking the 'Sign Up' button, you confirm that you accept our 
+              <a class="policy_link" href="#"> Terms of Use </a>  and  
+              <a class="policy_link" href="#"> Privacy Policy. </a>
+            </p>
+          </div>
 
-    <div class="sex_container"></div>
-
-    <div class="address_container">
-      <div class="country"></div>
-      <div class="city"></div>
+        </form>
+      </div>
     </div>
-    <div class="sign_up_container">
-      <button type="button">sign up</button>
-    </div>
-    <div class="policy_container"></div>
-
-    <footer class="footer">
-      <p>Have an account?</p>
-      <a href="#">Log In</a>
-    </footer>
   </body>
 </html>
