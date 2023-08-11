@@ -14,7 +14,8 @@
   </head>
   <body>
     <div class="page__wrapper">
-      <div class="account-form__container">
+      <!-- #region Account-form  -->
+      <div class="form__container">
         <form class="form" action="#">
           <h2 class="heading">Create an Account</h2>
           <div class="name__container">
@@ -29,29 +30,31 @@
           </div>
           <div class="email__container">
             <label class="lb-email" for="email">E-mail</label>
-            <input type="email" name="email" id="email" class="email"/>
+            <input type="email" name="email" id="email" class="email" />
             <p class="email_disclaimer">
               We'll never share your email with anyone else.
             </p>
           </div>
           <div class="sex__container">
             <div class="male__wrapper">
-            <input type="radio" name="male" id="male" class="male__radio"/
-            checked value="male" >
-            <label class="fake__radio" for="male">Male</label>
-          </div>
-          <div class="female__wrapper">
-            <input type="radio" name="male" id="female" class="male__radio"/
-            value="female">
-            <label class="fake__radio" for="female">Female</label>
-          </div>
+              <input type="radio" name="male" id="male" class="male__radio"/
+              checked value="male" >
+              <label class="fake__radio" for="male">Male</label>
+            </div>
+            <div class="female__wrapper">
+              <input type="radio" name="male" id="female" class="male__radio"/
+              value="female">
+              <label class="fake__radio" for="female">Female</label>
+            </div>
           </div>
 
           <div class="address__container">
             <div class="country__container">
               <label class="what-to-select" for="country__slct">Country</label>
               <select name="Country" id="country " class="country__slct">
-                <option class="country__option" value="1" disabled selected>Select</option>
+                <option class="country__option" value="1" disabled selected>
+                  Select
+                </option>
                 <option class="country__option" value="2">Ukraine</option>
                 <option class="country__option" value="3">USA</option>
                 <option class="country__option" value="4">Mexico</option>
@@ -67,8 +70,8 @@
           </div>
           <div class="disclaimer__container">
             <p class="disclaimer">
-              By clicking the 'Sign Up' button, you confirm that you accept our 
-              <a class="policy_link" href="#"> Terms of Use </a>  and  
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a class="policy_link" href="#"> Terms of Use </a> and
               <a class="policy_link" href="#"> Privacy Policy. </a>
             </p>
           </div>
@@ -77,10 +80,71 @@
           <!-- #region Have an acc? -->
           <div class="have_acc">
             <a class="have_acc_link" href="log_in_btn">Have an account?</a>
-            <button type="button" class="log_in___btn" id="log_in_btn">log in</button>
+            <button type="button" class="log_in___btn" id="log_in_btn">
+              log in
+            </button>
           </div>
           <!-- #endregion -->
         </form>
+      </div>
+      <!-- #endregion -->
+
+      <!--#region Profile form  -->
+      <div class="form__container profile">
+        <form class="form" action="#">
+          <!-- #region Photo  styles -->
+          <h2 class="heading">Profile</h2>
+          <div class="picture__container">
+            <div class="user_photo">
+              <img class="avatar" src="./assets/images/indus.png" alt="indus" />
+            </div>
+            <div class="photo_inputs__container">
+              <label class="fake_dwnld_photo" for="dwnld_photo"></label>
+              <input id="dwnld_photo" class="dwnld_photo" type="file" />
+
+              <p class="disclaimer photo_p">Up to 1 MB (300x300 px)</p>
+            </div>
+            <button type="button" class="trash"></button>
+          </div>
+          <!-- #endregion -->
+          <!-- #region About User inputs styles -->
+          <div class="profile_info_inputs">
+            <div class="profile_name">
+              <label for="profile_name">Name</label>
+              <input class="profile_name" id="profile_name" type="text">
+            </div>
+            <div class="profile_email">
+              <label for="profile_email">E-mail</label>
+              <input class="profile_email" id="profile_name" type="text">
+            </div>
+            <div class="profile_country">
+              <label class="what-to-select" for="country__slct">Country</label>
+              <select name="Country" id="country " class="country__slct">
+                <option class="country__option" value="1" disabled selected>
+                  Select
+                </option>
+                <option class="country__option" value="2">Ukraine</option>
+                <option class="country__option" value="3">USA</option>
+                <option class="country__option" value="4">Mexico</option>
+              </select>
+            </div>
+            <div class="profile_city">
+              <label for="profile_city">City</label>
+                <input type="text" name="profile_city" id="profile_city">
+            </div>
+            <div class="profile_zip">
+              <label for="zip">Zip Code</label>
+              <input type="text" name="zipCode" class="zip" id="zip">
+            </div>
+            <div class="profile_number">
+              <label for="phone">Phone Number</label>
+              <input type="number" name="phone" id="phone">
+            </div>
+            <button type="button" class="profile_submit_btn">Update</button>
+          </div>
+        </form>
+
+        <!-- #endregion -->
       </div>
     </div>
   </body>

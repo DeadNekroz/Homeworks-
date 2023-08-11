@@ -23,7 +23,9 @@ label{
 input[type='text'],
 input[type='email'],
 input[type='password'],
-input[type='number']{
+input[type='number'],
+input[type='file']
+{
   width: 100%;
   border: 1px solid #E4E4E4;
   border-radius: 5px;
@@ -31,7 +33,9 @@ input[type='number']{
 input[type='text']:focus,
 input[type='email']:focus,
 input[type='password']:focus,
-input[type='number']:focus{
+input[type='file']:focus,
+input[type='number']:focus,
+select:focus{
 outline: 1px solid #007BFF;
 } 
 
@@ -51,17 +55,21 @@ button{
 
 /* #region Wrappers-containers Styles */
 .page__wrapper {
-  width: 1440px;
-  height: 700px;
+  display: grid;
+  width: 100%;
+  max-width: 1440px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+   
+
 }
-.account-form__container {
+.form__container {
   margin: 0 auto;
   justify-content: center;
   text-align: start;
   display: flex;
   width: 570px;
- 
-
+  height: 700px;
 }
 
 .form{
@@ -94,16 +102,7 @@ button{
   gap: 12px;
   
 }
-.first-name__wrapper {
-}
-.firstname {
  
-}
-.last-name__wrapper {
-}
-.last-name {
- 
-}
 
 /* #endregion */
 
@@ -189,7 +188,7 @@ button{
  max-width: 245px;
 }
 .what-to-select{
- 
+
 }
 .country__slct {
   width: 100%;
@@ -203,6 +202,7 @@ button{
   background-size: 18px;
   background-repeat: no-repeat;
   color: #969696;
+  border-radius: 5px;
 }
  
 .country__option {
@@ -277,6 +277,7 @@ flex-shrink: 0;
  
 }
 /* #endregion */
+
 /* #region Have an account styles */
 .have_acc{
   display: flex;
@@ -297,5 +298,109 @@ flex-shrink: 0;
   font-weight: 500;
   line-height: 22px; /* 146.667% */
   letter-spacing: -0.1px;
+}
+/* #endregion */
+
+/* #region Profile form Styles */
+.form_container {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: start;
+  display: flex;
+  width: 570px;
+ 
+}
+ 
+
+/* #region Photo styles */
+.avatar{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  }
+.picture__container{
+  display: flex;
+
+  width: 100%;
+  gap: 20px;
+}
+.photo_inputs__container{
+  display: grid;
+  grid-template-rows: 30px 18px;
+ 
+  gap: 9px;
+ justify-content: start;
+ text-align: center;
+  height: 30px;
+
+}
+.dwnld_photo{
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 138px;
+  height: 30px;
+  position: relative;
+}
+.fake_dwnld_photo{
+background-image: url(../assets/images/camera.svg);
+background-position-x: 95%;
+background-position-y: center;
+background-size: 16px;
+background-repeat: no-repeat;
+  grid-row: 1 / 2;
+  border: 1px solid #E4E4E4;
+  position: absolute;
+  width: 138px;
+  height: 30px;
+ border-radius: 5px;
+
+}
+
+.photo_p{
+    grid-row: 2 / 3;
+}
+
+.trash{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ background-image: url(../assets/images/trash.svg);
+ background-size: 16px;
+ background-position: center;
+ background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+}
+/* #endregion */
+
+ 
+.profile_info_inputs{
+  display: grid;
+  grid-template-columns: repeat(2, 245px);
+  grid-template-rows:repeat(3, 67px);
+column-gap: 10px;
+row-gap: 20px;
+ 
+}
+.profile_name{
+grid-row: 1 / 2 ;
+grid-column: 1 / 2 ;
+}
+.profile_email{
+grid-row: 1 / 2 ;
+grid-column: 2 / 3 ;
+}
+.profile_submit_btn{
+  display: flex;
+  width: 150px;
+  height: 38px;
+  justify-content: center;
+  align-items: center;
+  background-color: #007BFF;
+  color: #ffffff;
+  border-radius: 5px;
 }
 /* #endregion */
