@@ -60,8 +60,7 @@ button{
   max-width: 1440px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-   
-
+  margin: 0 auto;
 }
 .form__container {
   margin: 0 auto;
