@@ -1,10 +1,12 @@
 .page_wrapper{
   width: 100%;
   max-width: 1170px;
+  margin: 120px auto;
+  
 }
  
 .header {
-  margin-top: 120px;
+ 
   position: relative;
   text-align: center;
 
@@ -26,7 +28,7 @@ font-family: Raleway;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
-line-height: 24px; /* 133.333% */
+line-height: 24px; 
 text-transform: uppercase;
 margin-bottom: 15px;
 }
@@ -37,9 +39,9 @@ margin-bottom: 15px;
 text-align: center;
 font-family: Roboto;
 font-size: 60px;
-font-style: normal;
+ 
 font-weight: 900;
-line-height: 66px; /* 110% */
+line-height: 66px;  
 text-transform: uppercase;
  
 position: relative;
