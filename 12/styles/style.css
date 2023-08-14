@@ -1,10 +1,11 @@
+
 .page_wrapper{
   width: 100%;
   max-width: 1170px;
   margin: 120px auto;
   
 }
- 
+ /* #region header styles */
 .header {
  
   position: relative;
@@ -46,6 +47,7 @@ text-transform: uppercase;
  
 position: relative;
 }
+
 .title:before{
 position: absolute;
 content: '';
@@ -54,7 +56,7 @@ bottom: -50px;
 width: 210px;
 height: 1px;
 background-color: #FC0;
-transform: translateX(-35%);
+transform: translateX(-37%);
 }
 .title:after{
   position: absolute;
@@ -64,15 +66,19 @@ transform: translateX(-35%);
   width: 210px;
   height: 1px;
   background-color: #FC0;
-  transform: translateX(-65%);
+  transform: translateX(-68%);
 }
+/* #endregion */
+
+/* #region Main Styles */
 .main:before{
   position: absolute;
   content: '';
   width: 20px;
   height: 20px;
-  right: 49%;
-  transform: translateY(36px);
+  right: 50%;
+  top: 6%;
+  transform: translateX(28%);
   background-image: url(../assets/images/bonfire-sharp\ 1.svg);
   background-size: cover;
   background-position: center;
@@ -88,6 +94,7 @@ transform: translateX(-35%);
   justify-content: space-between;
 
 }
+/* #endregion */
 
 /* #region Photo  */
 .photo__container {
@@ -152,7 +159,6 @@ transform: translateX(-35%);
 
 
 /* #endregion */
-
 
 /* #region About user Styles */
 .about__user_container {
