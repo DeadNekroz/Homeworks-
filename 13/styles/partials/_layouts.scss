@@ -1,0 +1,78 @@
+.page_wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+ }
+ 
+ 
+section{
+  margin: 0 auto;
+}
+div[class*="container"]{
+  width: 100%;
+  max-width: 1170px;
+  margin: 22px 135px 100px 135px;
+}
+
+.logo_wrapper{
+
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+.heading{
+  display: inline-block;
+
+}
+ 
+// #region Services 
+.serv_list{
+  display: flex;
+  margin-bottom: 100px;
+}
+.serv_item{
+  display: flex;
+  width: 370px;
+  height: 340px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.serv_item_desc{
+width: 275px;
+height: 80px;
+}
+.serv_item_content{
+  width: 290px;
+  height: 260px;
+  justify-content: center;
+  gap: 30px;
+ 
+}
+// #endregion
+
+// #region footer
+.footer{
+  width: 100%;
+  max-width: 100%;
+  height: 193px;
+  background-color:#16133D;
+  color: #ffffff;
+}
+.footer__container{
+  padding: 40px;
+}
+.footer_logo{
+  margin-bottom: 40px;
+ 
+}
+.footer_icons_list{
+display: flex;
+gap: 5px;
+}
+.footer_icons_item{
+  width: 38px;
+  height: 38px;
+  border-radius: 5px;
+  background:  #EFEEF3;
+}
+// #endregion
