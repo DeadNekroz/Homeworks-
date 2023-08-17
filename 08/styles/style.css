@@ -175,8 +175,8 @@ margin-top: 120px;
 .grid1{
   display: grid;
   max-width: 1170px;
-  grid-template-rows: repeat(3, 33%);
-  grid-template-columns: repeat(3, 33%) ;
+  grid-template-rows: repeat(3, 30%);
+  grid-template-columns: repeat(3, 30%) ;
   column-gap: 30px;
   row-gap: 30px;
  }

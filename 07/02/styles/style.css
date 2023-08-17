@@ -185,7 +185,9 @@ font-family: 'Poppins', sans-serif;
 }
  
 .first_screen_right_part {
-  width: 50%;
+ 
+  min-width: 50%;
+ 
  
 }
 /* #endregion */
