@@ -243,9 +243,6 @@ div[class*=container] {
   fill: #CAEFF2;
 }
 
-.footer_icons_item:hover .footer_svg use {
-  fill: none;
-}
-.footer_icons_item:hover .footer_svg use:hover use {
-  fill: #3DB370;
+.footer_icons_item:hover {
+  --hovercolor:#3DB370;
 }

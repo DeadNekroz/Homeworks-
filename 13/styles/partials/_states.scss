@@ -18,14 +18,10 @@
     }
     }
   }
+  .footer_icons_item:hover {
+    --hovercolor:#3DB370}
+ 
+ 
+  
 
-  .footer_icons_item{
-    &:hover{
-    .footer_svg use{
-      fill:none;
-      &:hover use{
-      fill:#3DB370;
-    }
-    }
-    }
-  }
+ 
