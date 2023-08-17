@@ -26,6 +26,7 @@ div[class*=container] {
 .serv_list {
   display: flex;
   margin-bottom: 100px;
+  gap: 30px;
 }
 
 .serv_item {
@@ -35,6 +36,7 @@ div[class*=container] {
   padding: 40px;
   justify-content: center;
   align-items: center;
+  border: 1px solid #E5EAF4;
 }
 
 .serv_item_desc {
@@ -45,8 +47,16 @@ div[class*=container] {
 .serv_item_content {
   width: 290px;
   height: 260px;
+}
+
+.icon_wrapper {
+  display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #E5EAF4;
+  width: 64px;
+  height: 64px;
 }
 
 .footer {
@@ -55,24 +65,59 @@ div[class*=container] {
   height: 193px;
   background-color: #16133D;
   color: #ffffff;
-}
-
-.footer__container {
   padding: 40px;
 }
 
-.footer_logo {
-  margin-bottom: 40px;
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
 }
 
 .footer_icons_list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
 }
 
 .footer_icons_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 38px;
   height: 38px;
   border-radius: 5px;
   background: #EFEEF3;
+}
+
+.footer_svg {
+  width: 38px;
+  height: 38px;
+}
+
+.svg1 {
+  width: 20.011px;
+  height: 20.007px;
+}
+
+.svg2 {
+  width: 10px;
+  height: 18.671px;
+}
+
+.svg3 {
+  width: 20px;
+  height: 19.5px;
+}
+
+.svg4 {
+  width: 19.375px;
+  height: 19.375px;
+}
+
+.svg5 {
+  width: 20px;
+  height: 16.244px;
 }
