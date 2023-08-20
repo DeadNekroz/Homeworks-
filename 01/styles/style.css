@@ -139,7 +139,7 @@ height: 400px;
 .skills_list{
  justify-content: space-between;
   column-count: 2;
- background-color: rgba(169, 192, 236, 0.936));
+ background-color: rgba(169, 192, 236, 0.936);
  
 }
 .skills_title{
