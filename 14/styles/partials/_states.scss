@@ -9,8 +9,11 @@
   .contacts_link a:hover{
    cursor:url("/14/assets/images/cursor.svg"), pointer;
   }
+  .searh_btn:hover{
+   cursor:url("/14/assets/images/cursor.svg"), pointer;
+  }
   .nav_link:hover{
-
+   cursor:url("/14/assets/images/cursor.svg"), pointer;
    &:after{
    content:'';
    display: inline-block;

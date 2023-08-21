@@ -606,7 +606,7 @@ show_text_btn {
   .open_menu {
     z-index: 1;
     position: fixed;
-    top: 40px;
+    top: 45px;
     right: 100px;
     text-align: center;
     display: flex;
@@ -1105,6 +1105,13 @@ show_text_btn {
   cursor: url("/14/assets/images/cursor.svg"), pointer;
 }
 
+.searh_btn:hover {
+  cursor: url("/14/assets/images/cursor.svg"), pointer;
+}
+
+.nav_link:hover {
+  cursor: url("/14/assets/images/cursor.svg"), pointer;
+}
 .nav_link:hover:after {
   content: "";
   display: inline-block;

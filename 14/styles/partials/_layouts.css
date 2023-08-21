@@ -411,7 +411,7 @@ show_text_btn {
   .open_menu {
     z-index: 1;
     position: fixed;
-    top: 40px;
+    top: 45px;
     right: 100px;
     text-align: center;
     display: flex;
