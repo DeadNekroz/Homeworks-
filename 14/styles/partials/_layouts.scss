@@ -125,6 +125,8 @@ display: inline-block;
 // #endregion
 
 // #region Blog
+
+
 .blog{
 
  
@@ -133,27 +135,26 @@ display: inline-block;
   display: flex;
   width: 100%;
   max-width: 1170px;
- margin-bottom: 50px;
+  margin-bottom: 50px;
  
+
  }
 
 .image_wrapper{
   display: inline-block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  width: 570px;
+  max-width: 570;
+  width: 100%;
   height: 470px;
 }
-.blog_img_1{
-  background-image: url(/14/assets/images/blog_cards/blog_arrow_img.png);
-  max-width: 100vw;
+// .blog_img_1{
+//   background-image: url(/14/assets/images/blog_cards/blog_arrow_img.png);
+//   max-width: 100vw;
 
-}
-.blog_img_2{
-  max-width: 100vw;
-  background-image: url(/14/assets/images/blog_cards/blog_dont_know_wtf_image.png);
-}
+// }
+// .blog_img_2{
+//   max-width: 100vw;
+//   background-image: url(/14/assets/images/blog_cards/blog_dont_know_wtf_image.png);
+// }
 .text_wrapper{
 padding-left: 30px;
 max-width: calc(50%-30px);
@@ -248,7 +249,7 @@ height: 150px;
  
 .info_left_block {
   width: 100%;
-  max-width: 470px;
+ 
 
 }
 .proff {
@@ -257,7 +258,7 @@ height: 150px;
  
 .info_right_block {
   width: 100%;
-  max-width: 470px;
+   
 }
 .info_desk{
   margin-bottom: 40px;
@@ -388,6 +389,7 @@ height: 150px;
 
   .page_wrapper{
     max-width: 100%;
+    margin: 0 auto;
     padding-bottom: 50px;
     overflow-x: hidden; 
   }
@@ -477,7 +479,7 @@ height: 150px;
   // reverse blocks
   .tablet_grid_wrapper{
     display: grid;
-    grid-template-columns: repeat(2, 49%);
+    grid-template-columns: repeat(2, 48%);
     grid-template-rows: 115px , repeat(4,280px);
     grid-row-gap: 50px;
  
@@ -524,6 +526,7 @@ height: 150px;
       padding: 0;
      }
      .text_content{
+      max-width: 100%;
       margin: 0;
       padding: 0;
      }
@@ -606,7 +609,7 @@ height: 150px;
     }
     .image_wrapper{
       .image_wrapper{
-        min-width: 340px;
+        max-width: 340px;
         width: 100%;
         height: 280px;
   
@@ -655,6 +658,8 @@ height: 150px;
    }
   }
   @media screen and (max-width:320px){
+
+    
    .mb_90{
     margin-bottom: 70px;
    }
@@ -756,7 +761,7 @@ height: 150px;
     display: flex;
     order: 1;
     grid-template-columns: 1fr ;
-    grid-template-rows: 64px , repeat(2,1fr)  ;
+    grid-template-rows: 64px , repeat(2,49%)  ;
     .blog_block{
       display: flex;
   width: 300px;
@@ -934,6 +939,9 @@ height: 150px;
       letter-spacing: 1.6px;
     }
   }
-@media screen and (min-width:1440px){
+@media screen and (max-width:1440px){
+  .tablet_card3{
+    display: none;
+  }
 
 }
