@@ -60,6 +60,10 @@
   gap: 42px;
 }
 
+.nav_link {
+  position: relative;
+}
+
 .search {
   display: inline-block;
   position: relative;
@@ -427,6 +431,12 @@ show_text_btn {
   .open_menu .nav_link {
     display: block;
     height: 50px;
+  }
+  .open_menu .nav_link:hover:after {
+    width: 100%;
+    top: 50px;
+    right: 0;
+    background-color: aqua;
   }
 
   .hamburger-box {
