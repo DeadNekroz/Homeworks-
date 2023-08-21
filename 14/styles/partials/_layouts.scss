@@ -134,10 +134,7 @@ display: inline-block;
 // #region Blog
 
 
-.blog{
-
  
-}
  .blog_block{
   display: flex;
   width: 100%;
@@ -157,15 +154,7 @@ display: inline-block;
 .text_wrapper{
   max-width: 50%;
 }
-// .blog_img_1{
-//   background-image: url(/14/assets/images/blog_cards/blog_arrow_img.png);
-//   max-width: 100vw;
-
-// }
-// .blog_img_2{
-//   max-width: 100vw;
-//   background-image: url(/14/assets/images/blog_cards/blog_dont_know_wtf_image.png);
-// }
+ 
 
 .text_content{
  margin: 85px 20px 85px 20px;
@@ -597,11 +586,8 @@ height: 150px;
     grid-row: 3 / 4 ;
     grid-column:1 / 3 ;
     display: flex;
-   .text_wrapper{
-   }
-    .image_wrapper{
- 
-    }
+   
+    
    }
    .tablet_card3{
    
@@ -871,23 +857,10 @@ height: 150px;
     }
   
 
-  .header__container {
-  }
-  .section_header {
-  }
-  .section_title {
-  }
-  .view_all_btn {
-  }
-  .svg_arrow {
-  }
   .section_list {
    display: flex;
    flex-direction: column;
   
-  }
- 
-  .item_card {
   }
   .most_pop_card {
   height: 100%;
@@ -903,10 +876,7 @@ height: 150px;
     line-height: 166%; 
     letter-spacing: 1.6px;
   }
-  .card_tag {
-  }
-  .card_date {
-  }
+
   .card_heading {
     width: 100%;
     max-width: 297px;
@@ -923,21 +893,12 @@ height: 150px;
     line-height: 166%; 
     letter-spacing: 0.8px;
   }
-  .load_more_btn {
-  }
+
     } 
-    .info {
-    }
-    .mb_90 {
-    }
     .info_left_block {
     font-size: 24px;
     line-height: 166%;  
     letter-spacing: 2.4px;
-    }
-    .proff {
-    }
-    .svg_arrow {
     }
     .info_right_block {
       text-align: start;
@@ -945,8 +906,7 @@ height: 150px;
       line-height: 32px; 
       letter-spacing: 0.9px;
     }
-    .info_desk {
-    }
+
     .policy{
       font-size: 16px;
       font-weight: 400;
