@@ -396,7 +396,7 @@ show_text_btn {
 
 @media screen and (max-width: 768px) {
   .search {
-    left: 30px;
+    left: auto;
   }
 
   .page_wrapper {
