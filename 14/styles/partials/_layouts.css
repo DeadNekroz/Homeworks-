@@ -101,6 +101,12 @@
   height: 500px;
 }
 
+.hero_bg {
+  width: 100%;
+  max-width: 1440px;
+  height: 600px;
+}
+
 .hero_bg_img {
   justify-content: center;
   align-items: center;
