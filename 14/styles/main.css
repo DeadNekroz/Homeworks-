@@ -1159,25 +1159,17 @@ show_text_btn {
     margin-bottom: 50px;
   }
 }
+a:hover {
+  cursor: url("/14/assets/images/cursor.svg"), pointer;
+}
+
 .socket:hover {
   background-color: var(--desc_grey);
-  cursor: url("/14/assets/images/cursor.svg"), pointer;
 }
 .socket:hover #social_icon {
   --desc_grey:#ffffff ;
 }
 
-.contacts_link a:hover {
-  cursor: url("/14/assets/images/cursor.svg"), pointer;
-}
-
-.searh_btn:hover {
-  cursor: url("/14/assets/images/cursor.svg"), pointer;
-}
-
-.nav_link:hover {
-  cursor: url("/14/assets/images/cursor.svg"), pointer;
-}
 .nav_link:hover:after {
   content: "";
   display: inline-block;
