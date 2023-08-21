@@ -147,6 +147,18 @@
   max-width: 50%;
 }
 
+.read_more_option {
+  display: none;
+}
+
+.show_text {
+  display: inline;
+}
+
+.hide_arrow {
+  display: none;
+}
+
 .text_content {
   margin: 85px 20px 85px 20px;
 }
