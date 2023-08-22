@@ -464,7 +464,8 @@ show_text_btn {
   }
   .open_menu .nav_link {
     display: block;
-    height: 50px;
+    padding-top: 15px;
+    height: 20px;
   }
   .open_menu .nav_link:hover:after {
     width: 100%;
@@ -736,7 +737,7 @@ show_text_btn {
     z-index: 1;
     position: fixed;
     right: 0;
-    height: 250px;
+    height: 200px;
     flex-direction: column-reverse;
     justify-content: flex-end;
     border-radius: 4px;

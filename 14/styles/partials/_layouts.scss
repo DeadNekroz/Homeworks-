@@ -424,8 +424,9 @@ height: 150px;
       width: 100%;
     }
     .nav_link{
-      display: block;  
-      height: 50px;
+      display: block;
+      padding-top: 15px;
+      height: 20px;
     }
     .nav_link:hover{
       &:after{
@@ -674,7 +675,7 @@ height: 150px;
       z-index: 1;
       position: fixed;
       right: 0;
-      height: 250px;
+      height: 200px;
       flex-direction: column-reverse;
       justify-content:flex-end;
       border-radius: 4px;
