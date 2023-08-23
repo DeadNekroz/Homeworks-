@@ -365,7 +365,8 @@ height: 150px;
 // #region Media
 .mobile{
   display: none;
-}@media screen and (max-width:1440px){
+}
+@media screen and (min-width:970px){
   .tablet_card3{
     display: none;
   }
