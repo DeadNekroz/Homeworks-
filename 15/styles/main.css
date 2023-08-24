@@ -44,7 +44,7 @@ img {
 
 .card {
   fill-opacity: 0;
-  background-image: url(/15/assets/images/back.png);
+  background-image: url(../assets/images/back.png);
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,7 +63,7 @@ img {
 @keyframes flip {
   0% {
     transform: rotateY(0deg);
-    background-image: url(/15/assets/images/back.png);
+    background-image: url(../assets/images/back.png);
     fill-opacity: 0;
     background-size: 100px 140px;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ img {
   }
 }
 body {
-  background-image: url(/15/assets/images/bgtable.jpg);
+  background-image: url(../assets/images/bgtable.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
