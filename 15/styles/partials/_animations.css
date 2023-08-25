@@ -1,7 +1,7 @@
 .card {
   position: relative;
   fill-opacity: 0;
-  background-image: url(/15/assets/images/back.png);
+  background-image: url(../assets/images/back.png);
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
