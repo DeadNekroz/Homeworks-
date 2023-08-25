@@ -21,8 +21,6 @@ background-position: center;
 }
 
 .active{
- 
-  
   transition:all linear 0.8s ; 
   animation-name: flip;
   animation-duration: 2s;
@@ -50,6 +48,7 @@ background-position: center;
   fill-opacity: 0;    
  }
   100%{
+
     transform: rotateY(180deg);
     background-image: none; 
     opacity: 8;
