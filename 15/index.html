@@ -131,13 +131,14 @@
   const test = document.getElementById("test");
 
   // hover active add
-  $('.card').mouseover(function(){
-$(this).addClass('active');
-setInterval(() => {
+  
+    $('.card').mouseover(function(){
+$(this).addClass('active'), 2000 ;
+}) 
     $(this).mouseleave(function(){
 $(this).removeClass('active');
-}, 3000  )})})
-
+} )
+ 
 </script>
 </body>
 </html>
