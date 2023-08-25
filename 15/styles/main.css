@@ -51,9 +51,9 @@ img {
   background-position: center;
 }
 .card:hover {
-  transition: all linear 0.8s;
+  transition: all ease-out 0.3s;
   animation-name: flip;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -64,8 +64,8 @@ img {
 .active {
   transition: all linear 0.8s;
   animation-name: flip;
-  animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: backwards;
   transform: translateY(2%);
@@ -92,7 +92,7 @@ img {
   }
 }
 body {
-  background-image: url(/15/assets/images/bgtable.jpg);
+  background-image: url(../assets/images/bgtable.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -116,9 +116,4 @@ body {
   background-color: #ffffff;
   width: 100px;
   height: 150px;
-}
-
-.card svg {
-  transform: rotateX(180deg);
-  transform: translateX(1%);
 }

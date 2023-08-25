@@ -24,8 +24,3 @@ body {
   width: 100px;
   height: 150px;
 }
-
-.card svg {
-  transform: rotateX(180deg);
-  transform: translateX(1%);
-}

@@ -8,9 +8,9 @@ background-repeat: no-repeat;
 background-position: center;
  &:hover  {
   
-  transition:all linear 0.8s ; 
+  transition:all ease-out 0.3s ; 
   animation-name: flip;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction:normal;
   animation-fill-mode: both;
@@ -24,7 +24,7 @@ background-position: center;
 .active{
   transition:all linear 0.8s ; 
   animation-name: flip;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-direction:normal;
   animation-fill-mode: backwards;
