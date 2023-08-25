@@ -31,7 +31,7 @@
 @keyframes flip {
   0% {
     transform: rotateY(0deg);
-    background-image: url(/15/assets/images/back.png);
+    background-image: url(../assets/images/back.png);
     fill-opacity: 0;
     background-size: 100px 140px;
     background-repeat: no-repeat;
