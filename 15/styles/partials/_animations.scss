@@ -8,7 +8,7 @@ background-repeat: no-repeat;
 background-position: center;
  &:hover  {
   
-  transition:all ease-out 0.3s ; 
+  transition:all linear 0.8s ; 
   animation-name: flip;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -22,7 +22,7 @@ background-position: center;
  
 
 .active{
-  transition:all linear 0.3s ; 
+  transition:all linear 0.8s ; 
   animation-name: flip;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
