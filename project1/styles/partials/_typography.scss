@@ -17,7 +17,10 @@
   @include typo($primare_dark_blue,44px, normal,52px,$secondary_font);
 }
 .secondary_spring {
-  @include typo($secondary_spring,44px,italic,52px,$secondary_font);
+  @include typo($secondary_spring,40px,italic,52px,$secondary_font);
+}
+.fz44{
+  font-size: 44px;
 }
 .hero_subtitle {
   opacity: 0.8;
@@ -30,14 +33,9 @@
 
 // #endregion
 // #region Stats
-.stats {
-
-}
-.stats_img {
-}
-.stats_content {
  
-}
+ 
+ 
 .count-item_title {
   @include typo($primare_dark_blue,68px,normal,72px,$secondary_font);
   }
@@ -47,29 +45,8 @@
   .content_article {
     @include subText;
   }
- 
-.count_item {
-}
-.divided {
-}
 .dollar {
- 
  @include typo(#E4E4E4,40px,normal,50px,$secondary_font)
-}
-.stats_btn {
-}
-.btn {
-}
-
-.counters_wrapper{
- 
-}
-.content_article_text {
-  
-}
-.stats_btn {
-}
-.btn {
 }
 // #endregion
 // #region Benefits
@@ -106,4 +83,115 @@ letter-spacing: 1.28px;
   @include typo ($primaryWhite, 20px,italic,20px,$secondary_font);
 letter-spacing: 1.6px;
 }
+// #endregion
+
+// #region Video
+ 
+.video_title {
+  @include typo($primare_dark_blue,40px,nomal,48px,$secondary_font);
+}
+.video_subtitle {
+  @include subText;
+}
+// #endregion
+
+// #region Promises
+ 
+.item_heading {
+  @include typo($primare_dark_blue,24px,normal,28px,$secondary_font);
+}
+.item_content {
+  @include subText;
+  margin-bottom: 18px;
+}
+
+// #endregion
+
+// #region Reviews
+ 
+.reviews_heading {
+  @include typo ($primare_dark_blue,40px,normal,48px,$secondary_font);
+  .secondary_spring{
+    font-size: 40px;
+  }
+}
+ 
+.reviews_subheding {
+  max-width: 400px;
+  @include subText;
+}
+.reviews_list {
+}
+.review_card { 
+
+}
+.review_text {
+  @include typo(rgba(255, 255, 255, 1),16px,normal,26px,$primare_font);
+ 
+}
+.initials {
+  @include typo(rgba(255, 255, 255, 1) ,20px,italic,20px,$secondary_font);
+  letter-spacing: 1.6px;
+}
+// #endregion
+
+// #region Contacts
+ 
+.contacts_heading {
+  @include typo($primare_dark_blue,40px,normal,39px,$secondary_font);
+ margin-bottom: 29px;
+ 
+}
+ 
+.contacts_subheading {
+  @include subText;
+  max-width: 470px;
+}
+.form {
+  @include typo($primare_dark_blue,18px,italic,20px,$secondary_font);
+ letter-spacing: 1.44px;
+  :not(:last-child){
+   opacity: 0.5;
+  text-transform: capitalize;
+  }
+}
+.name {
+}
+.email {
+}
+.tell_more {
+}
+.contacts_btn {
+}
+.btn {
+}
+// #endregion
+
+// #region Footer
+.footer {
+  @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+ 
+.rights {
+  @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
+font-weight: 300;
+opacity: 0.6;
+}
+.made_by {
+  @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
+  font-weight: 300;
+text-transform: none;
+}
+.made_p{
+  opacity: 0.6;
+}
+.made_by_link {
+
+  letter-spacing: 1.12px;
+
+ 
+}
+ 
 // #endregion

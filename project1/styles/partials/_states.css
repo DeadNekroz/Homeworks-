@@ -20,10 +20,11 @@
 
 .logo_wrapper:hover {
   width: 120px;
+  border-radius: 4px;
   --logo_color: #F1897B,
-  -webkit-box-shadow: 108px 32px 272px 78px rgba(241,137,123,1);
-  -moz-box-shadow: 108px 32px 272px 78px #f1897b;
-  box-shadow: 108px 32px 272px 78px #f1897b;
+  -webkit-box-shadow: 28px 16px 132px 28px rgba(241,137,123,1);
+  -moz-box-shadow: 28px 16px 13px 28px #f1897b;
+  box-shadow: 28px 16px 132px 28px #f1897b;
   background: linear-gradient(359deg, rgba(33, 36, 54, 0.5) 0%, rgba(33, 36, 54, 0) 100%), url(<path-to-image>), lightgray 0px -54.849px/100% 113.817% no-repeat;
   backdrop-filter: blur(5px);
 }
@@ -33,8 +34,8 @@
 }
 .btn:after {
   position: absolute;
-  top: 14px;
-  left: 9px;
+  top: 12px;
+  left: 8px;
   content: "";
   width: 100%;
   height: 13px;
