@@ -120,6 +120,19 @@
   text-align: center;
 }
 
+.divided {
+  position: relative;
+}
+.divided::before {
+  content: "";
+  position: absolute;
+  opacity: 0.8;
+  top: -25px;
+  width: 100px;
+  height: 1px;
+  background-color: #85bbb1;
+}
+
 .count-item_title {
   display: flex;
   justify-content: center;

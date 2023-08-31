@@ -9,7 +9,7 @@ max-width: 1170px;
 .nav_item {
   position: relative;
  
-  &:hover {
+  &:hover   {
 
     .nav_link::after {
       content: '';
@@ -24,22 +24,22 @@ max-width: 1170px;
       background: var(--secondary-coral, #F1897B);
     }
   }
+  
 }
 
 .logo_wrapper {
-  &:hover {
+  &:hover  {
     width: 120px;
     border-radius: 4px;
      
-    --logo_color: #F1897B,
-    -webkit-box-shadow: 28px 16px 132px 28px rgba(241,137,123,1);
-    -moz-box-shadow: 28px 16px 13px 28px rgba(241,137,123,1);
-    box-shadow: 28px 16px 132px 28px rgba(241,137,123,1);
-    background: linear-gradient(359deg, rgba(33, 36, 54, 0.50) 0%, rgba(33, 36, 54, 0.00) 100%), url(<path-to-image>), lightgray 0px -54.849px / 100% 113.817% no-repeat;
+    --logo_color: #F1897B;
+    
+    box-shadow:  8px  2px 22px 10px rgba(241,137, 123,1);
  
     backdrop-filter: blur(5px);
 
   }
+   
 
 }
 

@@ -133,6 +133,18 @@
   justify-content: space-between;
   text-align: center;
 }
+.divided{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    opacity: 0.8;
+    top: -25px;
+    width: 100px;
+    height: 1px;
+    background-color: rgba(133, 187, 177, 1);
+  }
+}
 
 .count-item_title {
   display: flex;
