@@ -1,5 +1,8 @@
+@charset "UTF-8";
 .hero_screen {
   position: relative;
+  width: 100%;
+  max-width: 100%;
   min-height: 993px;
   background-image: url(../assets/images/First-Screen-Bg-Image.png);
   background-size: cover;
@@ -46,7 +49,7 @@
   max-width: 523px;
   position: absolute;
   top: 260px;
-  left: 135px;
+  left: 20%;
 }
 
 .hero .container {
@@ -178,7 +181,7 @@
 
 .benefits-list {
   display: flex;
-  max-width: 100%;
+  max-width: 95%;
   flex-wrap: wrap;
   gap: 90px;
 }
@@ -186,12 +189,13 @@
 .benefit_card {
   position: relative;
   max-width: 500px;
+  margin-left: 10px;
 }
 .benefit_card::after {
   content: "";
   height: 1px;
   background-color: #E4E4E4;
-  width: 95%;
+  width: 90%;
   position: absolute;
   top: -30px;
 }
@@ -517,4 +521,72 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
+}
+
+@media (max-width: 1440px) {
+  .hero_content {
+    max-width: 523px;
+    position: absolute;
+    top: 260px;
+    left: 135px;
+  }
+
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+/* md(<=991px) */
+@media (max-width: 991px) {
+  .page_wrapper {
+    overflow: hidden;
+  }
+
+  .content_article_text {
+    width: 90%;
+    margin-bottom: 50px;
+    padding-right: 20px;
+  }
+
+  .stats_content {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 90%;
+    max-width: 100%;
+    padding-right: 20px;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .benefits-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit_card {
+    display: inline-block;
+    width: 90%;
+    position: relative;
+  }
+  .benefit_card::after {
+    position: absolute;
+    height: 1px;
+    background-color: #E4E4E4;
+    width: 90%;
+    top: -30px;
+    left: 50px;
+    right: 50px;
+  }
+}
+/* sm (<=768px) */
+@media (max-width: 767px) {
+  /*  от 576px до 767px */
+}
+/* xs (<=575px) */
+@media (max-width: 575px) {
+  /*  до 575px включительно */
 }
