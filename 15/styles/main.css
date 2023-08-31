@@ -49,8 +49,6 @@ img {
   background-size: 100px;
   background-repeat: no-repeat;
   background-position: center;
-}
-.card:hover {
   transition: all linear 0.8s;
   animation-name: flip;
   animation-duration: 1.5s;
@@ -60,26 +58,14 @@ img {
   transform: translateY(2%);
   fill-opacity: 0;
 }
-
 .active {
   transition: all linear 0.8s;
   animation-name: flip;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: backwards;
-  transform: translateY(2%);
-  fill-opacity: 0;
 }
 
 @keyframes flip {
   0% {
     transform: rotateY(0deg);
-    background-image: url(../assets/images/back.png);
-    fill-opacity: 0;
-    background-size: 100px 140px;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   25% {
     fill-opacity: 0;

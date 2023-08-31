@@ -9,6 +9,11 @@
   background-repeat: no-repeat;
   align-items: start;
   padding-top: 25px;
+  animation-name: appearance;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
 }
 
 .hero_screen .container {
@@ -73,10 +78,6 @@
   align-items: center;
 }
 
-.stats {
-  margin-bottom: 120px;
-}
-
 .stats .container {
   position: relative;
   display: flex;
@@ -95,6 +96,16 @@
   justify-content: center;
 }
 
+.stats_img img {
+  opacity: 0;
+  animation-name: appearance;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+}
+
 .overlaying_part {
   display: flex;
   right: 75px;
@@ -106,7 +117,7 @@
 }
 
 .content_count {
-  width: 370px;
+  max-width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -163,7 +174,7 @@
 .content_article {
   padding: 45px 0;
   width: 100%;
-  width: 400px;
+  max-width: 400px;
 }
 
 .content_article_text {
@@ -400,6 +411,8 @@
   left: 0px;
   bottom: 0px;
   top: 0px;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 
@@ -535,29 +548,95 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-/* md(<=991px) */
-@media (max-width: 991px) {
-  .page_wrapper {
-    overflow: hidden;
-  }
-
-  .content_article_text {
-    width: 90%;
-    margin-bottom: 50px;
-    padding-right: 20px;
-  }
 
   .stats_content {
     position: absolute;
-    right: 0;
+    padding-right: 20px;
     top: 45px;
-    width: 90%;
-    max-width: 100%;
+    max-width: 90%;
     padding-right: 20px;
     display: flex;
     z-index: 2;
     justify-content: center;
+  }
+}
+/* md(<=991px) */
+@media (max-width: 991px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .page_wrapper {
+    overflow: hidden;
+  }
+
+  .content_article {
+    padding: 0;
+    max-width: 90%;
+    padding-right: 20px;
+  }
+
+  .content_article_text {
+    font-size: 14px;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    line-height: 16px;
+  }
+
+  .stats_btn {
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+  }
+
+  .stats .container {
+    position: relative;
+  }
+
+  .stats_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    max-width: 90%;
+    padding-right: 20px;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .content_count {
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 0;
+    font-size: 30px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .count_item {
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .count-item_title {
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .count-item_subtitle {
+    max-width: 300px;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .overlaying_part {
+    left: 0;
+    right: 0;
+    top: 25px;
   }
 
   .benefits-list {
@@ -580,6 +659,116 @@
     top: -30px;
     left: 50px;
     right: 50px;
+  }
+
+  .promises_back {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+  }
+  .promises_back img {
+    max-height: 100%;
+  }
+
+  .promises_front {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+
+  .frontcard_list {
+    align-items: start;
+    gap: 20px;
+    justify-content: center;
+    max-height: 100%;
+  }
+
+  .frontcard_item {
+    width: 150px;
+  }
+
+  .item_heading {
+    margin-bottom: 2px;
+    font-size: 14px;
+  }
+
+  .button_wrapper {
+    display: block;
+    align-self: center;
+    z-index: 3;
+    opacity: 10;
+    justify-self: center;
+    width: 100%;
+  }
+
+  .reviews {
+    background-color: #fff;
+    margin-bottom: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .reviews_heading {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .reviews_subheding {
+    margin-bottom: 50px;
+    align-self: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .reviews_list {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .review_card {
+    z-index: 2;
+  }
+
+  .contacts .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inp {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .btn_wrapper {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* sm (<=768px) */

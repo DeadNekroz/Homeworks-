@@ -53,3 +53,15 @@
   color: #E54F3A;
   z-index: 1;
 }
+
+@keyframes appearance {
+  0% {
+    opacity: 10;
+  }
+  50% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 0;
+  }
+}

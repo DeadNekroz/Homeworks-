@@ -74,3 +74,15 @@ max-width: 1170px;
   }
 }
 
+@keyframes appearance {
+
+  0%{
+    opacity: 10;
+  }
+  50%{
+    opacity: 5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
