@@ -3,7 +3,7 @@
 .page_wrapper{
   position: relative;
 }
-.header_mobile{
+.nav_mobile{
   display: none;
 }
 .hero_screen {
@@ -984,7 +984,7 @@
       text-shadow: #FFF;
     }
   }
-  .header_mobile{
+  .nav_mobile{
     display: flex;
     position: sticky;
     top: 200px;

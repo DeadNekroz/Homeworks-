@@ -348,7 +348,7 @@ img {
   position: relative;
 }
 
-.header_mobile {
+.nav_mobile {
   display: none;
 }
 
@@ -1213,7 +1213,7 @@ img {
     text-shadow: #FFF;
   }
 
-  .header_mobile {
+  .nav_mobile {
     display: flex;
     position: sticky;
     top: 200px;
