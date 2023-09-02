@@ -15,9 +15,11 @@
 }
 .hero_title {
   @include typo($primare_dark_blue,44px, normal,52px,$secondary_font);
+  @include adaptiv-font(44,24);
 }
 .secondary_spring {
   @include typo($secondary_spring,40px,italic,52px,$secondary_font);
+  @include adaptiv-font(40,16);
 }
 .fz44{
   font-size: 44px;
@@ -38,6 +40,7 @@
  
 .count-item_title {
   @include typo($primare_dark_blue,68px,normal,72px,$secondary_font);
+  @include adaptiv-font(68,18);
   }
   .count-item_subtitle {
     @include subText;
@@ -46,7 +49,8 @@
     @include subText;
   }
 .dollar {
- @include typo(#E4E4E4,40px,normal,50px,$secondary_font)
+ @include typo(#E4E4E4,40px,normal,50px,$secondary_font);
+ @include adaptiv-font(50,14);
 }
 // #endregion
 // #region Benefits
@@ -61,6 +65,7 @@
 .benefit_title {
   
 @include typo($primare_dark_blue, 40px,normal,48px,$secondary_font);
+@include adaptiv-font(40,16);
 }
  
 .benefit_sub {
@@ -73,10 +78,16 @@
 
 .quote_content{
 @include typo($primaryWhite,32px,normal,46px,$primare_font);
+@include adaptiv-font(32,16);
 letter-spacing: 1.28px;
 }
 
+.quote_title{
+  line-height: 26px;
+  letter-spacing: 0.9;
 
+  
+}
 
 
 .quote_subtitle {
@@ -89,6 +100,7 @@ letter-spacing: 1.6px;
  
 .video_title {
   @include typo($primare_dark_blue,40px,nomal,48px,$secondary_font);
+  @include adaptiv-font(40,16);
 }
 .video_subtitle {
   @include subText;
@@ -104,7 +116,9 @@ letter-spacing: 1.6px;
   @include subText;
   margin-bottom: 18px;
 }
-
+.frontcard_list{
+  @include adaptiv-font(18,14);
+}
 // #endregion
 
 // #region Reviews
@@ -139,6 +153,7 @@ letter-spacing: 1.6px;
  
 .contacts_heading {
   @include typo($primare_dark_blue,40px,normal,39px,$secondary_font);
+  @include adaptiv-font(40,18);
  margin-bottom: 29px;
  
 }
@@ -149,38 +164,28 @@ letter-spacing: 1.6px;
 }
 .form {
   @include typo($primare_dark_blue,18px,italic,20px,$secondary_font);
+  @include adaptiv-font(18,14);
  letter-spacing: 1.44px;
   :not(:last-child){
    opacity: 0.5;
   text-transform: capitalize;
   }
 }
-.name {
-}
-.email {
-}
-.tell_more {
-}
-.contacts_btn {
-}
-.btn {
-}
+ 
 // #endregion
 
 // #region Footer
-.footer {
-  @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
-  font-weight: 400;
-  text-transform: capitalize;
-}
+
  
 .rights {
   @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
+  @include adaptiv-font(14,12);
 font-weight: 300;
 opacity: 0.6;
 }
 .made_by {
   @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
+  @include adaptiv-font(14,12);
   font-weight: 300;
 text-transform: none;
 }
@@ -193,5 +198,17 @@ text-transform: none;
 
  
 }
+.footer {
  
+  @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
+  font-weight: 400;
+  text-transform: capitalize;
+  @include adaptiv-font(14,10);
+}
+.agreement{
+  @include adaptiv-font(14,12);
+}
+.privacy_policy{
+  @include adaptiv-font(14,12);
+}
 // #endregion
