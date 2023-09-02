@@ -52,18 +52,19 @@
       <!-- #region Hero  -->
       <section class="hero_screen">
        
-        <div class="container">
-         
+        <div class="container">    
           <!-- #region Header -->
           <header class="header">
             <div class="container">
               <div class="logo_wrapper">
+                <button class="theme_switch_btn">
                 <svg>
                   <use
                     id="logo"
                     class="logo"
                     xlink:href="./assets/sprite.svg#logo"></use>
                 </svg>
+              </button>
               </div>
               <div class="header_nav">
                 <ul class="nav_list">
@@ -442,6 +443,10 @@
         document.querySelector('.hamburger').classList.toggle('is-active');
         document.querySelector('.header_nav').classList.toggle('open_menu');
         document.querySelector('.header_mobile').classList.toggle('sticky_header');
+      }
+      function switchTheme() {
+        document.querySelector('.secondary_spring').classList.toggle('dark');
+      
       }
     </script>
   </body>

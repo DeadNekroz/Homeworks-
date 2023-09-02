@@ -52,8 +52,9 @@
 .logo_wrapper {
   width: 116px;
   height: 32px;
-
+ 
 }
+
 .mobile_btn{
   display: none;
   flex-direction: column;
@@ -658,7 +659,7 @@
 
 // #region MEDIA
 //          1440px-992px
-@media (max-width: 1440px) {
+@media (max-width: 3000px) {
   
   .hero_content {
     max-width: 523px;
@@ -684,7 +685,9 @@
     z-index: 2;
     justify-content: center;
   }
-   
+   .overlaying_part{
+    top:-5%;
+   }
 }
 
 /* md(<=991px) */

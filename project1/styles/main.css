@@ -902,7 +902,7 @@ img {
   gap: 32px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 3000px) {
   .hero_content {
     max-width: 523px;
     position: absolute;
@@ -922,6 +922,10 @@ img {
     display: flex;
     z-index: 2;
     justify-content: center;
+  }
+
+  .overlaying_part {
+    top: -5%;
   }
 }
 /* md(<=991px) */
