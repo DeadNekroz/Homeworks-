@@ -14,15 +14,46 @@
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
       <link rel="manifest" href="./site.webmanifest">
       <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#a2adb0">
+      <link rel="stylesheet" href="./styles/partials/hamburgers.css">
       <meta name="msapplication-TileColor" content="#d7d7d7">
       <meta name="theme-color" content="#cdcdcd">
     <title> Solis</title>
   </head>
   <body>
     <div class="page_wrapper">
+       
+        <div class="header_mobile">
+        
+          <div class="header_nav">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="#home" class="nav_link">Home</a>
+              </li>
+              <li class="nav_item">
+                <a href="#about" class="nav_link">About</a>
+              </li>
+              <li class="nav_item">
+                <a href="#products" class="nav_link">Products</a>
+              </li>
+              <li class="nav_item">
+                <a href="#cases" class="nav_link">Use Cases</a>
+              </li>
+              <li class="nav_item">
+                <a href="#pricing" class="nav_link">Pricing</a>
+              </li>
+              <li class="nav_item">
+                <a href="#resources" class="nav_link">Resources</a>
+              </li>
+            </ul>
+          </div>
+        
+        </div>
+       
       <!-- #region Hero  -->
       <section class="hero_screen">
+       
         <div class="container">
+         
           <!-- #region Header -->
           <header class="header">
             <div class="container">
@@ -56,9 +87,17 @@
                   </li>
                 </ul>
               </div>
+              <button  type="button" class="hamburger hamburger--boring mobile" onclick="toggleMenu()">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             </div>
           </header>
           <!-- #endregion -->
+         
+        </div>
+        <div class="container2">
           <article class="hero_content">
             <h1 class="hero_title">
               A peer-to-peer stablecoin
@@ -69,7 +108,7 @@
               We are bringing real solutions to the payments world by leveraging
               public blockchains.
             </p>
-            <button class="heto_btn btn">
+            <button class="hero_btn btn">
               <span class="btn_text">join now</span>
             </button>
           </article>
@@ -80,6 +119,9 @@
       <section class="stats">
         <div class="container">
           <div class="stats_img">
+            <button class="btn mobile_btn" type="button">
+              Contact sales
+            </button>
             <img
               src="./assets/images/statistic-image.png"
               alt="office_building" />
@@ -99,8 +141,8 @@
                   </p>
                   <p class="count-item_subtitle">Deposited to platform</p>
                 </li>
-                <li class="count_item divided">
-                  <p class="count-item_title">12</p>
+                <li class="count_item divided ">
+                  <p class="count-item_title no_dollar"> <span class="dollar"></span>12</p>
                   <p class="count-item_subtitle">Stablecoins</p>
                 </li>
               </ul>
@@ -118,11 +160,13 @@
                   are currently preventing the stablecoin market from reaching
                   critical mass.
                 </p>
-                <button class="stats_btn btn" type="button">
+                <button class="stats_btn btn button_pc" type="button">
                   Contact sales
                 </button>
               </article>
+        
             </div>
+         
           </div>
         </div>
       </section>
@@ -391,5 +435,12 @@
       </footer>
       <!-- #endregion -->
     </div>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.hamburger').classList.toggle('is-active');
+        document.querySelector('.header_nav').classList.toggle('open_menu');
+        document.querySelector('.header_mobile').classList.toggle('sticky_header');
+      }
+    </script>
   </body>
 </html>

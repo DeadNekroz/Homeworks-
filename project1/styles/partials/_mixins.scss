@@ -1,3 +1,4 @@
+@import './vars';
 @mixin typo($color,$fsz,$fs,$lh,$ff){
   color: $color;
   font-family:$ff;
@@ -8,7 +9,7 @@
 };
 @mixin subText {
   opacity: 0.8;
-  font-size: 18px;
+  @include adaptiv-font(18,14);
   line-height: 26px;
   font-weight: 300;
 
@@ -30,4 +31,11 @@ text-transform: uppercase;
   &hover{
     color: #E54F3A;
   }
+}
+ 
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }

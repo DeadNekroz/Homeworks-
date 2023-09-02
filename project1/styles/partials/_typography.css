@@ -17,6 +17,7 @@
   font-size: 44px;
   font-style: normal;
   line-height: 52px;
+  font-size: calc(24px + 20 * ((100vw - 320px) / 960));
 }
 
 .secondary_spring {
@@ -25,6 +26,7 @@
   font-size: 40px;
   font-style: italic;
   line-height: 52px;
+  font-size: calc(16px + 24 * ((100vw - 320px) / 960));
 }
 
 .fz44 {
@@ -34,7 +36,7 @@
 .hero_subtitle {
   opacity: 0.8;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
   max-width: 439px;
@@ -65,18 +67,19 @@
   font-size: 68px;
   font-style: normal;
   line-height: 72px;
+  font-size: calc(18px + 50 * ((100vw - 320px) / 960));
 }
 
 .count-item_subtitle {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
 }
 
 .content_article {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
 }
@@ -87,6 +90,7 @@
   font-size: 40px;
   font-style: normal;
   line-height: 50px;
+  font-size: calc(14px + 36 * ((100vw - 320px) / 960));
 }
 
 .benefit_title {
@@ -95,11 +99,12 @@
   font-size: 40px;
   font-style: normal;
   line-height: 48px;
+  font-size: calc(16px + 24 * ((100vw - 320px) / 960));
 }
 
 .benefit_sub {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
 }
@@ -110,7 +115,13 @@
   font-size: 32px;
   font-style: normal;
   line-height: 46px;
+  font-size: calc(16px + 16 * ((100vw - 320px) / 960));
   letter-spacing: 1.28px;
+}
+
+.quote_title {
+  line-height: 26px;
+  letter-spacing: 0.9;
 }
 
 .quote_subtitle {
@@ -128,11 +139,12 @@
   font-size: 40px;
   font-style: nomal;
   line-height: 48px;
+  font-size: calc(16px + 24 * ((100vw - 320px) / 960));
 }
 
 .video_subtitle {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
 }
@@ -147,10 +159,14 @@
 
 .item_content {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
   margin-bottom: 18px;
+}
+
+.frontcard_list {
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
 }
 
 .reviews_heading {
@@ -167,7 +183,7 @@
 .reviews_subheding {
   max-width: 400px;
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
 }
@@ -195,12 +211,13 @@
   font-size: 40px;
   font-style: normal;
   line-height: 39px;
+  font-size: calc(18px + 22 * ((100vw - 320px) / 960));
   margin-bottom: 29px;
 }
 
 .contacts_subheading {
   opacity: 0.8;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   line-height: 26px;
   font-weight: 300;
   max-width: 470px;
@@ -212,20 +229,11 @@
   font-size: 18px;
   font-style: italic;
   line-height: 20px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 960));
   letter-spacing: 1.44px;
 }
 .form :not(:last-child) {
   opacity: 0.5;
-  text-transform: capitalize;
-}
-
-.footer {
-  color: #262A3F;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  line-height: 24px;
-  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -235,6 +243,7 @@
   font-size: 14px;
   font-style: normal;
   line-height: 26px;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 960));
   font-weight: 300;
   opacity: 0.6;
 }
@@ -245,6 +254,7 @@
   font-size: 14px;
   font-style: normal;
   line-height: 26px;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 960));
   font-weight: 300;
   text-transform: none;
 }
@@ -255,4 +265,23 @@
 
 .made_by_link {
   letter-spacing: 1.12px;
+}
+
+.footer {
+  color: #262A3F;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 960));
+}
+
+.agreement {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 960));
+}
+
+.privacy_policy {
+  font-size: calc(12px + 2 * ((100vw - 320px) / 960));
 }
