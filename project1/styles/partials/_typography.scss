@@ -21,9 +21,7 @@
   @include typo($secondary_spring,40px,italic,52px,$secondary_font);
   @include adaptiv-font(40,16);
 }
-.fz44{
-  font-size: 44px;
-}
+
 .hero_subtitle {
   opacity: 0.8;
   @include subText;

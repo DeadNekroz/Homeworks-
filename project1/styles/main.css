@@ -87,10 +87,6 @@ img {
   font-size: calc(16px + 24 * ((100vw - 320px) / 960));
 }
 
-.fz44 {
-  font-size: 44px;
-}
-
 .hero_subtitle {
   opacity: 0.8;
   opacity: 0.8;
@@ -1262,6 +1258,9 @@ img {
     max-width: 90%;
   }
   .hero_content .hero_subtitle {
+    width: 90%;
+  }
+  .hero_content .hero_subtitle .hero_title {
     width: 90%;
   }
 

@@ -918,6 +918,9 @@
   .hero_content .hero_subtitle {
     width: 90%;
   }
+  .hero_content .hero_subtitle .hero_title {
+    width: 90%;
+  }
 
   .benefits-list {
     display: flex;

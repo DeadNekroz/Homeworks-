@@ -29,10 +29,6 @@
   font-size: calc(16px + 24 * ((100vw - 320px) / 960));
 }
 
-.fz44 {
-  font-size: 44px;
-}
-
 .hero_subtitle {
   opacity: 0.8;
   opacity: 0.8;
