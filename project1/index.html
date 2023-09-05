@@ -57,6 +57,7 @@
        <!-- #endregion -->
       <!-- #region Hero  -->
       <section class="hero_screen">
+        <h2 class="hero_hidden_section_title" hidden>hero screen</h2>
         <div class="hero_bg_wrapper">
       <img class="dark_hero_bg_img" src="./assets/images/First-Screen-Bg-Image.webp" alt="first screen bg">
         </div>
@@ -133,6 +134,7 @@
       <!-- #endregion -->
       <!-- #region Stats section -->
       <section class="stats">
+        <h2 class="hero_hidden_section_title" hidden>Statistics</h2>
         <div class="container">
           <div class="stats_img">
             <button class="btn mobile_btn" type="button">
@@ -189,6 +191,7 @@
       <!-- #endregion -->
       <!-- #region benefits -->
       <section class="benefits">
+        <h2 class="hero_hidden_section_title" hidden>Benefits</h2>
         <div class="container">
           <ul class="benefits-list" id="benefit_list">
             <li class="benefit_card">
@@ -239,6 +242,7 @@
       <!-- #endregion -->
       <!-- #region quote -->
       <section class="quote">
+        <h2 class="hero_hidden_section_title" hidden>quote </h2>
         <div class="container">
           <div class="quote_content">
             <div class="svg_quote_wrapper ">
@@ -274,14 +278,14 @@
       <!-- #endregion -->
       <!-- #region Video  -->
       <section class="video">
+        <h2 class="hero_hidden_section_title" hidden>player </h2>
         <div class="container">
        
             <figure class="video_area">
-              <div play_pause" class="controls" data-state="hidden">
+              <div   class="controls" data-state="hidden">
                 <button
                   id="playpause"
-                  class="type"
-                  ="button"
+                  class="type_button"
                   data-state="play"></button>
                   <div class="dark_controls hide">
                     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
@@ -330,6 +334,7 @@
       <!-- #endregion -->
       <!-- #region Promises -->
       <section class="promises">
+        <h2 class="hero_hidden_section_title" hidden>promises</h2>
         <div class="container">
           <div class="promises_back">
             
@@ -354,7 +359,7 @@
               </li>
               <li class="frontcard_item">
                 <div class="button_wrapper">
-                  <button type="button " class="promisses_btn btn">
+                  <button   class="promisses_btn btn">
                     join now
                   </button>
                 </div>
@@ -366,6 +371,7 @@
       <!-- #endregion -->
       <!-- #region Reviews -->
       <section class="reviews">
+        <h2 class="hero_hidden_section_title" hidden>reviews</h2>
         <div class="container">
           <h3 class="reviews_heading">
             Client <span class="secondary_spring">reviews</span>
@@ -379,7 +385,7 @@
           <li class="review_card">
             <img
               class="review_card_bg"
-              src="./assets/images/review_cards/card1.webp" />
+              src="./assets/images/review_cards/card1.webp" alt="review_case"/>
             <p class="review_text">
               Solis did a great job. Whether providing direct development
               support or giving us the opportunity to make our development
@@ -393,7 +399,7 @@
           <li class="review_card">
             <img
               class="review_card_bg"
-              src="./assets/images/review_cards/card2.webp" />
+              src="./assets/images/review_cards/card2.webp" alt="review_case" />
             <p class="review_text">
               Solis is a cutting edge company and knows the importance of
               excellence. Having been in business for 21 years, I know when I’ve
@@ -406,7 +412,7 @@
           <li class="review_card">
             <img
               class="review_card_bg"
-              src="./assets/images/review_cards/card3.webp" />
+              src="./assets/images/review_cards/card3.webp" alt="review_case" />
             <p class="review_text">
               I can’t say enough about how knowledgeable Toinette Rorie is in
               the area of Web Development. She indeed is a developer and can
@@ -421,6 +427,7 @@
       <!-- #endregion -->
       <!-- #region Contacts -->
       <section class="contacts">
+        <h2 class="hero_hidden_section_title" hidden>contacts</h2>
         <div class="container after_par">
           <div class="contacts_content">
           <h3 class="contacts_heading">
@@ -438,7 +445,7 @@
           <form action="#" class="form ">
             <div class="name inp">
               <label for="name">your name</label>
-              <input type="text " id="name"/>
+              <input type="text" id="name"/>
             </div>
             <div class="email  inp">
               <label for="email">email</label>
@@ -447,7 +454,7 @@
             <div class="tell_more inp">
               <label for="tell_more">tell more</label>
               <input type="text"
-                name="tell_more_comment"  "
+                name="tell_more_comment"   
                 id="tell_more"
              > 
             </div>
@@ -461,6 +468,7 @@
       <!-- #endregion -->
       <!-- #region Footer -->
       <footer class="footer">
+        
         <div class="container ">
           <div class="rights_wrapp">
           <p class="rights">© 2020 Solisgroup. All Rights Reserved.</p></div>
@@ -526,7 +534,7 @@
     $(".name").toggleClass('dark_font');
     $(".tell_more").toggleClass('dark_font');
     $(".dark_controls").toggleClass('hide');
-    $(".type").toggleClass('hide');
+    $(".type_button").toggleClass('hide');
 
   });
  
