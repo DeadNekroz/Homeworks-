@@ -750,6 +750,21 @@ img {
   height: 35px;
 }
 
+.little_tablet_btn {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 289px;
+  left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.little_tablet_btn use {
+  width: 13px;
+  height: 13px;
+}
+
 .controls {
   position: absolute;
   top: 40%;
@@ -762,6 +777,7 @@ img {
 .video_content {
   position: relative;
   max-width: 870px;
+  padding-right: 20px;
 }
 
 .video_text {
@@ -1687,6 +1703,11 @@ img {
 .dark_bg {
   background: #161926;
   background-attachment: local;
+}
+
+.dark_border {
+  border-radius: 32px;
+  border: 1px solid #515773;
 }
 
 .dark_form {

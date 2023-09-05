@@ -441,7 +441,21 @@
     height: 35px;
   }
 }
+.little_tablet_btn {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 289px;
+  left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  use {
+    width: 13px;
+    height: 13px;
+  }
+}
 .controls {
   position: absolute;
   top: 40%;
@@ -455,7 +469,7 @@
 .video_content {
   position: relative;
   max-width: 870px;
-
+  padding-right: 20px;
 }
 
 

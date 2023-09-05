@@ -300,7 +300,7 @@
               <video
                 class="video_content"
                 width="870"
-                poster="./assets/images/screensaver-video.png">
+                poster="./assets/images/screensaver-video.png" width="90%">
                 <source
                   src="./assets/video/abstract_building.mp4"
                   type="video/mp4" />
@@ -317,6 +317,9 @@
                 <use
                   id="tablet_btn"
                   xlink:href="./assets/sprite.svg#tablet_btn"></use>
+              </svg>
+              <svg class="little_tablet_btn">
+                <use   xlink:href="./assets/sprite.svg#little_tablet_btn"></use>
               </svg>
             </figure>
            
@@ -542,6 +545,10 @@
     $(".tell_more").toggleClass('dark_font');
     $(".dark_controls").toggleClass('hide');
     $(".type_button").toggleClass('hide');
+    $('.video_area').toggleClass('dark_border');
+    $('.circle_tablet_btn').toggleClass('dark_tablet_btn');
+
+    
   });
     //  #endregion
 

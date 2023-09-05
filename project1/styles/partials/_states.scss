@@ -248,7 +248,10 @@
   background: $primaryDark;
   background-attachment: local;
 }
- 
+.dark_border{
+  border-radius: 32px;
+  border: 1px solid #515773;
+}
 .dark_form {
   display: flex;
   flex-direction: column;
@@ -371,6 +374,9 @@
     height: 100%;
     width: 100%;
   }
+}
+.dark_tablet_btn{
+  $circle_border:#515773; 
 }
 .dark_svg_quote_wrapper {
   position: absolute;

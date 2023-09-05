@@ -209,6 +209,11 @@
   background-attachment: local;
 }
 
+.dark_border {
+  border-radius: 32px;
+  border: 1px solid #515773;
+}
+
 .dark_form {
   display: flex;
   flex-direction: column;

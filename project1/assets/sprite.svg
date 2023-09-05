@@ -11,8 +11,12 @@
 </symbol>
  
 
-<symbol xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="var(--tablet_btn_color, #ffffff)" id="tablet_btn" >
-  <circle cx="17.5" cy="17.5" r="17"  stroke="#E4E4E4"/>
+<symbol xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none" id="tablet_btn" class="circle_tablet_btn" >
+  <circle cx="17.5" cy="17.5" r="17" stroke="var(--circle_border, #E4E4E4)"  />
+</symbol>
+
+<symbol xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none" id="little_tablet_btn">
+  <circle cx="6.5" cy="6.5" r="6" stroke="var(--circle_border, #E4E4E4)"/>
 </symbol>
 
 <symbol xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="var(--play_btn, #586291)" id="play_btn">
