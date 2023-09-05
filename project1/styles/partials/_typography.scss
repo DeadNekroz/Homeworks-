@@ -4,8 +4,8 @@
 @import './vars';
 @import './mixins';
 html, body{
-  font-family: $primare_font;
-  color: $primare_dark_blue;
+  @include typo ($primare_dark_blue,16px,normal,26px, $primare_font);
+ 
 }
 .container {
   font-family: 'Lato', sans-serif;
