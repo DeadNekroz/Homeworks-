@@ -324,7 +324,7 @@
 .dark_btn {
   color: $dark_neon_color;
   position: relative;
-
+  z-index: 5;
   &:after {
     position: absolute;
     top: 12px;
@@ -336,7 +336,7 @@
     background: $dark_neon_color;
 
     &:hover {
-      background: $dark_neon_color;
+      background: $dark_btn_active;
     }
   }
 

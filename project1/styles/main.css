@@ -1754,6 +1754,7 @@ img {
 .dark_btn {
   color: #53f3cd;
   position: relative;
+  z-index: 5;
 }
 .dark_btn:after {
   position: absolute;
@@ -1766,7 +1767,7 @@ img {
   background: #53f3cd;
 }
 .dark_btn:after:hover {
-  background: #53f3cd;
+  background: #02e0ab;
 }
 .dark_btn .btn_text {
   z-index: 1;
