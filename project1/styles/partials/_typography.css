@@ -1,3 +1,8 @@
+html, body {
+  font-family: "Lato", sans-serif;
+  color: #262A3F;
+}
+
 .container {
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -80,7 +85,6 @@
   font-size: 68px;
   font-style: normal;
   line-height: 72px;
-  white-space: nowrap;
 }
 
 .count-item_subtitle {
@@ -133,8 +137,8 @@
 }
 
 .quote_title {
-  line-height: 26px;
-  letter-spacing: 0.9;
+  line-height: 46px;
+  letter-spacing: 0.9px;
 }
 
 .quote_subtitle {

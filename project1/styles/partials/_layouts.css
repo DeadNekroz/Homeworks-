@@ -272,7 +272,6 @@
 
 .benefits-list {
   display: flex;
-  max-width: 95%;
   flex-wrap: wrap;
   gap: 90px;
 }

@@ -3,7 +3,10 @@
 // font-family: 'Playfair Display', serif;
 @import './vars';
 @import './mixins';
-
+html, body{
+  font-family: $primare_font;
+  color: $primare_dark_blue;
+}
 .container {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -12,7 +15,7 @@
 
 .header_nav {
   @include typo($primare_dark_blue, 14px, normal, 24px, $primare_font);
-}
+ }
 
 .hero_title {
   @include typo($primare_dark_blue, 44px, normal, 52px, $secondary_font);
@@ -55,7 +58,8 @@
 .count-item_title {
   @include typo($primare_dark_blue, 68px, normal, 72px, $secondary_font);
   // @include adaptiv-font(68,18);
-  white-space: nowrap;
+  
+ 
 }
 
 .count-item_subtitle {
@@ -102,8 +106,8 @@
 }
 
 .quote_title {
-  line-height: 26px;
-  letter-spacing: 0.9;
+  line-height: 46px;
+  letter-spacing: 0.9px;
 
 
 }
