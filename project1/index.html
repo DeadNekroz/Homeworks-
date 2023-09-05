@@ -27,7 +27,7 @@
        <!-- #region nav_mobile -->
         <div class="nav_mobile">
         
-          <div class="header_nav">
+          <div class="header_nav but_mobile">
             <ul class="nav_list">
               <li class="nav_item">
                 <a href="#home" class="nav_link">Home</a>
@@ -48,7 +48,7 @@
                 <a href="#resources" class="nav_link">Resources</a>
               </li>
             </ul>
-            <button  type="button" class="hamburger hamburger--boring burger_to_show"  >
+            <button  type="button" class="hamburger hamburger--boring burger_mobile"  >
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
@@ -104,7 +104,7 @@
                   </li>
                 </ul>
               </div>
-              <button  type="button" class="hamburger hamburger--boring burger_to_hide  " >
+              <button  type="button" class="hamburger hamburger--boring burger_from_header  " >
                 <span class="hamburger-box hide_header_burger ">
                   <span class="hamburger-inner  "></span>
                 </span>
@@ -493,20 +493,21 @@
 
       // }
   
-    $('.burger_to_hide').click(function () {
-      $('.burger_to_hide').toggleClass('hide');
-      $('.burger_to_show').toggleClass('is-active');
-      $(".header_nav").toggleClass('open_menu');
+    $('.burger_from_header').click(function () {
+      $('.burger_from_header').toggleClass('hide');
+      $('.hamburger-box').toggleClass('hide');
+
+      $('.burger_mobile').toggleClass('is-active');
+      $(".but_mobile").toggleClass('open_menu');
     });
-    $('.burger_to_show').click(function(){
+    $('.burger_mobile').click(function(){
       $('hamburger').toggleClass('is-active');
-      $('.burger_to_show').toggleClass('hide');
+      $('.burger_mobile').toggleClass('hide');
     ;
     })
 
-  //  Logo  Dark Button
+  //  #region Dark theme
     $('.logo_wrapper').click(function () {
-    
     $(this).toggleClass('dark_logo_wrapper');
     $(".secondary_spring").toggleClass('secondary_dark');
     $(".btn").toggleClass('dark_btn');
@@ -541,16 +542,10 @@
     $(".tell_more").toggleClass('dark_font');
     $(".dark_controls").toggleClass('hide');
     $(".type_button").toggleClass('hide');
-
   });
- 
+    //  #endregion
 
-  //   $('.theme_switch_btn').click(function () {
-    
-  //   $(".hamburger").toggleClass('is-active');
-  //     $(".header_nav").toggleClass('open_menu');
-    
-  // });
+ 
     </script>
   </body>
 </html>
