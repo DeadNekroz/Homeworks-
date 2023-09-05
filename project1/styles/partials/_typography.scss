@@ -3,7 +3,7 @@
 // font-family: 'Playfair Display', serif;
 @import './vars';
 @import './mixins';
- 
+
 .container {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -11,26 +11,30 @@
 
 
 .header_nav {
-  @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
+  @include typo($primare_dark_blue, 14px, normal, 24px, $primare_font);
 }
+
 .hero_title {
-  @include typo($primare_dark_blue,44px, normal,52px,$secondary_font);
+  @include typo($primare_dark_blue, 44px, normal, 52px, $secondary_font);
+
   // @include adaptiv-font(44,24);
   .secondary_spring {
-    @include typo($secondary_spring,40px,italic,52px,$secondary_font);
+    @include typo($secondary_spring, 40px, italic, 52px, $secondary_font);
     // @include adaptiv-font(40,16);
   }
-  .secondary_dark{
-    @include typo($secondary_dark,40px,italic,52px,$secondary_font);
+
+  .secondary_dark {
+    @include typo($secondary_dark, 40px, italic, 52px, $secondary_font);
   }
 }
 
 .secondary_spring {
-  @include typo($secondary_spring,40px,italic,52px,$secondary_font);
-  @include adaptiv-font(40,16);
+  @include typo($secondary_spring, 40px, italic, 52px, $secondary_font);
+  @include adaptiv-font(40, 16);
 }
-.secondary_dark{
-  color:$secondary_dark;
+
+.secondary_dark {
+  color: $secondary_dark;
 }
 
 .hero_subtitle {
@@ -38,208 +42,232 @@
   @include subText;
   max-width: 439px;
 }
- .btn{
- @include link;
- }
+
+.btn {
+  @include link;
+}
 
 // #endregion
 // #region Stats
- 
- 
- 
+
+
+
 .count-item_title {
-  @include typo($primare_dark_blue,68px,normal,72px,$secondary_font);
+  @include typo($primare_dark_blue, 68px, normal, 72px, $secondary_font);
   // @include adaptiv-font(68,18);
   white-space: nowrap;
-  }
-  .count-item_subtitle {
-    @include subText;
-  }
-  .content_article {
-    @include subText;
-  }
-.dollar {
- @include typo(#E4E4E4,40px,normal,50px,$secondary_font);
-//  @include adaptiv-font(50,14);
 }
+
+.count-item_subtitle {
+  @include subText;
+}
+
+.content_article {
+  @include subText;
+}
+
+.dollar {
+  @include typo(#E4E4E4, 40px, normal, 50px, $secondary_font);
+  //  @include adaptiv-font(50,14);
+}
+
 // #endregion
 // #region Benefits
-.container {
-}
-.benefits-list {
+.container {}
 
-}
-.benefit_card {
+.benefits-list {}
 
-}
+.benefit_card {}
+
 .benefit_title {
-  
-@include typo($primare_dark_blue, 40px,normal,48px,$secondary_font);
-// @include adaptiv-font(40,16);
-.secondary_spring{
-  font-size: 40px;
-  
+
+  @include typo($primare_dark_blue, 40px, normal, 48px, $secondary_font);
+
+  // @include adaptiv-font(40,16);
+  .secondary_spring {
+    font-size: 40px;
+
+  }
+
 }
- 
-}
- 
+
 .benefit_sub {
- 
-@include subText;
+
+  @include subText;
 }
+
 // #endregion
 
 // #region Quote
 
-.quote_content{
-@include typo($primaryWhite,32px,normal,46px,$primare_font);
-// @include adaptiv-font(32,16);
-letter-spacing: 1.28px;
+.quote_content {
+  @include typo($primaryWhite, 32px, normal, 46px, $primare_font);
+  // @include adaptiv-font(32,16);
+  letter-spacing: 1.28px;
 }
 
-.quote_title{
+.quote_title {
   line-height: 26px;
   letter-spacing: 0.9;
 
-  
+
 }
 
 
 .quote_subtitle {
-  @include typo ($primaryWhite, 20px,italic,20px,$secondary_font);
-letter-spacing: 1.6px;
+  @include typo ($primaryWhite, 20px, italic, 20px, $secondary_font);
+  letter-spacing: 1.6px;
 }
+
 // #endregion
 
 // #region Video
- 
+
 .video_title {
-  @include typo($primare_dark_blue,40px,nomal,48px,$secondary_font);
+  @include typo($primare_dark_blue, 40px, nomal, 48px, $secondary_font);
+
   // @include adaptiv-font(40,16);
-  .secondary_spring{
+  .secondary_spring {
     font-size: 40px;
   }
 }
+
 .video_subtitle {
   @include subText;
 }
+
 // #endregion
 
 // #region Promises
- 
+
 .item_heading {
-  @include typo($primare_dark_blue,24px,normal,28px,$secondary_font);
+  @include typo($primare_dark_blue, 24px, normal, 28px, $secondary_font);
 }
+
 .item_content {
   @include subText;
   margin-bottom: 18px;
 }
-.frontcard_list{
-  @include adaptiv-font(18,14);
+
+.frontcard_list {
+  @include adaptiv-font(18, 14);
 }
+
 // #endregion
 
 // #region Reviews
- 
+
 .reviews_heading {
-  @include typo ($primare_dark_blue,40px,normal,48px,$secondary_font);
-  .secondary_spring{
+  @include typo ($primare_dark_blue, 40px, normal, 48px, $secondary_font);
+
+  .secondary_spring {
     font-size: 40px;
   }
-  .secondary_dark{
-    @include typo($secondary_dark,40px,italic,52px,$secondary_font);
- 
+
+  .secondary_dark {
+    @include typo($secondary_dark, 40px, italic, 52px, $secondary_font);
+
   }
 }
- 
+
 .reviews_subheding {
   max-width: 400px;
   @include subText;
 }
-.reviews_list {
-}
-.review_card { 
+
+.reviews_list {}
+
+.review_card {}
+
+.review_text {
+  @include typo(rgba(255, 255, 255, 1), 16px, normal, 26px, $primare_font);
 
 }
-.review_text {
-  @include typo(rgba(255, 255, 255, 1),16px,normal,26px,$primare_font);
- 
-}
+
 .initials {
-  @include typo(rgba(255, 255, 255, 1) ,20px,italic,20px,$secondary_font);
+  @include typo(rgba(255, 255, 255, 1), 20px, italic, 20px, $secondary_font);
   letter-spacing: 1.6px;
 }
+
 // #endregion
 
 // #region Contacts
- 
+
 .contacts_heading {
   margin-bottom: 29px;
-  @include typo($primare_dark_blue,40px,normal,39px,$secondary_font);
- 
+  @include typo($primare_dark_blue, 40px, normal, 39px, $secondary_font);
 
- .secondary_spring{
-  font-size: 40px;
- }
- 
+
+  .secondary_spring {
+    font-size: 40px;
+  }
+
 }
- 
+
 .contacts_subheading {
   @include subText;
   max-width: 470px;
 }
+
 .form {
-  @include typo($primare_dark_blue,18px,italic,20px,$secondary_font);
-  @include adaptiv-font(18,14);
- letter-spacing: 1.44px;
-  :not(:last-child){
-   opacity: 0.5;
-  text-transform: capitalize;
+  @include typo($primare_dark_blue, 18px, italic, 20px, $secondary_font);
+  @include adaptiv-font(18, 14);
+  letter-spacing: 1.44px;
+
+  :not(:last-child) {
+    opacity: 0.5;
+    text-transform: capitalize;
   }
 }
- 
+
 // #endregion
 
 // #region Footer
 
- 
+
 .rights {
-  @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
-  @include adaptiv-font(14,12);
-font-weight: 300;
-opacity: 0.6;
-}
-.made_by {
-  @include typo($primare_dark_blue,14px,normal,26px,$primare_font);
-  @include adaptiv-font(14,12);
+  @include typo($primare_dark_blue, 14px, normal, 26px, $primare_font);
+  @include adaptiv-font(14, 12);
   font-weight: 300;
-text-transform: none;
-}
-.made_p{
   opacity: 0.6;
 }
+
+.made_by {
+  @include typo($primare_dark_blue, 14px, normal, 26px, $primare_font);
+  @include adaptiv-font(14, 12);
+  font-weight: 300;
+  text-transform: none;
+}
+
+.made_p {
+  opacity: 0.6;
+}
+
 .made_by_link {
 
   letter-spacing: 1.12px;
 
- 
+
 }
 
 .footer {
- 
-  @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
+
+  @include typo($primare_dark_blue, 14px, normal, 24px, $primare_font);
   font-weight: 400;
   text-transform: capitalize;
-  @include adaptiv-font(14,10);
-}
-.agreement{
-  @include adaptiv-font(14,12);
-}
-.privacy_policy{
-  @include adaptiv-font(14,12);
+  @include adaptiv-font(14, 10);
 }
 
-.dark_font{
+.agreement {
+  @include adaptiv-font(14, 12);
+}
+
+.privacy_policy {
+  @include adaptiv-font(14, 12);
+}
+
+.dark_font {
   @include dark_main_font;
 }
+
 // #endregion
