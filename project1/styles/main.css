@@ -1478,6 +1478,10 @@ img {
     left: -2%;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+
 .header .container {
   max-width: 1170px;
   width: 100%;
