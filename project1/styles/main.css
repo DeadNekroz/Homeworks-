@@ -1010,7 +1010,7 @@ img {
   gap: 32px;
 }
 
-@media (max-width: 3000px) {
+@media (max-width: 3200px) {
   .header {
     padding-left: 30px;
     padding-right: 30px;
@@ -1311,6 +1311,7 @@ img {
   }
 
   .open_menu {
+    border-radius: 6px;
     display: inline-block;
     flex-direction: column;
     position: fixed;
@@ -1318,8 +1319,9 @@ img {
     right: 20px;
   }
   .open_menu .nav_list {
-    background: #9fddd1;
-    background: linear-gradient(90deg, rgba(159, 221, 209, 0.388) 0%, rgba(203, 225, 221, 0.793) 32%, rgba(206, 225, 222, 0.623) 34%, #d5e2e0 39%, rgba(228, 228, 228, 0.0845588235) 50%, #e7d0cd 61%, #e9c3be 68%, #ebb6af 75%, #eea298 86%, #ef9d92 89%, rgba(241, 137, 123, 0.6391806723) 100%);
+    background: rgba(159, 221, 209, 0.792);
+    background: linear-gradient(90deg, #689ff2 0%, rgba(203, 225, 221, 0.885) 32%, rgba(78, 190, 173, 0.623) 34%, #d5e2e0 39%, rgba(228, 228, 228, 0.0845588235) 50%, #e7d0cd 61%, #e9c3be 68%, #ebb6af 75%, #eea298 86%, #ef9d92 89%, rgba(241, 137, 123, 0.6391806723) 100%);
+    border-radius: 8px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1370,6 +1372,7 @@ img {
 /* xs (<=575px) */
 @media (max-width: 575px) {
   .open_menu .nav_list {
+    border-radius: 6px;
     padding: 10px;
   }
   .open_menu .nav_item {

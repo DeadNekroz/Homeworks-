@@ -73,11 +73,6 @@
 
 // #endregion
 // #region Benefits
-.container {}
-
-.benefits-list {}
-
-.benefit_card {}
 
 .benefit_title {
 
@@ -174,10 +169,6 @@
   max-width: 400px;
   @include subText;
 }
-
-.reviews_list {}
-
-.review_card {}
 
 .review_text {
   @include typo(rgba(255, 255, 255, 1), 16px, normal, 26px, $primare_font);
