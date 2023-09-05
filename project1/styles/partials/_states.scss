@@ -355,13 +355,19 @@
   }
 }
 .dark_controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 40%;
-  left: 43%;
+  top: 0 ;
+  left: 0;
   width: 120px;
   height: 120px;
-
   z-index: 2;
+  .svg{
+    height: 100%;
+    width: 100%;
+  }
 }
 .dark_svg_quote_wrapper {
   position: absolute;
