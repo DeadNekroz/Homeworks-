@@ -15,11 +15,22 @@
 }
 .hero_title {
   @include typo($primare_dark_blue,44px, normal,52px,$secondary_font);
-  @include adaptiv-font(44,24);
+  // @include adaptiv-font(44,24);
+  .secondary_spring {
+    @include typo($secondary_spring,40px,italic,52px,$secondary_font);
+    // @include adaptiv-font(40,16);
+  }
+  .secondary_dark{
+    @include typo($secondary_dark,40px,italic,52px,$secondary_font);
+  }
 }
+
 .secondary_spring {
   @include typo($secondary_spring,40px,italic,52px,$secondary_font);
   @include adaptiv-font(40,16);
+}
+.secondary_dark{
+  color:$secondary_dark;
 }
 
 .hero_subtitle {
@@ -38,7 +49,8 @@
  
 .count-item_title {
   @include typo($primare_dark_blue,68px,normal,72px,$secondary_font);
-  @include adaptiv-font(68,18);
+  // @include adaptiv-font(68,18);
+  white-space: nowrap;
   }
   .count-item_subtitle {
     @include subText;
@@ -48,7 +60,7 @@
   }
 .dollar {
  @include typo(#E4E4E4,40px,normal,50px,$secondary_font);
- @include adaptiv-font(50,14);
+//  @include adaptiv-font(50,14);
 }
 // #endregion
 // #region Benefits
@@ -63,7 +75,12 @@
 .benefit_title {
   
 @include typo($primare_dark_blue, 40px,normal,48px,$secondary_font);
-@include adaptiv-font(40,16);
+// @include adaptiv-font(40,16);
+.secondary_spring{
+  font-size: 40px;
+  
+}
+ 
 }
  
 .benefit_sub {
@@ -76,7 +93,7 @@
 
 .quote_content{
 @include typo($primaryWhite,32px,normal,46px,$primare_font);
-@include adaptiv-font(32,16);
+// @include adaptiv-font(32,16);
 letter-spacing: 1.28px;
 }
 
@@ -98,7 +115,10 @@ letter-spacing: 1.6px;
  
 .video_title {
   @include typo($primare_dark_blue,40px,nomal,48px,$secondary_font);
-  @include adaptiv-font(40,16);
+  // @include adaptiv-font(40,16);
+  .secondary_spring{
+    font-size: 40px;
+  }
 }
 .video_subtitle {
   @include subText;
@@ -126,6 +146,10 @@ letter-spacing: 1.6px;
   .secondary_spring{
     font-size: 40px;
   }
+  .secondary_dark{
+    @include typo($secondary_dark,40px,italic,52px,$secondary_font);
+ 
+  }
 }
  
 .reviews_subheding {
@@ -150,9 +174,13 @@ letter-spacing: 1.6px;
 // #region Contacts
  
 .contacts_heading {
+  margin-bottom: 29px;
   @include typo($primare_dark_blue,40px,normal,39px,$secondary_font);
-  @include adaptiv-font(40,18);
- margin-bottom: 29px;
+ 
+
+ .secondary_spring{
+  font-size: 40px;
+ }
  
 }
  
@@ -196,6 +224,7 @@ text-transform: none;
 
  
 }
+
 .footer {
  
   @include typo($primare_dark_blue,14px,normal,24px,$primare_font);
@@ -208,5 +237,9 @@ text-transform: none;
 }
 .privacy_policy{
   @include adaptiv-font(14,12);
+}
+
+.dark_font{
+  @include dark_main_font;
 }
 // #endregion

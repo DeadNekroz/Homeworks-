@@ -17,7 +17,20 @@
   font-size: 44px;
   font-style: normal;
   line-height: 52px;
-  font-size: calc(24px + 20 * ((100vw - 320px) / 960));
+}
+.hero_title .secondary_spring {
+  color: #85BBB1;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 52px;
+}
+.hero_title .secondary_dark {
+  color: #689ff2;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 52px;
 }
 
 .secondary_spring {
@@ -27,6 +40,10 @@
   font-style: italic;
   line-height: 52px;
   font-size: calc(16px + 24 * ((100vw - 320px) / 960));
+}
+
+.secondary_dark {
+  color: #689ff2;
 }
 
 .hero_subtitle {
@@ -63,7 +80,7 @@
   font-size: 68px;
   font-style: normal;
   line-height: 72px;
-  font-size: calc(18px + 50 * ((100vw - 320px) / 960));
+  white-space: nowrap;
 }
 
 .count-item_subtitle {
@@ -86,7 +103,6 @@
   font-size: 40px;
   font-style: normal;
   line-height: 50px;
-  font-size: calc(14px + 36 * ((100vw - 320px) / 960));
 }
 
 .benefit_title {
@@ -95,7 +111,9 @@
   font-size: 40px;
   font-style: normal;
   line-height: 48px;
-  font-size: calc(16px + 24 * ((100vw - 320px) / 960));
+}
+.benefit_title .secondary_spring {
+  font-size: 40px;
 }
 
 .benefit_sub {
@@ -111,7 +129,6 @@
   font-size: 32px;
   font-style: normal;
   line-height: 46px;
-  font-size: calc(16px + 16 * ((100vw - 320px) / 960));
   letter-spacing: 1.28px;
 }
 
@@ -135,7 +152,9 @@
   font-size: 40px;
   font-style: nomal;
   line-height: 48px;
-  font-size: calc(16px + 24 * ((100vw - 320px) / 960));
+}
+.video_title .secondary_spring {
+  font-size: 40px;
 }
 
 .video_subtitle {
@@ -175,6 +194,13 @@
 .reviews_heading .secondary_spring {
   font-size: 40px;
 }
+.reviews_heading .secondary_dark {
+  color: #689ff2;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-style: italic;
+  line-height: 52px;
+}
 
 .reviews_subheding {
   max-width: 400px;
@@ -202,13 +228,15 @@
 }
 
 .contacts_heading {
+  margin-bottom: 29px;
   color: #262A3F;
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-style: normal;
   line-height: 39px;
-  font-size: calc(18px + 22 * ((100vw - 320px) / 960));
-  margin-bottom: 29px;
+}
+.contacts_heading .secondary_spring {
+  font-size: 40px;
 }
 
 .contacts_subheading {
@@ -280,4 +308,8 @@
 
 .privacy_policy {
   font-size: calc(12px + 2 * ((100vw - 320px) / 960));
+}
+
+.dark_font {
+  color: #fff;
 }
