@@ -16,6 +16,9 @@ html, body{
 .header_nav {
   @include typo($primare_dark_blue, 14px, normal, 24px, $primare_font);
  }
+ .nav_item q{
+  color: $primare_dark_blue;
+ }
 
 .hero_title {
   @include typo($primare_dark_blue, 44px, normal, 52px, $secondary_font);
