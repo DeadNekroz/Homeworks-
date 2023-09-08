@@ -1131,6 +1131,25 @@ html, body {
     right: 0;
   }
 
+  .promises {
+    margin-bottom: 50px;
+    min-height: 250px;
+  }
+
+  .promises_front {
+    max-width: 100%;
+    opacity: 0.9;
+  }
+
+  .promises_back {
+    z-index: -2;
+  }
+
+  .frontcard_item {
+    color: #fff;
+    background-color: #080808a2;
+  }
+
   .footer {
     padding: 0px 20px 20px 20px;
   }
@@ -1276,7 +1295,7 @@ html, body {
   }
 
   .frontcard_item {
-    max-width: 110px;
+    max-width: 200px;
   }
 
   .item_heading {
@@ -1341,6 +1360,7 @@ html, body {
     background-color: rgba(0, 0, 0, 0.668);
     text-shadow: 1.5px 1.5px 1.5px black;
     opacity: 0.9;
+    font-size: 16px;
   }
 
   .initials {
@@ -1548,6 +1568,20 @@ html, body {
   .controls {
     top: 35%;
     left: 35%;
+  }
+
+  .promises {
+    min-height: 400px;
+  }
+
+  .frontcard_list {
+    min-height: 300px;
+  }
+
+  .promises_front {
+    min-height: 500px;
+    opacity: 0.7;
+    height: max-content;
   }
 
   .quote_content .svg_quote_wrapper {
@@ -1777,6 +1811,10 @@ html, body {
   max-height: 670px;
 }
 
+.promises_back {
+  display: none;
+}
+
 .frontcard_list {
   margin-bottom: 5px;
   gap: 10px;
@@ -1828,6 +1866,10 @@ html, body {
   text-align: center;
   align-items: center;
   gap: 5px;
+}
+
+.review_text {
+  font-size: 16px;
 }
 
 @media (max-width: 370px) {
