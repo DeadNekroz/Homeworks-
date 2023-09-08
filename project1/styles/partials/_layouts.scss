@@ -107,12 +107,12 @@
  
 }
 .switcher{
-  transition: 1s all ease;
+  transition: 0.3s all ease;
   --theme_switcher_color: rgb(2, 224, 171) ;
   box-shadow: 0px 0px 30px 10px   rgb(2, 224, 171,  1.25) ;
 }
 .switch_color{
-  transition: 1s all ease;
+  transition: 0.3s all ease;
   --theme_switcher_color: rgb(241, 137, 123);
   box-shadow: 0px 0px 30px 10px   rgb(241, 137, 123, 1.25) ;
  
@@ -378,7 +378,7 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 120px;
-  padding: 100px 0 100px 0;
+  padding: 100px 300px 160px 160px;
   z-index: -1;
 }
 
@@ -428,6 +428,14 @@
 // #region Video
 .video {
   margin-bottom: 120px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
 }
 
 .player_wrapp {
@@ -436,21 +444,23 @@
 
 .video_area {
   position: relative;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 970px;
+
   padding: 31px 70px 31px 30px;
+ 
   border: 1px solid var(--primary-grey, #E4E4E4);
   border-radius: 32px;
   margin-bottom: 50px;
+  padding-right: 50px;
 }
 
 .tablet_btn {
   width: 35px;
   height: 35px;
   position: absolute;
-  right: 14px;
-  top: 283px;
+  right: 5px;
+  top: 45%;
+ 
+  bottom: 283px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,7 +474,7 @@
   width: 13px;
   height: 13px;
   position: absolute;
-  top: 289px;
+  top: 48%;
   left: 8px;
   display: flex;
   justify-content: center;
@@ -478,7 +488,7 @@
 .controls {
   position: absolute;
   top: 40%;
-  left: 43%;
+  left: 45%;
   width: 120px;
   height: 120px;
 
@@ -486,9 +496,10 @@
 }
 
 .video_content {
-  position: relative;
+  width: 100%;
   max-width: 870px;
-  padding-right: 20px;
+ 
+ 
 }
 
 
@@ -827,10 +838,14 @@
 @media (max-width: 1160px) {
   .header {
     .container {
-      max-width: 90%;
+      padding: 20px;
     }
   }
-
+  .quote{
+    .container{
+      padding: 60px;
+    }
+  }
   .benefits-list {
     flex-direction: column;
     justify-content: center;
@@ -862,7 +877,9 @@
     padding-left: 20px;
 
   }
-
+  .container {
+    max-width: 90%;
+  }
   .mobile_btn {
     display: inline-block;
 
@@ -967,7 +984,11 @@
 
     }
   }
-
+  .svg_quote_wrapper{
+    top: -20%;
+    left: -9%;
+    }
+ 
   .promises_back {
     position: relative;
     width: 100%;
@@ -986,23 +1007,19 @@
     right: 0;
     top: 0;
     bottom: 0;
-    opacity: 0.5;
-
-    background-color: transparent;
-    text-shadow: 1px 1px 1px #ffffff;
-
+ 
   }
 
   .frontcard_list {
     align-items: start;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     max-height: 100%;
     margin-bottom: 10px;
   }
 
   .frontcard_item {
-    width: 150px;
+    max-width: 110px;
   }
 
   .item_heading {
@@ -1021,7 +1038,7 @@
   }
 
   .reviews {
-    background-color: $primaryWhite;
+ 
     margin-bottom: 160px;
     text-align: center;
     display: flex;
@@ -1052,9 +1069,28 @@
   }
 
   .review_card {
-    z-index: 2;
-  }
+    padding: 30px;
 
+    display: inline-block;
+    max-width: 500px;
+    max-height: 450px;
+  }
+  .review_card_bg{
+    padding: 25px;
+  }
+  .review_text{
+    background-color: rgba(0, 0, 0, 0.668);
+    text-shadow: 1.5px 1.5px 1.5px black;
+    opacity:0.9;
+  }
+  .initials{
+    background-color: rgba(0, 0, 0, 0.668);
+    text-shadow: 1.5px 1.5px 1.5px black;
+    opacity:0.9;
+    left: 100px;
+    right:100px;
+    white-space: nowrap;
+  }
   .contacts .container {
     flex-direction: column;
     justify-content: center;
@@ -1092,7 +1128,9 @@
 
 /* sm (<=768px) */
 @media (max-width: 767px) {
-
+  .container {
+    max-width: 90%;
+  }
   .hero_screen .container {
     position: relative;
   }
@@ -1184,21 +1222,28 @@
       opacity: 0;
     }
   }
-
+  .controls{
+    top: 35%;
+     left: 35%;
+  }
   .quote_content {
     .svg_quote_wrapper {
-      left: 1%;
+      left: -5%;
+      top: -20%;
     }
   }
   .review_text{
     background-color: rgba(0, 0, 0, 0.57);
     text-shadow: black px;
-    opacity: 10;
+    opacity:0.9;
   }
 }
 
 /* xs (<=575px) */
 @media (max-width: 575px) {
+  .container {
+    max-width: 90%;
+  }
   .open_menu {
 
     .nav_list {
@@ -1223,14 +1268,40 @@
       }
     }
   }
-
+.benefits{
+  margin-bottom: 100px;
+}
   .benefits-list {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
     gap: 90px;
   }
-
+  .quote_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 90%;
+    min-width: 500px;
+    background-size: cover;
+  }
+  .quote_content{
+    text-align: center;
+  gap: 5px;
+  }
+  .quote_title{
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+     
+  }
+  .svg_quote_wrapper{
+    display: none;
+    top: -20%;
+    left: -5%;
+  }
   .stats_img {
     max-width: 90%;
   }
