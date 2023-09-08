@@ -291,6 +291,7 @@
         <div class="container">
      
             <figure class="video_area">
+              .
               <svg class="tablet_btn">
                 <use
                   id="tablet_btn"
@@ -457,17 +458,14 @@
           </p>
         </div>
           <form action="#" class="form ">
-            <div class="name inp" class="form_input">
-              <label for="name"  >your name</label>
-              <input type="text" id="name"/>
+            <div class="name inp_wrapp" class="form_input">
+              <input class="form_input" type="text" placeholder="your name" id="name"/>
             </div>
-            <div class="email  inp" class="form_input">
-              <label for="email"  >email</label>
-              <input type="email"   id="email"/>
+            <div class="email  inp_wrapp" class="form_input">
+              <input class="form_input" type="email"  placeholder="email" id="email"/>
             </div>
-            <div class="tell_more inp" class="form_input">
-              <label for="tell_more" >tell more</label>
-              <input type="text"
+            <div class="tell_more inp_wrapp" class="form_input">
+              <input class="form_input" type="text" placeholder="tell more"
                 name="tell_more_comment"   
                 id="tell_more"
              > 
@@ -551,14 +549,14 @@
     $(".rights_wrapp").toggleClass('dark_font');
     $(".contacts_heading").toggleClass('dark_font');
     $(".form").toggleClass('dark_form');
-    $(".email").toggleClass('dark_font');
-    $(".name").toggleClass('dark_font');
-    $(".tell_more").toggleClass('dark_font');
+    $(".inp_wrapp").toggleClass('dark_inp_wrapp');
+    $(".form_input").toggleClass('dark_font');
+    $(".form_input").toggleClass('dark__form_input');
     $(".dark_controls").toggleClass('hide');
     $(".type_button").toggleClass('hide');
     $('.video_area').toggleClass('dark_border');
     $('.circle_tablet_btn').toggleClass('dark_tablet_btn');
-    $('.form_input').toggleClass('dark_form_input');
+    
     
   });
     //  #endregion

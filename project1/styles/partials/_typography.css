@@ -272,6 +272,24 @@ html, body {
   text-transform: capitalize;
 }
 
+.inp_wrapp ::placeholder {
+  color: #262A3F;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 20px;
+  letter-spacing: 1.44px;
+}
+
+.dark__form_input::placeholder {
+  text-transform: capitalize;
+  color: #fff;
+}
+.dark__form_input::placeholder:focus {
+  color: #02e0ab;
+  text-shadow: #53f3cd 0.5px 0.3px 2.8px;
+}
+
 .rights {
   color: #262A3F;
   font-family: "Lato", sans-serif;

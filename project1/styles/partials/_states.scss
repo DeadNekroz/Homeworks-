@@ -259,31 +259,47 @@
   height: 240px;
   gap: 40px;
 
-  div {
-    position: relative;
 
+  } 
+.inp_wrapp{
+    position: relative;
     &::after {
       content: '';
+      height: 1px;
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom:0;
       width: 100%;
       opacity: 0.1;
       height: 1px;
-      background: $primaryWhite;
-    }
-  }}
-  .dark_form_input{
-    label{
-    &:focus{
-      opacity: 9;
-      outline: $coral;
-      color: $coral;
-      box-shadow: 8px 2px 22px 10px  $dark_neon_color;
-      backdrop-filter: blur(5px);
-     }
+      background-color: $primare_dark_blue;
     }}
-   
+  .dark_inp_wrapp{
+      position: relative;
+      &::after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom:0;
+        width: 100%;
+        opacity: 0.1;
+        height: 1px;
+        background-color: $primaryWhite;
+      }}
+      .dark_form_input {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        &:hover ,&:focus{
+    
+        opacity: 9;
+        outline:  $dark_btn_active ;
+        color:  $dark_btn_active;
+        box-shadow: 8px 2px 22px 10px rgba(83, 243, 205, 1);
+        backdrop-filter: blur(5px);
+       }
+      }  
 .secondary_dark {
   color: $secondary_dark
 }
