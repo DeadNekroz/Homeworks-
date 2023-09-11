@@ -1,6 +1,8 @@
 function greeting(){
   let greet = prompt("вітаю,  як тебе звати?")
+  if(isNaN(greet)&&greet.length()>2){
   let answerGreet= alert(`Привіт,${greet}`);
+}
 }
 
 function birthYear() {
@@ -11,17 +13,29 @@ function birthYear() {
     var userAge = currentYear-wasBorned;
     alert(`ваш вік ${userAge} рочків, але пам'ятай, що після 20 всім 100 років`)
   }     
- 
+
+}
+
+function square(){
+  let squareSide = parseInt(prompt('введіть сторону квадрата, щоб дізнатись його периметр'));
+  if(!isNaN(squareSide)){
+  let result = squareSide *4 ;
+  
+  alert(` периметр квадрата = ${result} см`);
+} 
+  else{
+    alert('введіть, будь ласка, коректну довжину сторони квадрата (в см)')
+  };
 }
 function runnerSpeedCalc(){
-  let distance = parseInt(prompt(`пиши відстань між містами в км`));
-  let time = parseInt(prompt(`пиши скільки часу в тебе буде в годинах`));
+  let distance = parseInt(prompt(`яка відстань між містами в км, яку треба подолати?`));
+  let time = parseInt(prompt(` скільки часу в тебе буде в годинах?`));
   let result = distance/time;
-  alert(`тобі знадобиться бігти ${result}км за годину`);
+  alert(`тобі знадобиться бігти зі швидкістю ${result}км за годину`);
 }
 
 function binanceStepOne(){
-  let dollars = parseInt(prompt(`пиши скільки $ треба обміняти на € `));
+  let dollars = parseInt(prompt(`скільки $ треба обміняти на € `));
   let coeff = 0.93;
   let inEvros = dollars*coeff; 
   alert(`можете обміняти на ${inEvros} €`)
