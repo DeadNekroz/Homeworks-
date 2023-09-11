@@ -9,7 +9,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .container ul {
   list-style: none;
@@ -19,14 +19,14 @@ html, body {
   flex-direction: column;
 }
 .container ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
 }
 .container p {
   font-size: 20px;
   display: block;
   border: 2px solid black;
-  padding: 5px;
+  padding: 3px;
 }
 .container button {
   display: flex;
