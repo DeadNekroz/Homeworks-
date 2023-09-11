@@ -30,13 +30,19 @@ function square(){
 function runnerSpeedCalc(){
   let distance = parseInt(prompt(`яка відстань між містами в км, яку треба подолати?`));
   let time = parseInt(prompt(` скільки часу в тебе буде в годинах?`));
-  let result = distance/time;
-  alert(`тобі знадобиться бігти зі швидкістю ${result}км за годину`);
+  if(!isNaN(distance)&&!isNaN(time)){
+    let result = distance/time;
+    alert(`тобі знадобиться бігти зі швидкістю ${result}км за годину`);
+  }
+
 }
 
 function binanceStepOne(){
   let dollars = parseInt(prompt(`скільки $ треба обміняти на € `));
-  let coeff = 0.93;
-  let inEvros = dollars*coeff; 
-  alert(`можете обміняти на ${inEvros} €`)
+  if(!isNaN(dollars)){
+    let coeff = 0.93;
+    let inEvros = dollars*coeff; 
+    alert(`можете обміняти на ${inEvros} €`)
+  }
+ 
 }
