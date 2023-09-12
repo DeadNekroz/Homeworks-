@@ -1,9 +1,10 @@
 function greeting(){
-  let greet = prompt("вітаю,  як тебе звати?")
-  if(isNaN(greet)&&greet.length()>2){
-  let answerGreet= alert(`Привіт,${greet}`);
+  let userName = prompt("вітаю, як тебе звати?");
+   if(userName&&userName.length&&userName.length>2){
+    alert(`Hi, ${userName}`);
+   }
 }
-}
+
 
 function birthYear() {
   var currentYear = 2023;

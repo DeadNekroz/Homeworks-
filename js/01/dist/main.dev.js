@@ -1,10 +1,10 @@
 "use strict";
 
 function greeting() {
-  var greet = prompt("вітаю,  як тебе звати?");
+  var userName = prompt("вітаю, як тебе звати?");
 
-  if (isNaN(greet) && greet.length() > 2) {
-    var answerGreet = alert("\u041F\u0440\u0438\u0432\u0456\u0442,".concat(greet));
+  if (userName && userName.length && userName.length > 2) {
+    alert("Hi, ".concat(userName));
   }
 }
 
