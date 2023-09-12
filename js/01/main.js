@@ -7,7 +7,8 @@ function greeting(){
 
 
 function birthYear() {
-  var currentYear = 2023;
+  var curruntDate = new Date();
+  var currentYear =  curruntDate.getFullYear();
   // new Date('2023-09-11T14:50:00')
   var wasBorned = parseInt(prompt('введіть, будь ласка, ваш рік народження.'));
   if(!isNaN(wasBorned)&& currentYear > wasBorned){
