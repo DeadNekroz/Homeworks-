@@ -1,11 +1,20 @@
 "use strict";
 
-function greeting() {
-  var userName = prompt("вітаю, як тебе звати?");
+function userFullName() {
+  var userName = prompt("hi, what's your name?");
 
   if (userName && userName.length && userName.length > 2) {
-    alert("Hi, ".concat(userName));
+    alert("ok,".concat(userName));
   }
+
+  var _UserSurname = prompt("твоє and whats you fullname?");
+
+  if (_UserSurname && _UserSurname.length && _UserSurname.length > 2) {
+    alert("so your fullname is, ".concat(_UserSurname));
+  }
+
+  var $userFullname = "".concat(_UserSurname, "+ ").concat(userName);
+  alert("Nice to meet you,".concat($userFullname, " "));
 }
 
 function birthYear() {

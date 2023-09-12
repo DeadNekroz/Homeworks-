@@ -1,8 +1,15 @@
-function greeting(){
-  let userName = prompt("вітаю, як тебе звати?");
+function userFullName(){
+  let userName = prompt("hi, what's your name?");
+  
    if(userName&&userName.length&&userName.length>2){
-    alert(`Hi, ${userName}`);
+    alert(`ok,${userName}`);
    }
+   let _UserSurname = prompt("твоє and whats you fullname?");
+   if(_UserSurname&&_UserSurname.length&&_UserSurname.length>2){
+    alert(`so your fullname is, ${_UserSurname}`)
+   }
+   let $userFullname = `${_UserSurname }+ ${userName}`
+   alert(`Nice to meet you,${$userFullname} `)
 }
 
 
