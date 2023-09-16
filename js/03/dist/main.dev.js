@@ -1,6 +1,6 @@
 "use strict";
 
-// #region easy
+// #region Min
 function checkAge() {
   while (true) {
     var userAge = parseInt(prompt("Please, enter your age"));
@@ -87,19 +87,21 @@ function alternate_symbol() {
 
 function lets_get_amount() {
   while (true) {
-    var from = parseInt(prompt("plz choose num for starting point"));
-    var to = parseInt(prompt("plz choose num for finishing point"));
+    var _from = parseInt(prompt("plz choose num for starting point"));
+
+    var _to = parseInt(prompt("plz choose num for finishing point"));
+
     var amount = 0;
 
-    if (!isNaN(from) && !isNaN(to)) {
-      if (from < to) {
-        for (var _i = from; _i <= to; _i++) {
+    if (!isNaN(_from) && !isNaN(_to)) {
+      if (_from < _to) {
+        for (var _i = _from; _i <= _to; _i++) {
           amount += _i;
         }
 
         alert("".concat(amount));
-      } else if (to < from) {
-        for (var _i2 = to; _i2 <= from; _i2++) {
+      } else if (_to < _from) {
+        for (var _i2 = _to; _i2 <= _from; _i2++) {
           amount += _i2;
         }
 
@@ -203,44 +205,122 @@ function oddsEvensNulls() {
   }
 }
 
-function nextDay() {
-  for (var _i4 = 0; _i4 <= 6; _i4++) {
-    switch (true) {
-      case _i4 === 0:
-        confirm("today is \"Monday\" wanna see next day of the week?");
+function dayOfTheWeek() {
+  var dayOfTheWeek = 'Monday';
+
+  while (true) {
+    var choise = confirm("today is ".concat(dayOfTheWeek, ", wanna know next day of the week?"));
+
+    if (choise === false) {
+      break;
+    }
+
+    ;
+
+    switch (dayOfTheWeek) {
+      case 'Monday':
+        dayOfTheWeek = 'Tuesday';
         break;
 
-      case _i4 === 1:
-        confirm("today is \"Tuesday\" wanna see next day of the week?");
+      case 'Tuesday':
+        dayOfTheWeek = 'Wednesday';
         break;
 
-      case _i4 === 2:
-        confirm("today is \"Wednesday\" wanna see next day of the week?");
+      case 'Wednesday':
+        dayOfTheWeek = 'Thursday';
         break;
 
-      case _i4 === 3:
-        confirm("today is \"Thursday\" wanna see next day of the week?");
+      case 'Thursday':
+        dayOfTheWeek = 'Friday';
         break;
 
-      case _i4 === 4:
-        confirm("today is \"Friday\" wanna see next day of the week?");
+      case 'Friday':
+        dayOfTheWeek = 'Saturday';
         break;
 
-      case _i4 === 5:
-        confirm("today is \"Saturday\" wanna see next day of the week?");
+      case 'Saturday':
+        dayOfTheWeek = 'Sunday';
         break;
 
-      case _i4 === 6:
-        confirm("today is \"Sunday\" wanna see next day of the week?");
-        break;
-
-      case _i4 === 7:
-        _i4 - 7; // не мінусує і :с 
-
-        console.log(_i4);
-        confirm("today is \"Monday\" wanna see next day of the week?");
+      case 'Sunday':
+        dayOfTheWeek = 'Monday';
         break;
     }
   }
-} // #endregion
+} // #endregion 
+// #region Max
+
+
+function numberSearch(min, max) {
+  var target = parseInt(prompt('введіть число 0-100'));
+  var middle = parseInt(to - from) / 2 + from;
+
+  if (isSucces) {
+    console.log('Thanks for a game');
+    return false;
+  } else {
+    var isLarger = confirm("Your numbers is larger than ".concat(middle, "?"));
+    isLarger ? numberSearch(middle, to) : numberSearch(from, middle);
+  }
+}
+
+function multitab() {
+  mainCheckpoint: for (var x = 1; x < 10; x++) {
+    for (var _i4 = 1; _i4 <= 9; _i4++) {
+      console.log(x, _i4, x * _i4);
+      if (_i4 === 9 && x === 9) break mainCheckpoint;
+    }
+  }
+}
+
+function dayAfter() {
+  while (true) {
+    var day = parseInt(prompt('please enter a number the day of the month)'));
+    var month = parseInt(prompt('please enter a month'));
+    var year = parseInt(prompt('please enter a year'));
+
+    if (isNaN(day) || day > 31 || isNaN(year) || isNaN(month) || month > 12) {
+      alert('valid numbers plz -_-');
+      break;
+    }
+
+    var bigMonths = [1, 2, 3, 5, 7, 8, 10, 12];
+    var lilMonths = [4, 6, 9, 11];
+
+    switch (true) {
+      case lilMonths.includes(month) && day === 30:
+        month++;
+        day = 1;
+        break;
+
+      case bigMonths.includes(month) === 11 && day === 31:
+        year++;
+        day = 1;
+        month = 1;
+        break;
+
+      case day === 31:
+        month++;
+        day = 1;
+        break;
+
+      case day === 28 && month === 2 && year % 4 !== 0:
+        month++;
+        day = 1;
+        break;
+
+      case day === 29 && month === 2 && year % 4 === 0 && year % 100 !== 0 || year % 400 === 0:
+        day++;
+        break;
+
+      default:
+        day++;
+        break;
+    }
+
+    alert("next day seemed to be ".concat(day, ".").concat(month, ".").concat(year));
+  }
+}
+
+function dateFormat() {} // #endregion
 //
