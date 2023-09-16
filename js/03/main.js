@@ -264,32 +264,43 @@ function multitab(){
     var day =parseInt(prompt('please enter a number the day of the month)'));
     var month =parseInt(prompt('please enter a month'));
     var year = parseInt(prompt('please enter a year'));
-    if(isNaN(day)||(day>31)||isNaN(year)||isNaN(month)||(month>12)){
-      alert ('valid numbers plz -_-')
-      break
-    }
+
+
     let bigMonths=[1,2,3,5,7,8,10,12];
     let lilMonths=[4,6,9,11];
     switch(true){
+      // lil month
       case lilMonths.includes(month)&&day===30:
       month++
       day=1;
       break
-      
-      case bigMonths.includes(month)===11&&day===31:
+      case lilMonths.includes(month)&&day===31:
+         
+        break
+
+      // big month
+      case bigMonths.includes(month)&&day===31:
+        month++
+        day=1;
+        break
+        
+      case bigMonths.includes(month)&&day===30:
+        day++
+
+        break
+
+      // new Year
+      case bigMonths.includes(month)===12&&day===31:
         year++;
         day=1;
         month=1;
         break;
-      case day===31:
-        month++;
-        day=1;
-        break;
+      
       case day===28&&month===2&&year%4!==0:
         month++;
         day=1;
         break;
-      case day===29&&month===2&&year%4===0&&year%100!==0||year%400===0:
+      case day===29&&month===2&&year%4===0&&year%100!==0&&year%400===0:
         day++
         break;
       default:
@@ -298,14 +309,23 @@ function multitab(){
       
 
     }
-    
+    if(isNaN(day)||(day>31)||isNaN(year)||isNaN(month)||(month>12)||lilMonths.includes(month)&&day===31){
+      alert ('valid numbers plz -_-')
+      break
+    }
+    if(day.toString.length<=1){
+      day='0'+day;
+      }   
+    if(month.toString.length=1){
+      month='0'+month;
+      }
     
     alert(`next day seemed to be ${day}.${month}.${year}`)
   }
   
 }
   function dateFormat(){
-    
+
   }
    
  

@@ -1,36 +1,24 @@
 "use strict";
 
-function checkPolindrom() {
-  var isPolindrom = prompt('enter Number plz');
-  var number = '';
-  var numberReversed = '';
-  var _iteratorNormalCompletion = true;
-  var _didIteratorError = false;
-  var _iteratorError = undefined;
+function ifPurfectNumber(number) {
+  var totalDivider = 0; // 6     1 2 3 
 
-  try {
-    for (var _iterator = isPolindrom[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-      var ch = _step.value;
-      number += ch;
-      console.log(number);
-      numberReversed = ch + numberReversed;
-      console.log(numberReversed);
-    }
-  } catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-  } finally {
-    try {
-      if (!_iteratorNormalCompletion && _iterator["return"] != null) {
-        _iterator["return"]();
-      }
-    } finally {
-      if (_didIteratorError) {
-        throw _iteratorError;
-      }
+  for (var i = 1; i <= number / 2; i++) {
+    if (number % i === 0) {
+      totalDivider = totalDivider + i;
+      console.log(totalDivider);
     }
   }
 
-  alert('your number is a polindrom!');
-  alert('nope,its not a polindrom!');
+  return number === totalDivider;
+}
+
+function showResult() {
+  var userNumber = parseInt(prompt('введіть будь ласка число'));
+  console.log(ifPurfectNumber(userNumber) ? 'number is purfect' : 'number is not purfect');
+}
+
+function purfectInRange() {
+  var min = parseInt(prompt('введ'));
+  var max = parseInt(prompt());
 }

@@ -309,13 +309,21 @@ function dayAfter() {
         day = 1;
         break;
 
-      case day === 29 && month === 2 && year % 4 === 0 && year % 100 !== 0 || year % 400 === 0:
+      case day === 29 && month === 2 && year % 4 === 0 && year % 100 !== 0 && year % 400 === 0:
         day++;
         break;
 
       default:
         day++;
         break;
+    }
+
+    if (day.toString.length = 1) {
+      day = '0' + day;
+    }
+
+    if (month.toString.length = 1) {
+      month = '0' + month;
     }
 
     alert("next day seemed to be ".concat(day, ".").concat(month, ".").concat(year));
