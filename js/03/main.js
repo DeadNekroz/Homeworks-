@@ -193,143 +193,137 @@ function oddsEvensNulls() {
   }
 }
 
-
-function dayOfTheWeek(){
-  let dayOfTheWeek='Monday';
-  while(true){
-   let choise = confirm(`today is ${dayOfTheWeek}, wanna know next day of the week?`);
-   if(choise===false){break};
-   switch (dayOfTheWeek){
-      case ('Monday'):
-        dayOfTheWeek='Tuesday'
-        break
-        case ('Tuesday'):
-        dayOfTheWeek='Wednesday'
-        break
-        case ('Wednesday'):
-        dayOfTheWeek='Thursday'
-        break
-        case ('Thursday'):
-        dayOfTheWeek='Friday'
-        break
-        case ('Friday'):
-        dayOfTheWeek='Saturday'
-        break
-        case ('Saturday'):
-          dayOfTheWeek='Sunday'
-          break
-          case ('Sunday'):
-          dayOfTheWeek='Monday'
-          break
-          
-   } 
-  }  
+function dayOfTheWeek() {
+  let dayOfTheWeek = "Monday";
+  while (true) {
+    let choise = confirm(
+      `today is ${dayOfTheWeek}, wanna know next day of the week?`
+    );
+    if (choise === false) {
+      break;
+    }
+    switch (dayOfTheWeek) {
+      case "Monday":
+        dayOfTheWeek = "Tuesday";
+        break;
+      case "Tuesday":
+        dayOfTheWeek = "Wednesday";
+        break;
+      case "Wednesday":
+        dayOfTheWeek = "Thursday";
+        break;
+      case "Thursday":
+        dayOfTheWeek = "Friday";
+        break;
+      case "Friday":
+        dayOfTheWeek = "Saturday";
+        break;
+      case "Saturday":
+        dayOfTheWeek = "Sunday";
+        break;
+      case "Sunday":
+        dayOfTheWeek = "Monday";
+        break;
+    }
+  }
 }
 
-// #endregion 
+// #endregion
 
 // #region Max
-function numberSearch(min,max){
-  let target = parseInt(prompt('введіть число 0-100'));
- 
-   const middle=parseInt(to-from)/2 + from ;
+function numberSearch(from, to) {
+  const middle = parseInt((to - from) / 2 + from);
+  const isSucces= confirm(`ваше число ${middle} `)
 
-   if(isSucces){
-    console.log('Thanks for a game')
+  if (isSucces) {
+    console.log("дякую за участь");
     return false;
-   } else {
-    const isLarger = confirm(`Your numbers is larger than ${middle}?`)
+  } else {
+    const isLarger = confirm(`число більше за ${middle}?`);
 
-    isLarger ? numberSearch(middle,to) : numberSearch(from,middle)  
+    isLarger ? numberSearch(middle, to) : numberSearch(from, middle);
   }
-
 }
 
-function multitab(){
- 
-  mainCheckpoint: for(let x =1;x <10; x++){
-    for(let i=1;i<=9;i++){
-        
-    console.log(x,i,x*i)
- 
-    if(i===9&&x===9)break mainCheckpoint;
+function multitab() {
+  mainCheckpoint: for (let x = 1; x < 10; x++) {
+    for (let i = 1; i <= 9; i++) {
+      console.log(x, i, x * i);
+
+      if (i === 9 && x === 9) break mainCheckpoint;
     }
   }
 }
 
- 
-  function dayAfter(){
-    while(true){
-    
-    var day =parseInt(prompt('please enter a number the day of the month)'));
-    var month =parseInt(prompt('please enter a month'));
-    var year = parseInt(prompt('please enter a year'));
+function dayAfter() {
+  while (true) {
+    var day = parseInt(prompt("please enter a number the day of the month)"));
+    var month = parseInt(prompt("please enter a month"));
+    var year = parseInt(prompt("please enter a year"));
 
-
-    let bigMonths=[1,2,3,5,7,8,10,12];
-    let lilMonths=[4,6,9,11];
-    switch(true){
+    let bigMonths = [1, 2, 3, 5, 7, 8, 10, 12];
+    let lilMonths = [4, 6, 9, 11];
+    switch (true) {
       // lil month
-      case lilMonths.includes(month)&&day===30:
-      month++
-      day=1;
-      break
-      case lilMonths.includes(month)&&day===31:
-         
-        break
+      case lilMonths.includes(month) && day === 30:
+        month++;
+        day = 1;
+        break;
+      case lilMonths.includes(month) && day === 31:
+        break;
 
       // big month
-      case bigMonths.includes(month)&&day===31:
-        month++
-        day=1;
-        break
-        
-      case bigMonths.includes(month)&&day===30:
-        day++
+      case bigMonths.includes(month) && day === 31:
+        month++;
+        day = 1;
+        break;
 
-        break
+      case bigMonths.includes(month) && day === 30:
+        day++;
+
+        break;
 
       // new Year
-      case bigMonths.includes(month)===12&&day===31:
+      case bigMonths.includes(month) === 12 && day === 31:
         year++;
-        day=1;
-        month=1;
+        day = 1;
+        month = 1;
         break;
-      
-      case day===28&&month===2&&year%4!==0:
+
+      case day === 28 && month === 2 && year % 4 !== 0:
         month++;
-        day=1;
+        day = 1;
         break;
-      case day===29&&month===2&&year%4===0&&year%100!==0&&year%400===0:
-        day++
+      case day === 29 &&
+        month === 2 &&
+        year % 4 === 0 &&
+        year % 100 !== 0 &&
+        year % 400 === 0:
+        day++;
         break;
       default:
-        day++
-        break
-      
-
+        day++;
+        break;
     }
-    if(isNaN(day)||(day>31)||isNaN(year)||isNaN(month)||(month>12)||lilMonths.includes(month)&&day===31){
-      alert ('valid numbers plz -_-')
-      break
+    if (
+      isNaN(day) ||
+      day > 31 ||
+      isNaN(year) ||
+      isNaN(month) ||
+      month > 12 ||
+      (lilMonths.includes(month) && day === 31)
+    ) {
+      alert("valid numbers plz -_-");
+      break;
     }
-    if(day.toString.length<=1){
-      day='0'+day;
-      }   
-    if(month.toString.length=1){
-      month='0'+month;
-      }
-    
-    alert(`next day seemed to be ${day}.${month}.${year}`)
-  }
-  
-}
-  function dateFormat(){
-
-  }
+     const addZero = n => n<10 ? `0${n}` : n;
    
- 
- 
+    
+    alert(`next day seemed to be ${addZero(day)}.${addZero(month)}.${year}`);
+  }
+}
+
+
 // #endregion
 
 //
