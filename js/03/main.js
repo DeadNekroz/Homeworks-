@@ -256,7 +256,6 @@ function multitab() {
 }
 
 function dayAfter() {
-  while (true) {
     var day = parseInt(prompt("please enter a number the day of the month)"));
     var month = parseInt(prompt("please enter a month"));
     var year = parseInt(prompt("please enter a year"));
@@ -314,14 +313,14 @@ function dayAfter() {
       (lilMonths.includes(month) && day === 31)
     ) {
       alert("valid numbers plz -_-");
-      break;
+       
     }
      const addZero = n => n<10 ? `0${n}` : n;
    
     
     alert(`next day seemed to be ${addZero(day)}.${addZero(month)}.${year}`);
   }
-}
+
 
 
 // #endregion
