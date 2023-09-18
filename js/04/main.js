@@ -24,12 +24,18 @@
 
  factorial=()=>{
   let numb1=parseInt(prompt('введіть число для обчислення факторіалу'))
-  let result=0;
-  for(let i=1;i<=numb1;i++){
-  result +=numb1*(numb1-i)
- }
- console.log(result)
- alert(result)
+  if(isNaN(numb1)){
+    alert('будь ласка, введіть число.'
+    )
+  }else{
+    let result=0;
+    for(let i=1;i<=numb1;i++){
+    result +=numb1*(numb1-i)
+   }
+   console.log(result)
+   alert(result)
+  }
+
  }
 
  numbersInOne=()=>{
@@ -48,7 +54,7 @@ alert(result)
 function rectangleSize(){
   if(rectangleSize.arguments[1]==undefined){
     alert(`size of this rectangle = ${rectangleSize.arguments[0]**2}`)
-  }
+  }  
   else{
     alert(`size of this rectangle =${rectangleSize.arguments[0]*rectangleSize.arguments[1]}`)
  }
