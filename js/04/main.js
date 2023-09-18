@@ -9,6 +9,10 @@
  function comparison(){
     let firstNum= parseInt(prompt('введіть перше число для порівняння'))
     let secondNum= parseInt(prompt('введіть друге число для порівняння'))
+    if (isNaN(firstNum)||isNaN(secondNum)){
+      alert('будь ласка, введіть саме числа')
+    }
+    else{
     switch (true){
      case  (firstNum<secondNum) :
       alert(-1)
@@ -19,7 +23,7 @@
       case  (firstNum===secondNum) :
       alert(0)
       break
-    }
+    }}
  }
 
  factorial=()=>{
@@ -80,13 +84,21 @@ function ifPurfectNumber(number){
 }
 function showResult(){
   let userNumber=parseInt(prompt('введіть будь ласка число'));
-  alert(ifPurfectNumber(userNumber)? 'number is purfect' :'number is not purfect')
+  if(isNaN(userNumber)){
+    alert('будь ласка, введіть саме число')
+  }else{
+    alert(ifPurfectNumber(userNumber)? 'number is purfect' :'number is not purfect')
+  }
+ 
 
 }
 
 function purfectInRange(){
   let min = parseInt(prompt('введіть мінімальне значення діапазону'))
   let max = parseInt(prompt('введіть максимальне значення діапазону'))
+  if(isNaN(min)||isNaN(max)){
+    alert('будь ласка, введіть саме число')
+  }else{
   let result ='';
   for(let i=min; i<=max;i++){
     if(ifPurfectNumber(i)){
@@ -94,5 +106,5 @@ function purfectInRange(){
     }
 
   } alert(`${result} are purfect`)
-}
+}}
 // #endregion
