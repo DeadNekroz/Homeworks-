@@ -189,7 +189,7 @@ function oddsEvensNulls() {
     numbersCounter++;
     numbersCounter === 10 &&
       alert(`amoung your number ive found:${nulls} nulls,${odds} odds numbers and ${evens} even numbers.
-  There are ${positiveNumbers}positive and ${negativeNumbers}negative numbers in your list.`);
+  There are ${positiveNumbers} positive and ${negativeNumbers} negative numbers in your list.`);
   }
 }
 
