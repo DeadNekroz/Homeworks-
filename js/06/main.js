@@ -104,7 +104,8 @@ function getAmountOfUnpurchased(){
   const unPurchasedAmount = allProducts.reduce((acc,el)=>{
     acc=(el.quantity*el.price)+acc
   },0)
-  return unPurchasedAmount
+
+  return (unPurchasedAmount)-(getAmountOfProduct)
 }
 
 function  lowToHighPriceSorted(){
