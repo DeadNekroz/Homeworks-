@@ -100,6 +100,12 @@ function getAmountOfProduct(){
   return amount
 }
 getAmountOfProduct();
+function getAmountOfUnpurchased(){
+  const unPurchasedAmount = allProducts.reduce((acc,el)=>{
+    acc=(el.quantity*el.price)+acc
+  },0)
+  return unPurchasedAmount
+}
 
 function  lowToHighPriceSorted(){
   const sorted = allProducts.slice()

@@ -28,12 +28,10 @@ function checkAge() {
   }
 }
 
-function alternate_symbol() {
-  while (true) {
+function alternateSymbol() {
     let keyboard_number = parseInt(
       prompt("Please, enter number, to find out its alternate symbol")
     );
-
     if (!isNaN(keyboard_number)) {
       switch (keyboard_number) {
         case 1:
@@ -76,12 +74,10 @@ function alternate_symbol() {
           alert(")");
           break;
       }
-      break;
     }
   }
-}
 
-function lets_get_amount() {
+function letsGetAmount() {
   while (true) {
     let from = parseInt(prompt("plz choose num for starting point"));
     let to = parseInt(prompt("plz choose num for finishing point"));

@@ -2,7 +2,7 @@
 //  function name() {}
 // () => {}
 // let name = function(){}
- function argsCount( ){
+ function argsCount(){
   alert ((argsCount.arguments).length)
  }
 
@@ -28,17 +28,19 @@
 
  factorial=()=>{
   let numb1=parseInt(prompt('введіть число для обчислення факторіалу'))
-  if(isNaN(numb1)){
+
+  if(isNaN(numb1))
+  {
     alert('будь ласка, введіть число.'
     )
-  }else{
+  return false
+}
     let result=0;
     for(let i=1;i<=numb1;i++){
     result +=numb1*(numb1-i)
    }
    console.log(result)
    alert(result)
-  }
 
  }
 

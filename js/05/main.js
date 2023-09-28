@@ -105,15 +105,15 @@ const time = {
 
     if (this.hours <= 0) {
       this.hours = 23;
-      this.hours -= (this.minutes / 60).toPrecision(1);
+      this.hours =this.hours- (this.minutes / 60).toPrecision(1);
     }
     if (this.minutes <= 0) {
       this.minutes = 59;
-      this.hours -= (this.minutes / 60).toPrecision(1);
+      this.hours = this.hours -(this.minutes / 60).toPrecision(1);
     }
     if (this.seconds <= 0) {
       this.seconds = 59;
-      this.minutes -= (this.seconds / 60).toPrecision(1);
+      this.minutes = this.minutes - (this.seconds / 60).toPrecision(1);
     }
     const addZero = (n) => (n>=0&&n < 10 ? `0${n}` : n);
     const resultTime = `${addZero(this.hours)}:${addZero(
