@@ -102,6 +102,22 @@ function lets_get_amount() {
     break;
   }
 }
+function common_divider() {
+  const num1 =parseInt(prompt('перше число плз'));
+  let num1Dividers =[];
+  const num2 =parseInt(prompt('друге число плз'));
+  let num2Dividers =[];
+  let comdivs=[];
+  let result ;
+  for( let i=1;i<=num1;i++){
+    if (num1 % i === 0 && num2 %i === 0) {
+     result =i
+    }
+  
+    }
+  }
+  alert(result)
+  
 // #endregion
 
 // #region normal

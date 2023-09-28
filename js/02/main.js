@@ -94,7 +94,7 @@ function fourtBtnReverseNumber(){
 function fifthBtnDepositCalc(){
   var amount = parseInt(prompt('write your deposit amount here '));
   var interestRate = 5;
-  var period = parseInt(prompt('please write period (in month)to calc profit'))
+  var period = parseInt(prompt('please write period (in month)to calc profit'));
   if(!isNaN(amount)&&!isNaN(period)){
  
   var afterMonthProfit = ((amount/100)*interestRate)/12 ;
