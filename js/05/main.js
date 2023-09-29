@@ -53,7 +53,7 @@ const car = {
 
 // #region time
 const time = {
-  hours: 12,
+  hours: 0,
   minutes: 0,
   seconds: 0,
 
@@ -103,23 +103,22 @@ const time = {
     this.changeMinutes();
     this.changeSeconds();
 
-    if (this.hours <= 0) {
-      this.hours = 23;
-      this.hours =this.hours- (this.minutes / 60).toPrecision(1);
+    if (this.hours < 0) {
+      this.hours = 24 + (this.hours);
     }
-    if (this.minutes <= 0) {
-      this.minutes = 59;
-      this.hours = this.hours -(this.minutes / 60).toPrecision(1);
+    
+    if (this.minutes < 0&&-60<this.minutes) {
+      this.minutes =(Math.floor(this.minutes%60)); 
+      this.hours = this.hours -(Math.floor(this.minutes / 60));
     }
-    if (this.seconds <= 0) {
-      this.seconds = 59;
-      this.minutes = this.minutes - (this.seconds / 60).toPrecision(1);
+    if (this.seconds < 0&&-60<this.seconds) {
+      this.seconds = (Math.floor(this.seconds%60));
+      this.minutes = this.minutes - (Math.floor(this.seconds / 60)) ;
     }
-    const addZero = (n) => (n>=0&&n < 10 ? `0${n}` : n);
-    const resultTime = `${addZero(this.hours)}:${addZero(
-      this.minutes
-    )}:${addZero(this.seconds)}`;
-
+    const addZero = (n) =>(n>=0&&n < 10? `0${n}` : n);
+    const resultTime = 
+    `${addZero(this.hours)}:${addZero(this.minutes)}:${addZero(this.seconds)}`;
+      console.log(resultTime)
     alert(`${resultTime} маємо на годиннику`);
   },
  
