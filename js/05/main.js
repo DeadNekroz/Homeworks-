@@ -59,70 +59,74 @@ const time = {
 
   changeHours() {
     const changeHours = parseInt(prompt("На скільки годин міняємо час?"));
-    if (!isNaN(changeHours)) {
+    if (isNaN(changeHours)) {
+      alert('plz enter how many hours do you want to change the clock to?')
+      return false
+    }
       this.hours = this.hours + changeHours;
       if (this.hours >= 24) {
-        this.hours = this.hours - 24;
+        this.hours = this.hours%24;
       }
-    } 
-    else 
-    {
-        alert('plz enter how many hours do you want to change the clock to?')
-    }
-  },
+      if(this.hours <0){
+        this.hours=this.hours%24
+      }
+    },
+    
+       
+   
   changeMinutes() {
     const changeMinutes = parseInt(prompt("На скільки хвилин міняємо час?"));
     if (isNaN(changeMinutes)) {
       alert('plz enter how many minutes do you want to change the clock to?')
+      return false
     }
-    else {
+    
     this.minutes = this.minutes + changeMinutes;
     if (this.minutes >= 60) {
       this.minutes = this.minutes % 60;
-      this.hours += (this.minutes / 60).toPrecision(1);
+      this.hours += Math.floor(this.minutes / 60);
+    } 
+    if (this.minutes < 0) {
+      this.minutes = 60 + (changeMinutes%60);
+      this.minutes =(Math.floor(this.minutes%60)); 
+      this.hours = this.hours -(Math.floor(this.minutes / 60));
     }
      
-  }
   },
   changeSeconds() {
     const changeSeconds = parseInt(prompt("На скільки секунд міняємо час?"));
     if (isNaN(changeSeconds)) {
       alert('plz enter how many seconds do you want to change the clock to?')
-    }else{
+      return false
+    }
     this.seconds = this.seconds + changeSeconds;
     if (this.seconds >= 60) {
       this.seconds = this.seconds % 60;
-      this.minutes += (this.seconds / 60).toPrecision(1);
+      this.minutes += Math.floor(this.seconds / 60);
     }
+    
+    if (this.seconds < 0) {
+      this.seconds = 60 + (changeSeconds%60);
+      this.seconds = (Math.floor(this.seconds%60));
+      this.minutes = this.minutes - (Math.floor(this.seconds / 60)) ;
     }
-  
-  },
-
+    },
+   
   changeTime() {
     this.changeHours();
     this.changeMinutes();
     this.changeSeconds();
 
-    if (this.hours < 0) {
-      this.hours = 24 + (this.hours);
-    }
-    
-    if (this.minutes < 0&&-60<this.minutes) {
-      this.minutes =(Math.floor(this.minutes%60)); 
-      this.hours = this.hours -(Math.floor(this.minutes / 60));
-    }
-    if (this.seconds < 0&&-60<this.seconds) {
-      this.seconds = (Math.floor(this.seconds%60));
-      this.minutes = this.minutes - (Math.floor(this.seconds / 60)) ;
-    }
+  
+   
     const addZero = (n) =>(n>=0&&n < 10? `0${n}` : n);
     const resultTime = 
     `${addZero(this.hours)}:${addZero(this.minutes)}:${addZero(this.seconds)}`;
       console.log(resultTime)
     alert(`${resultTime} маємо на годиннику`);
   },
+}
  
-};
 
 // endregion
 

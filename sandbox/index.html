@@ -8,10 +8,37 @@
   rel="stylesheet"
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
   crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <button type="button" class="btn btn-dark" onclick="spam()">spam</button>
- 
+    <div class="container">
+    <!-- #region Form -->
+      <div class="form">
+        <h2> Create acc</h2>
+        <div class="error"> </div>
+        <input type="text" name="username" placeholder="name">
+        <input type="password" name="userPassword" placeholder="password">
+        <input type="email" name="userEmail" placeholder="email">
+        <label>
+
+          <p>i have read terms & conditions</p>
+          <input type="checkbox" name="agree" id="">
+        </label>
+        <button type="button" onclick="submitForm()">Create an acc</button>
+       
+  </div>
+  <!-- #endregion -->
+  
+<ul >
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</div>
+
+  <!-- <button type="button" class="btn btn-dark" onclick="spam()">spam</button> -->
  <script src="./main.js"></script>
+
   </body>
 </html>
