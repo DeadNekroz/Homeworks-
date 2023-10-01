@@ -10,10 +10,8 @@ container.innerHTML = '<button type="button" class="openBtn">Відкрити</b
 
 // в модальному прописую баттон+ховаю модалку
 const modalka = document.querySelector('.modalka');
-modalka.innerHTML = '<button type="button" class="closeBtn">Закрити</button>';
-modalka.textContent='Some text about nothing, just for тз'
 modalka.style.display='none'
-
+modalka.innerHTML = '<p>Some text about nothing, just for тз</p><button type="button" class="closeBtn">Закрити</button>';
 // селектори для  бАттонів, для зручності 
 const toOpen = document.querySelector('.openBtn');
 const toClose = document.querySelector('.closeBtn');
