@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  max-width: 1200px;
+  margin-top: 200px;
+  width: 100%;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+ol{
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+ 
+  flex-wrap: wrap;
+  gap: 60px;
+
+}
+ol li{
+  text-align: center;
+
+  padding: 25px;
+  min-height: 50px;
+  width: 350px;
+  background-image: url(./rotsK.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  
+ }
+span{
+  color: rgb(247, 164, 31);
+  text-shadow: .5px .9px 1.5px rgb(165, 17, 17)
+}
+ 
