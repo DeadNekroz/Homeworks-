@@ -45,6 +45,7 @@ html, body{
 
 .hero_subtitle {
   opacity: 0.8;
+
   @include subText;
   max-width: 439px;
 }

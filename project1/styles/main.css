@@ -604,7 +604,6 @@ html, body {
 
 .overlaying_part {
   display: flex;
-  right: 75px;
   max-width: 770px;
   position: absolute;
   background-color: #fff;
@@ -612,7 +611,7 @@ html, body {
 }
 
 .dark_bg {
-  opacity: 0.3;
+  opacity: 0.9;
   background-color: #161926;
 }
 
@@ -673,13 +672,15 @@ html, body {
 }
 
 .content_article {
-  padding: 45px 0;
+  padding: 45px;
   width: 100%;
   max-width: 400px;
+  min-height: 250px;
 }
 
 .content_article_text {
   width: 100%;
+  margin-bottom: 50px;
   margin-bottom: 50px;
 }
 
@@ -1021,12 +1022,14 @@ html, body {
   outline: #F1897B;
   color: #F1897B;
   box-shadow: 8px 2px 22px 10px #f1897b;
-  backdrop-filter: blur(5px);
 }
 
 .dark_inp_wrapp {
   width: 470px;
   height: 32px;
+}
+.dark_inp_wrapp:hover, .dark_inp_wrapp:focus {
+  box-shadow: 8px 2px 22px 10px #53f3cd;
 }
 .dark_inp_wrapp .form_input {
   position: relative;
@@ -1038,7 +1041,6 @@ html, body {
   outline: #53f3cd;
   color: #02e0ab;
   box-shadow: 8px 2px 22px 10px #53f3cd;
-  backdrop-filter: blur(5px);
 }
 
 .btn_wrapper {
@@ -1178,9 +1180,30 @@ html, body {
     overflow: hidden;
   }
 
+  .overlaying_part {
+    position: relative;
+  }
+
   .content_count {
-    padding: 0;
-    gap: 30px;
+    width: 80%;
+    gap: 15px;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .count_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+  }
+
+  .count-item_title {
+    font-size: 24px;
   }
 
   .content_article {
@@ -1190,7 +1213,7 @@ html, body {
   }
 
   .content_article_text {
-    padding-right: 20px;
+    padding: 20px;
   }
 
   .stats_btn {
@@ -1215,14 +1238,26 @@ html, body {
     z-index: 2;
   }
 
+  .overlaying_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+
   .content_count {
-    max-width: 300px;
-    justify-content: start;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    justify-content: space-between;
+    vertical-align: top;
     padding: 20px 0;
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
-    max-width: 300px;
+  }
+  .content_count::after {
+    display: none;
   }
 
   .count_item {
@@ -1231,10 +1266,20 @@ html, body {
     align-items: start;
   }
 
+  .count_item.divided::before {
+    display: none;
+  }
+
   .count-item_title {
     max-width: 300px;
     justify-content: start;
     align-items: start;
+    height: 50px;
+    gap: 10px;
+  }
+
+  .content_article {
+    margin-top: 50px;
   }
 
   .count-item_subtitle {
@@ -1555,7 +1600,6 @@ html, body {
     overflow: scroll;
     margin-bottom: 20px;
     max-height: 200px;
-    letter-spacing: 0.8;
   }
   .content_article_text .overlaying_part {
     position: absolute;
@@ -1807,7 +1851,6 @@ html, body {
 .overlaying_part {
   top: 20px;
   display: flex;
-  max-height: 670px;
 }
 
 .frontcard_list {
@@ -1844,6 +1887,14 @@ html, body {
   width: 100%;
   max-width: 150px;
   height: 100%;
+}
+.inp_wrapp:hover, .inp_wrapp:focus {
+  box-shadow: 8px 2px 22px 10px #F1897B;
+  backdrop-filter: blur(5px);
+}
+.inp_wrapp:hover .form_input, .inp_wrapp:focus .form_input {
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .footer .container {
@@ -2133,6 +2184,9 @@ html, body {
 .dark_inp_wrapp {
   position: relative;
 }
+.dark_inp_wrapp:hover:hover, .dark_inp_wrapp:hover:focus, .dark_inp_wrapp:focus:hover, .dark_inp_wrapp:focus:focus {
+  box-shadow: 8px 2px 22px 10px #53f3cd;
+}
 .dark_inp_wrapp::after {
   content: "";
   height: 1px;
@@ -2143,6 +2197,7 @@ html, body {
   opacity: 0.1;
   height: 1px;
   background-color: #fff;
+  color: #02e0ab;
 }
 
 .dark_form_input {
@@ -2155,7 +2210,6 @@ html, body {
   outline: #02e0ab;
   color: #02e0ab;
   box-shadow: 8px 2px 22px 10px #53f3cd;
-  backdrop-filter: blur(5px);
 }
 
 .secondary_dark {
@@ -2282,6 +2336,7 @@ html, body {
   width: 100%;
   height: 3px;
   position: absolute;
+  color: #02e0ab;
   top: 22px;
   left: 0;
   right: 0;

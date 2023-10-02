@@ -241,6 +241,9 @@
 .dark_inp_wrapp {
   position: relative;
 }
+.dark_inp_wrapp:hover:hover, .dark_inp_wrapp:hover:focus, .dark_inp_wrapp:focus:hover, .dark_inp_wrapp:focus:focus {
+  box-shadow: 8px 2px 22px 10px #53f3cd;
+}
 .dark_inp_wrapp::after {
   content: "";
   height: 1px;
@@ -251,6 +254,7 @@
   opacity: 0.1;
   height: 1px;
   background-color: #fff;
+  color: #02e0ab;
 }
 
 .dark_form_input {
@@ -263,7 +267,6 @@
   outline: #02e0ab;
   color: #02e0ab;
   box-shadow: 8px 2px 22px 10px #53f3cd;
-  backdrop-filter: blur(5px);
 }
 
 .secondary_dark {
@@ -390,6 +393,7 @@
   width: 100%;
   height: 3px;
   position: absolute;
+  color: #02e0ab;
   top: 22px;
   left: 0;
   right: 0;
