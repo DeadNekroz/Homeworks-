@@ -455,6 +455,7 @@
 
 .promises {
   margin-bottom: 120px;
+  min-height: 510px;
 }
 
 .promises .container {
@@ -698,6 +699,7 @@
 
   .overlaying_part {
     top: -5%;
+    flex-direction: row;
   }
 }
 /* md(<=991px) */
@@ -1037,7 +1039,6 @@
   }
   .stats .overlaying_part {
     top: 0;
-    flex-direction: column;
     max-width: 90%;
     min-height: 750px;
     justify-content: center;
@@ -1239,7 +1240,6 @@
   }
   .stats .overlaying_part {
     position: relative;
-    flex-direction: column;
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -1404,12 +1404,7 @@
 .overlaying_part {
   top: 20px;
   display: flex;
-  flex-direction: column;
   max-height: 670px;
-}
-
-.promises_back {
-  display: none;
 }
 
 .frontcard_list {
