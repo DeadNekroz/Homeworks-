@@ -42,6 +42,10 @@
   position: relative;
   color: #262A3F;
 }
+.nav_item:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease;
+}
 .nav_item:hover .nav_link::after {
   content: "";
   width: 100%;

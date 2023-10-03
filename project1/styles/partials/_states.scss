@@ -45,14 +45,17 @@
 .nav_item {
   position: relative;
   color: $primare_dark_blue;
-  &:hover {
 
+  &:hover {
+    transform: scale(1.2);
+    transition: .3s all ease;
+    
     .nav_link::after {
       content: '';
       width: 100%;
       height: 3px;
       position: absolute;
-
+    
       top: 22px;
       left: 0;
       right: 0;
@@ -62,12 +65,12 @@
   }
 
 }
-
+ 
 .logo_wrapper {
   &:hover {
 
     border-radius: 4px;
-
+   
     --logo_color: #F1897B;
 
     box-shadow: 8px 2px 22px 10px rgba(241, 137, 123, 1);
@@ -407,9 +410,11 @@
   width: 120px;
   height: 120px;
   z-index: 2;
+
   .svg{
     height: 100%;
     width: 100%;
+ 
   }
 }
 .dark_tablet_btn{
@@ -444,7 +449,7 @@
   position: relative;
   color: $primaryWhite;
   &:hover {
-
+    
     .dark_nav_link::after {
       content: '';
       width: 100%;

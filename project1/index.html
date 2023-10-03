@@ -86,22 +86,22 @@
               <div class="header_nav">
                 <ul class="nav_list">
                   <li class="nav_item">
-                    <a href="#home" class="nav_link">Home</a>
+                    <span href="#home" onclick="scrollToElement(event)" class="nav_link" data-href="#home">Home</span>
                   </li>
                   <li class="nav_item">
-                    <a href="#about" class="nav_link">About</a>
+                    <span href="#about" onclick="scrollToElement(event)"  class="nav_link" data-href="#about">About</span>
                   </li>
                   <li class="nav_item">
-                    <a href="#products" class="nav_link">Products</a>
+                    <span href="#products" onclick="scrollToElement(event)" class="nav_link" data-href="#products">Products</span>
                   </li>
                   <li class="nav_item">
-                    <a href="#cases" class="nav_link">Use Cases</a>
+                    <span href="#cases"  onclick="scrollToElement(event)" class="nav_link" data-href="#cases">Use Cases</span>
                   </li>
                   <li class="nav_item">
-                    <a href="#pricing" class="nav_link">Pricing</a>
+                    <span href="#pricing"  onclick="scrollToElement(event)" class="nav_link" data-href="#pricing">Pricing</span>
                   </li>
                   <li class="nav_item">
-                    <a href="#resources" class="nav_link">Resources</a>
+                    <span href="#resources" onclick="scrollToElement(event)"  class="nav_link" data-href="#resources">Resources</span>
                   </li>
                 </ul>
                 <div class="theme_switch_wrapper">
@@ -496,13 +496,7 @@
       <!-- #endregion -->
     </div>
     <script>
-      // function toggleMenu() {
-      //   document.querySelector('.hamburger').classList.toggle('is-active');
-      //   document.querySelector('.header_nav').classList.toggle('open_menu');
-
-
-      // }
-  
+      // #region burger
     $('.burger_from_header').click(function () {
       $('.burger_from_header').toggleClass('hide');
       $('.hamburger-box').toggleClass('hide');
@@ -515,7 +509,7 @@
       $('.burger_mobile').toggleClass('hide');
     ;
     })
-
+// #endregion
   //  #region Dark theme
     $('.theme_switch_wrapper').click(function () {
     $('.switcher').toggleClass('switch_color');
@@ -563,5 +557,7 @@
 
  
     </script>
+
+    <script src="./main.js"></script>
   </body>
 </html>

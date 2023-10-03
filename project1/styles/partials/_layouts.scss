@@ -108,6 +108,11 @@
 }
 .switcher{
   transition: 0.3s all ease;
+  &:hover {
+    transform: scale(1.2);
+ 
+  }
+
   --theme_switcher_color: rgb(2, 224, 171) ;
   box-shadow: 0px 0px 30px 10px   rgb(2, 224, 171,  1.25) ;
 }

@@ -92,6 +92,9 @@
   --theme_switcher_color: rgb(2, 224, 171) ;
   box-shadow: 0px 0px 30px 10px #02e0ab;
 }
+.switcher:hover {
+  transform: scale(1.2);
+}
 
 .switch_color {
   transition: 0.3s all ease;
