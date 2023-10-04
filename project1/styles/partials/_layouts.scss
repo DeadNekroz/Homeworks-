@@ -106,6 +106,26 @@
  
  
 }
+.theme_switch_wrapper_mobile{
+  width: 22px;
+  height: 22px;
+ 
+ background-color: $primaryWhite;
+
+}
+.theme_switch_btn_mobile{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+ 
+  box-shadow: 0px 0px 1px 6px  rgb(16 57 47);
+ 
+}
+ 
+ 
 .switcher{
   transition: 0.3s all ease;
   &:hover {
@@ -121,6 +141,10 @@
   --theme_switcher_color: rgb(241, 137, 123);
   box-shadow: 0px 0px 30px 10px   rgb(241, 137, 123, 1.25) ;
  
+}
+.theme_switch_btn_mobile{
+  box-shadow: none;
+  background-color: transparent;
 }
 .theme_switch_btn {
  
@@ -1313,7 +1337,7 @@
       flex-direction: column;
       position: fixed;
       top: 90px;
-      right: 20px;
+   
     }
 
     .nav_item {
