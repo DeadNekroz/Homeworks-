@@ -493,6 +493,8 @@ html, body {
 .theme_switch_wrapper_mobile {
   width: 22px;
   height: 22px;
+  right: 38px;
+  top: -4px;
   background-color: #fff;
 }
 
@@ -628,6 +630,7 @@ html, body {
 
 .overlaying_part {
   display: flex;
+  flex-direction: row;
   max-width: 770px;
   position: absolute;
   background-color: #fff;
@@ -1670,7 +1673,6 @@ html, body {
 
   .open_menu .nav_list {
     border-radius: 6px;
-    padding: 10px;
   }
   .open_menu .nav_item {
     text-shadow: #FFF;
@@ -1819,6 +1821,17 @@ html, body {
     top: 2%;
     left: 48%;
   }
+
+  .overlaying_part {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+  }
+
+  .content_count {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .benefits {
   margin-bottom: 100px;
@@ -1870,9 +1883,20 @@ html, body {
   overflow: visible;
 }
 
-.overlaying_part {
-  top: 20px;
-  display: flex;
+.stats_content {
+  max-width: 100%;
+  width: 100%;
+}
+
+.count_item {
+  gap: 0 px;
+  line-height: 18px;
+}
+
+.count-item_title {
+  line-height: normal;
+  height: auto;
+  gap: 0px;
 }
 
 .frontcard_list {
@@ -1941,6 +1965,26 @@ html, body {
 }
 
 @media (max-width: 370px) {
+  .stats {
+    max-height: 600px;
+  }
+
+  .content_count {
+    margin-bottom: 20px;
+  }
+
+  .content_article {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+    max-height: none;
+  }
+
+  .content_article_text {
+    font-size: 14px;
+    max-height: none;
+  }
+
   .frontcard_list {
     flex-wrap: wrap;
     gap: 20px;
