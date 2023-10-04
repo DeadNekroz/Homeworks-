@@ -1569,7 +1569,6 @@ html, body {
   }
   .open_menu .nav_list {
     background: rgba(159, 221, 209, 0.792);
-    background: linear-gradient(90deg, #689ff2 0%, #ebb6af 75%, rgba(241, 137, 123, 0.6391806723) 100%);
     border-radius: 8px;
     padding: 20px;
     display: flex;
