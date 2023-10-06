@@ -310,9 +310,9 @@
                   class="type_button"
                   data-state="play" ></button>
                   <div class="dark_controls hide" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
-                      <circle opacity="0.3" cx="60" cy="60" r="60" fill="#689FF2" />
-                      <path d="M81.3175 58.615C82.0301 58.9898 82.0301 60.0102 81.3175 60.385L50.7155 76.4826C50.0496 76.8329 49.25 76.35 49.25 75.5976L49.25 43.4024C49.25 42.65 50.0496 42.1671 50.7155 42.5174L81.3175 58.615Z" fill="#689FF2"/>
+                    <svg  class="play_svg" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="var(--play_color, #ffffff)">
+                      <circle opacity="0.3" cx="60" cy="60" r="60" fill="var(--play_color, #ffffff)" />
+                      <path d="M81.3175 58.615C82.0301 58.9898 82.0301 60.0102 81.3175 60.385L50.7155 76.4826C50.0496 76.8329 49.25 76.35 49.25 75.5976L49.25 43.4024C49.25 42.65 50.0496 42.1671 50.7155 42.5174L81.3175 58.615Z" fill="var(--play_color, #02e0ab)"/>
                     </svg>
                   </div>
                 
@@ -320,7 +320,7 @@
                 <svg class="little_tablet_btn">
                   <use   xlink:href="./assets/sprite.svg#little_tablet_btn"></use>
                 </svg>
-              <video
+              <video id="videoPoster"
                 class="video_content"
               
                 poster="./assets/images/screensaver-video.png"  >

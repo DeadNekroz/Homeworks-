@@ -5,6 +5,7 @@ const targetElement = document.querySelector(target);
 const viewportOffset = targetElement.getBoundingClientRect().top;
 
 
+
 if(targetElement){
   window.scrollTo({
     top:viewportOffset,
@@ -13,3 +14,4 @@ if(targetElement){
 }
 
 }
+ 

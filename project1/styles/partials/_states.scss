@@ -15,7 +15,7 @@
 .show {
   display: inline-block;
 }
-
+ 
 .hamburger-box {
   display: none;
 
@@ -85,7 +85,10 @@
 
 .btn {
   position: relative;
-
+  &:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+  }
   &:after {
     position: absolute;
     top: 12px;
@@ -110,6 +113,7 @@
     ::after {
       color: $btn_active;
       z-index: 1;
+  
     }
 
     color: $btn_active;
@@ -392,6 +396,7 @@
   }
 
   &:hover {
+ 
     ::after {
       color: $dark_btn_active;
       z-index: 1;
@@ -410,11 +415,24 @@
   width: 120px;
   height: 120px;
   z-index: 2;
-
-  .svg{
+  cursor: pointer;
+   
     height: 100%;
     width: 100%;
+    &:hover  {
+       
+      --play_color: #02e0ab;
+   
+       
+    }
+  }
  
+.play_svg{
+  &:hover ,&:focus {
+       
+    --play_color: #02e0ab;
+ 
+     
   }
 }
 .dark_tablet_btn{

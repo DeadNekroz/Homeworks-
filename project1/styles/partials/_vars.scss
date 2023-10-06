@@ -9,14 +9,14 @@ $quote-gradient:#F1897B,
 #F1897B00;
 $borderColor:#E4E4E4;
 $btn_active:#E54F3A;
-$dark_btn_active:rgb(2, 224, 171);
+$dark_btn_active:#02e0ab;
 $primare_font:'Lato',
 sans-serif;
 $secondary_font:'Playfair Display',
 serif;
 $circle_border:#E4E4E4;
 $theme_switcher_color:#F1897B;
-
+$play_color:#F1897B;
 $maxWidth: 1440;
 
 @mixin adaptiv-font($pcSize, $mobSize) {

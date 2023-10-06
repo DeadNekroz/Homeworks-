@@ -68,6 +68,10 @@
 .btn {
   position: relative;
 }
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 .btn:after {
   position: absolute;
   top: 12px;
@@ -362,10 +366,16 @@
   width: 120px;
   height: 120px;
   z-index: 2;
-}
-.dark_controls .svg {
+  cursor: pointer;
   height: 100%;
   width: 100%;
+}
+.dark_controls:hover {
+  --play_color: #02e0ab;
+}
+
+.play_svg:hover, .play_svg:focus {
+  --play_color: #02e0ab;
 }
 
 .dark_svg_quote_wrapper {

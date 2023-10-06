@@ -733,7 +733,7 @@ html, body {
   content: "";
   height: 1px;
   background-color: #E4E4E4;
-  width: 0%;
+  width: 100%;
   position: absolute;
   top: -30px;
 }
@@ -850,6 +850,10 @@ html, body {
   width: 120px;
   height: 120px;
   z-index: 2;
+  cursor: pointer;
+}
+.controlsbutton:hover svg, .controlsbutton:focus svg {
+  --logo_color: $dark_neon_color;
 }
 
 .video_content {
@@ -1119,18 +1123,17 @@ html, body {
 
   .stats_content {
     position: absolute;
-    padding-right: 20px;
-    top: 45px;
-    max-width: 90%;
-    padding-right: 20px;
     display: flex;
     z-index: 2;
     justify-content: center;
   }
 
   .overlaying_part {
-    top: -5%;
     flex-direction: row;
+  }
+
+  .content_article_text {
+    margin-bottom: 50px;
   }
 }
 /* md(<=991px) */
@@ -1155,6 +1158,7 @@ html, body {
     min-width: 50%;
   }
   .benefit_card:after {
+    content: "";
     width: 100%;
     top: -30px;
     left: 0;
@@ -1884,7 +1888,6 @@ html, body {
 }
 
 .content_article_text {
-  margin-bottom: 15px;
   padding-right: 20px;
 }
 
@@ -2081,6 +2084,10 @@ html, body {
 
 .btn {
   position: relative;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 .btn:after {
   position: absolute;
@@ -2376,10 +2383,16 @@ html, body {
   width: 120px;
   height: 120px;
   z-index: 2;
-}
-.dark_controls .svg {
+  cursor: pointer;
   height: 100%;
   width: 100%;
+}
+.dark_controls:hover {
+  --play_color: #02e0ab;
+}
+
+.play_svg:hover, .play_svg:focus {
+  --play_color: #02e0ab;
 }
 
 .dark_svg_quote_wrapper {
