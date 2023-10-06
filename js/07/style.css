@@ -1,4 +1,5 @@
 .container{
+  position: relative;
   display: flex;
   max-width: 1200px;
   margin-top: 20px;
@@ -7,6 +8,23 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+.btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(125, 21, 21);
+  border: 5px solid black;
+width: 150px;
+height: 150px;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+font-size: 55px;
+color: red;
+text-shadow: 0.5 0.5 0.5 black;
 }
 ol{
   max-width: 1200px;
@@ -16,6 +34,9 @@ ol{
   flex-wrap: wrap;
   gap: 60px;
 
+}
+.hide{
+  display: none;
 }
 ol li{
   text-align: center;
