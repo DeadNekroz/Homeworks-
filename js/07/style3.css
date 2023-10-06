@@ -17,13 +17,22 @@ html,body{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  outline: 1px solid black;
 }
 .container div{
   width: 200px;
   height: 200px;
   border: 1px solid darkgrey;
   border-radius: 50%;
+  opacity: 0.1;
 }
-.light{
-  opacity: 0.2;
+.container .light{
+  opacity: 9;
+}
+.switcher{
+  width: 50px;
+  height: 50px;
+  background-color: yellowgreen;
+  
 }
