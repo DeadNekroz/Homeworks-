@@ -19,10 +19,15 @@
   --brown-light:#F16A50;
   transform: scale(1.3);
   transition: all .3s ease-out;
-  cursor: url('../assets/images/cursor.svg') ,pointer;
+
    
 }} 
-  
+.footer_social_links{
+  &:hover{
+    cursor: url('../assets/images/cursor.svg') ,pointer;
+    transition: none;
+  }
+}
  
 .logo{
   &:hover{
