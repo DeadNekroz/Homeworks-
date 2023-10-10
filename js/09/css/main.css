@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -308,13 +309,29 @@ section {
   position: relative;
   bottom: 50px;
   left: 640px;
-  list-style: url(../assets/images/dot.svg);
   z-index: 100;
 }
 
-.slick-dots li {
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.75;
+  color: #F8F1EAB2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #F16A50;
 }
 
 .arrivals {
