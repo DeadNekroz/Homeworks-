@@ -6,6 +6,7 @@ body{
   font-weight: 500;
   line-height: normal;
   
+  
 }
 // #region Hero
 .slide_title{
@@ -28,6 +29,14 @@ body{
 }
 .arrivals_to_view_more{
   @include buttonAndStatusText;
+}
+ 
+ 
+.product_description {
+ @include productDescriptionText;
+}
+.product_price {
+  @include priceText;
 }
 .product_status{
 color: $brown-light;

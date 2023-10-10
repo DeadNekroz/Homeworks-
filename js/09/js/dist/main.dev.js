@@ -1,18 +1,15 @@
 "use strict";
 
-nextArrow: document.querySelector('#my-arrow-next');
-
-prevArrow: document.querySelector('#my-arrow-prev');
-
 $('.hero_slider').slick({
   dots: true,
   height: 700,
   width: 1400,
   infinite: false,
-  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 10000,
+  speed: 200,
   fade: true,
   slide: "div",
-  cssEase: "linear",
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
@@ -43,14 +40,16 @@ $('.hero_slider').slick({
   // instead of a settings object
   ]
 });
-$('.product_list').slick({
+$('.products_list').slick({
   centerMode: true,
-  centerPadding: '60px',
+  centerPadding: '0px',
   slidesToShow: 5,
-  slidesToScroll: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
   arrows: true,
-  prevArrow: "<img src='../assets/images/products_next_arrow.svg' class='prev' alt='prevArrow'>",
-  nextArrow: "<img src='../assets/images/products_next_arrow.svg' class='nexta' alt='nextArrow'>",
+  nextArrow: document.querySelector('.products_next_arrow'),
+  prevArrow: document.querySelector('.products_prev_arrow'),
   responsive: [{
     breakpoint: 768,
     settings: {
@@ -70,15 +69,16 @@ $('.product_list').slick({
   }]
 });
 $('.partners_slider').slick({
-  rtl: true,
   centerMode: true,
-  centerPadding: '60px',
+  centerPadding: '0px',
+  autoplay: true,
+  autoplaySpeed: 4000,
   slidesToShow: 9,
   slidesToScroll: 1,
   slide: 'div',
   arrows: true,
-  prevArrow: "<img src='../assets/images/products_next_arrow.svg' class='prev' alt='prevArrow'>",
-  nextArrow: "<img src='../assets/images/products_next_arrow.svg' class='nexta' alt='nextArrow'>",
+  prevArrow: document.querySelector('.partners_prev_arrow'),
+  nextArrow: document.querySelector('.partners_next_arrow'),
   responsive: [{
     breakpoint: 1280,
     settings: {

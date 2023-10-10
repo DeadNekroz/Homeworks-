@@ -113,6 +113,24 @@ body {
   text-transform: uppercase;
 }
 
+.product_description {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.product_price {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .product_status {
   color: #F8F1EA;
   background-color: #F16A50;
@@ -193,11 +211,17 @@ section {
   align-items: center;
   text-align: center;
 }
+.header:hover {
+  cursor: url("../assets/images/cursor.svg"), pointer;
+}
 
 .logo_wrapper {
   background-color: #F8F1EA;
   width: 182px;
   height: 34px;
+}
+.logo_wrapper:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
 }
 
 .logo {
@@ -228,10 +252,16 @@ section {
   width: 36px;
   height: 36px;
 }
+.search_btn:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
+}
 
 .goToProfile_btn {
   width: 36px;
   height: 36px;
+}
+.goToProfile_btn:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
 }
 
 .HeroScreen {
@@ -289,9 +319,21 @@ section {
 
 .arrivals {
   margin: 70px auto;
+  min-height: 630px;
 }
-.arrivals .container {
-  text-align: center;
+.products_slider_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.products_prev_arrow, .products_next_arrow {
+  margin: 34px;
+  transform: translateY(-25%);
+  width: 40px;
+  height: 74px;
+}
+.products_prev_arrow:hover, .products_next_arrow:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
 }
 
 .arrivals_title {
@@ -299,8 +341,10 @@ section {
   margin-bottom: 50px;
 }
 
-.product_list {
+.products_list {
   display: flex;
+  max-width: 1280px;
+  width: 100%;
   gap: 30px;
   margin-bottom: 50px;
 }
@@ -326,15 +370,22 @@ section {
 .product_img {
   width: 204px;
   height: 300px;
+  margin-bottom: 18px;
+}
+
+.product_description {
+  margin-bottom: 10px;
 }
 
 .arrivals_to_view_more {
+  display: inline-block;
+  align-self: center;
   border: 2px solid #000;
 }
 
 .partners {
   background-color: #F8F1EA;
-  padding: 70px 107px;
+  padding: 70px 40px 70px 40px;
   margin-bottom: 0;
 }
 
@@ -342,19 +393,41 @@ section {
   margin-bottom: 40px;
 }
 
+.partners_slider_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners_prev_arrow, .partners_next_arrow {
+  gap: 34px;
+}
+.partners_prev_arrow:hover, .partners_next_arrow:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
+}
+
 .partners_slider {
   display: inline-flex;
   height: 70px;
   align-items: center;
-  gap: 20px;
+}
+
+.slick-dots:active {
+  --slick-dot-color-active:$tomato-light;
+}
+
+.partners_slider {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .partners_slide {
-  display: flex;
-  height: 35px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  width: 100px;
+  height: 34px;
 }
 
 .partner_logo {
@@ -396,6 +469,9 @@ section {
   text-align: start;
   gap: 10px;
 }
+.footer_nav_list:hover {
+  cursor: url("../assets/images/cursor_black.svg"), pointer;
+}
 
 .footer_contacts_wrapper {
   display: flex;
@@ -420,7 +496,7 @@ section {
 .btn:hover, .btn :focus {
   border: 2px solid #F16A50;
   background-color: #F16A50;
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: all 0.3s ease-out;
   cursor: url("../assets/images/cursor_black.svg"), pointer;
 }
@@ -431,7 +507,7 @@ section {
 
 .social_icon:hover {
   --brown-light:#F16A50;
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: all 0.3s ease-out;
 }
 

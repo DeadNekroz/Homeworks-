@@ -1,7 +1,7 @@
 .btn:hover, .btn :focus {
   border: 2px solid #F16A50;
   background-color: #F16A50;
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: all 0.3s ease-out;
   cursor: url("../assets/images/cursor_black.svg"), pointer;
 }
@@ -12,7 +12,7 @@
 
 .social_icon:hover {
   --brown-light:#F16A50;
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: all 0.3s ease-out;
 }
 

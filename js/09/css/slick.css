@@ -1,6 +1,7 @@
 /* Slider */
 .slick-slider
 {
+    overflow: hidden;
     position: relative;
 
     display: block;
@@ -117,5 +118,5 @@
  
 .slick-dots li button{
     font-size: 0;
+    
 }
- 
