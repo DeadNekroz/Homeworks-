@@ -146,8 +146,16 @@ section {
 }
 
 .product_status {
+  position: relative;
+  z-index: 2;
+  left: 0;
+  top: 0;
   width: 60px;
   height: 20px;
+}
+
+.product_card {
+  position: relative;
 }
 
 .product_img {

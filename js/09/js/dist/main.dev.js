@@ -70,6 +70,7 @@ $('.product_list').slick({
   }]
 });
 $('.partners_slider').slick({
+  rtl: true,
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 9,
@@ -104,9 +105,4 @@ $('.partners_slider').slick({
       slidesToShow: 1
     }
   }]
-}); // function statusCheck(){
-//   const productStatus =   document.querySelector('.product_status');
-//   for(i=0;i<product_list.length;i++){
-//   productStatus.text === 'Sold'? productStatus.style.backgroundColor = '#F8F1EA' : productStatus.style.backgroundColor = '#F16A50' ;
-// }
-// }
+});

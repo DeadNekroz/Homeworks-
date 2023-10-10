@@ -29,6 +29,17 @@ body{
 .arrivals_to_view_more{
   @include buttonAndStatusText;
 }
+.product_status{
+color: $brown-light;
+background-color:$tomato-light ;
+text-align: center;
+z-index: 2;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
 // #endregion
 
 // #region Partners

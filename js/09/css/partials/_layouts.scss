@@ -128,15 +128,20 @@
   margin-bottom: 50px;
 }
 .product_item {
+
   width: 437px;
   height: 224px;
 }
 .product_status {
+  position: relative;
+  z-index: 2;
+  left: 0;
+  top: 0;
   width: 60px;
   height: 20px;
 }
 .product_card {
-
+  position: relative;
 }
 .product_img{
   width: 204px;

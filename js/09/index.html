@@ -291,9 +291,17 @@
 
 
 </div>
-
+  
     <script src="./js/jquerry.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <!-- Фарбую статус якщо товар проданий -->
+    <script>function statusCheck(){
+ 
+      for(i=0;i<document.querySelectorAll('.product_status').length;i++){
+        document.querySelectorAll('.product_status')[i].textContent === 'Sold'? document.querySelectorAll('.product_status')[i].style.backgroundColor = '#F8F1EA' : document.querySelectorAll('.product_status')[i].style.backgroundColor = '#F16A50' ;
+        document.querySelectorAll('.product_status')[i].textContent === 'Sold'? document.querySelectorAll('.product_status')[i].style.color='#000' : document.querySelectorAll('.product_status')[i].style.backgroundColor = '#F16A50' ;
+    }
+    }statusCheck()</script>
   </body>
 </html>
