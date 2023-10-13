@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@media (max-width: 1280px) {
+@media (max-width: 3000px) {
   .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
     text-align: center;
   }
@@ -18,12 +18,10 @@
     margin: 0 auto;
   }
 
-  .header {
+  .header .container {
     background-color: #F8F1EA;
     width: 100%;
-    max-width: 1280px;
-    padding-left: 100px;
-    padding-right: 100px;
+    max-width: 1440px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -31,13 +29,14 @@
     text-align: center;
   }
   .header:hover {
-    cursor: url("../assets/images/cursor.svg"), pointer;
+    cursor: url("../assets/images/cursor_black.svg"), pointer;
   }
 
   .logo_wrapper {
     background-color: #F8F1EA;
     width: 182px;
     height: 34px;
+    padding-left: 100px;
   }
   .logo_wrapper:hover {
     cursor: url("../assets/images/cursor_black.svg"), pointer;
@@ -45,7 +44,6 @@
 
   .logo {
     height: 100%;
-    width: 100%;
   }
 
   .navigation {
@@ -63,6 +61,8 @@
   }
 
   .search_and_acc {
+    position: relative;
+    right: 100px;
     display: flex;
     gap: 30px;
   }
@@ -87,17 +87,20 @@
     margin-top: 0;
   }
 
+  .hero_slider {
+    background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+    z-index: 2;
+  }
+
   .hero_slide {
     width: 100%;
     max-width: 1400px;
     height: 700px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
   }
   .hero_slide img {
     position: relative;
     height: 100%;
     width: 100%;
-    z-index: -1;
   }
 
   .slide_title {
@@ -185,8 +188,8 @@
   }
 
   .product_item {
-    width: 437px;
-    height: 224px;
+    height: 437px;
+    max-width: 224px;
   }
 
   .product_status {
@@ -326,5 +329,21 @@
     text-align: center;
     align-items: center;
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
   }
 }

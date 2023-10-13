@@ -1,4 +1,8 @@
 $('.hero_slider').slick({
+  responsive: [
+    {
+  breakpoint:1280,
+  settings: {
   dots: true,
   height:700,
   width:1400,
@@ -11,31 +15,28 @@ $('.hero_slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows:false,
+    }
+  },
 
- 
 
-  responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
+        width: 768,
+        height: 380,
         slide: "div",
-        cssEase: "linear",
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
+    
     {
-      breakpoint: 600,
+      breakpoint: 320,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
+        width: 320,
+        height: 384,
         slidesToShow: 1,
         slidesToScroll: 1
       }
@@ -47,6 +48,7 @@ $('.hero_slider').slick({
 });
 
 $('.products_list').slick({
+ 
   centerMode: true,
   centerPadding: '0px',
   slidesToShow: 5,
@@ -78,6 +80,7 @@ $('.products_list').slick({
   ]
 });
 $('.partners_slider').slick({
+ 
   centerMode: true,
   centerPadding: '0px',
   autoplay:true,

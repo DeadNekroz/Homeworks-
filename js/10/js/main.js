@@ -1,20 +1,20 @@
 // eb5a2aa0 key 
-$('.movies_slider').slick({
-  infinite: true,
-  autoplay:true,
-  autoplaySpeed:4000,
-  speed: 200,
-  fade: true,
-  slide: "div",
-  slidesToShow: 10,
-  slidesToScroll: 1,
-  centerMode: true,
-  centerPadding: '40px',
-  prevArrow: document.querySelector('.mov_prev_arrow'),
-  nextArrow: document.querySelector('.mov_next_arrow'),
+// $('.movies_slider').slick({
+//   infinite: true,
+//   autoplay:true,
+//   autoplaySpeed:4000,
+//   speed: 200,
+//   fade: true,
+//   slide: "div",
+//   slidesToShow: 10,
+//   slidesToScroll: 1,
+//   centerMode: true,
+//   centerPadding: '40px',
+//   prevArrow: document.querySelector('.prev_arrow'),
+//   nextArrow: document.querySelector('.next_arrow'),
 
  
-});
+// });
 
 
 

@@ -1,8 +1,8 @@
 @import "./vars";
-@media (max-width: 1280px){
+@media (max-width: 3000px){
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   text-align: center;
 }
@@ -16,31 +16,35 @@
   margin: 0 auto;
  }
 .header {
-  background-color: $brown-light;
-  width: 100%;
-  max-width: 1280px;
-  padding-left: 100px;
-  padding-right: 100px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+
+  .container{
+    background-color: $brown-light;
+    width: 100%;
+    max-width: 1440px;
+ 
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
   &:hover{
 
-    cursor: url('../assets/images/cursor.svg') ,pointer;}
+    cursor: url('../assets/images/cursor_black.svg') ,pointer;}
 }
 .logo_wrapper {
   background-color: $brown-light;
   width: 182px;
   height: 34px;
+  padding-left: 100px;
+
   &:hover{
 
     cursor: url('../assets/images/cursor_black.svg') ,pointer;}
 }
 .logo {
   height: 100%;
-  width: 100%;
+ 
 }
 .navigation {
   display: flex;
@@ -56,7 +60,8 @@
   }
 }
 .search_and_acc {
-  
+  position: relative;
+  right: 100px;
   display: flex;
   gap: 30px;
 }
@@ -77,18 +82,25 @@
 .HeroScreen{
   margin-top: 0;
 }
+.hero_slider{
+  background-color: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+  z-index: 2;
+}
+ 
 .hero_slide{
   width:100%;
   max-width: 1400px;
   height: 700px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0.00) 100%);
+
   img{
     position: relative;
     height: 100%;
     width: 100%;
-    z-index: -1 ;
+   
+
   }
 }
+ 
 .slide_title{
   max-width: 400px;
   position: absolute;
@@ -183,8 +195,8 @@
 }
 .product_item {
 
-  width: 437px;
-  height: 224px;
+  height: 437px;
+  max-width: 224px;
 }
 .product_status {
   position: relative;
@@ -196,6 +208,7 @@
 }
 .product_card {
   position: relative;
+ 
 }
 .product_img{
   width: 204px;
@@ -328,8 +341,18 @@ gap: 34px;
 }
 // #region media
 @media  (max-width: 768px) {
-  
+  .container {
+    width: 100%;
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
-
+  .container {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

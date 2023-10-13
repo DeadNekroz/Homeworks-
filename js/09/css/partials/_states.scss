@@ -22,12 +22,7 @@
 
    
 }} 
-.footer_social_links{
-  &:hover{
-    cursor: url('../assets/images/cursor.svg') ,pointer;
-    transition: none;
-  }
-}
+ 
  
 .logo{
   &:hover{
@@ -40,7 +35,7 @@
 
  .footer_logo{
   &:hover{
-    transform: scale(1.1);
+ 
     transition: all .3s ease;
     --brown-light:#F16A50;
     cursor: url('../assets/images/cursor_black.svg') ,pointer; 
@@ -50,5 +45,10 @@
   &:hover{
     color:tomato;
 
+  }
+}
+.product_item{
+  &:hover{
+    border: 1px solid $tomato-light;
   }
 }

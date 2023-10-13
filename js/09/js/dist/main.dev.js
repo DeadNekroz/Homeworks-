@@ -1,37 +1,38 @@
 "use strict";
 
 $('.hero_slider').slick({
-  dots: true,
-  height: 700,
-  width: 1400,
-  infinite: false,
-  autoplay: true,
-  autoplaySpeed: 10000,
-  speed: 200,
-  fade: true,
-  slide: "div",
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
   responsive: [{
-    breakpoint: 1024,
+    breakpoint: 1280,
     settings: {
+      dots: true,
+      height: 700,
+      width: 1400,
+      infinite: false,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      speed: 200,
+      fade: true,
       slide: "div",
-      cssEase: "linear",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    }
+  }, {
+    breakpoint: 768,
+    settings: {
+      width: 768,
+      height: 380,
+      slide: "div",
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
       dots: true
     }
   }, {
-    breakpoint: 600,
+    breakpoint: 320,
     settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  }, {
-    breakpoint: 480,
-    settings: {
+      width: 320,
+      height: 384,
       slidesToShow: 1,
       slidesToScroll: 1
     }

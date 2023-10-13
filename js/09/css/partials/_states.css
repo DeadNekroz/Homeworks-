@@ -16,11 +16,6 @@
   transition: all 0.3s ease-out;
 }
 
-.footer_social_links:hover {
-  cursor: url("../assets/images/cursor.svg"), pointer;
-  transition: none;
-}
-
 .logo:hover {
   --brown-light:#F16A50;
   transform: scale(1.1);
@@ -29,7 +24,6 @@
 }
 
 .footer_logo:hover {
-  transform: scale(1.1);
   transition: all 0.3s ease;
   --brown-light:#F16A50;
   cursor: url("../assets/images/cursor_black.svg"), pointer;
@@ -37,4 +31,8 @@
 
 .footer_nav_item:hover {
   color: tomato;
+}
+
+.product_item:hover {
+  border: 1px solid #F16A50;
 }

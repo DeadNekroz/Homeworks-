@@ -167,11 +167,20 @@ img {
   gap: 20px;
 }
 
+.movies_slider div .title {
+  width: 150px;
+  position: absolute;
+  top: 209px;
+  left: 50px;
+  right: 0px;
+  background-color: cadetblue;
+}
+
 .mov_slide_wrapper {
   position: relative;
 }
 
-.prev_arrow {
+.mov_prev_arrow {
   position: absolute;
   top: 199px;
   left: 0;
@@ -179,7 +188,7 @@ img {
   height: 50px;
 }
 
-.next_arrow {
+.mov_next_arrow {
   position: absolute;
   top: 200px;
   right: 0;
