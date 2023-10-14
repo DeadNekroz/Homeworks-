@@ -1,25 +1,4 @@
 // eb5a2aa0 key 
-// $('.movies_slider').slick({
-//   infinite: true,
-//   autoplay:true,
-//   autoplaySpeed:4000,
-//   speed: 200,
-//   fade: true,
-//   slide: "div",
-//   slidesToShow: 10,
-//   slidesToScroll: 1,
-//   centerMode: true,
-//   centerPadding: '40px',
-//   prevArrow: document.querySelector('.prev_arrow'),
-//   nextArrow: document.querySelector('.next_arrow'),
-
- 
-// });
-
-
-
-
-
 const API_KEY = 'eb5a2aa0';
 const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
  
@@ -43,7 +22,7 @@ function searchMovie(event) {
 }
 
 function generateCards(resultsData) {
-    let html = `<ul class="movies_slider">`;
+    let html = `<div class="movies_slider">`;
 
     resultsData.forEach(el => {
         html = html + `<div>
@@ -54,8 +33,24 @@ function generateCards(resultsData) {
     })
     html = html + '</div>'
     document.getElementById('movies_slider').innerHTML = html;
+ 
 }
-
+$('.movies_slider').slick({
+    infinite: true,
+    autoplay:true,
+    autoplaySpeed:4000,
+    speed: 200,
+    fade: true,
+    slide: "div",
+    slidesToShow: 10,
+    slidesToScroll: 5,
+    centerMode: true,
+    centerPadding: '40px',
+    prevArrow: document.querySelector('.mov_prev_arrow'),
+    nextArrow: document.querySelector('.mov_next_arrow'),
+  
+   
+  });
 function nextPage(event) {
     event.preventDefault();
     PAGE++;
