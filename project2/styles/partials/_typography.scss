@@ -1,1 +1,90 @@
-@import './vars';
+@import
+'./vars';
+
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Source Sans 3', sans-serif;
+*{
+  font-family: 'Montserrat', sans-serif;
+  // font-size: 18px;
+  color:$mainDark;
+}
+.page_wrapper {
+  font-size: 18px;
+}
+.more_details_btn {
+}
+.btn {
+}
+//  #region Hero typo
+.head_nav {
+  @include headerNav;
+}
+.head_nav_item {
+  @include headerNav;
+}
+ 
+.hero_motto {
+  @include h1;
+}
+.hero_sub {
+  @include heroSub;
+}
+// #endregion
+
+// #region What we do typo
+.whatWeDO {
+}
+.container {
+}
+.weDoHeading {
+  @include lilHeading;
+}
+.WeDoProjectCard {
+}
+.weDoImageWrapp {
+}
+.weDoTextWrapp {
+}
+.weDoSubTitle {
+  @include sub;
+}
+.weDoTextTitle {
+  @include lilHeading;
+}
+.weDoTextContent {
+}
+.weDoCartMarker {
+}
+.markerText {
+}
+// #endregion
+
+// #region Latest News typo
+.latestNews {
+ 
+}
+.container {
+}
+.latestNewsHeading {
+  @include lilHeading;
+  color: $mainLight;
+}
+.News_slider_wrapp {
+}
+.NewsCard {
+}
+.news_image_wrapper {
+}
+.news_card_title {
+}
+.news_card_text_content {
+}
+.news_card_author_wrapp {
+}
+.news_card_author {
+}
+.news_card_date {
+}
+// #endregion

@@ -6,11 +6,83 @@
   line-height: $lh;
 
 }
-$dark_btn_active:#02e0ab;
-$circle_border:#E4E4E4;
-$theme_switcher_color:#F1897B;
-$play_color:#F1897B;
-$maxWidth: 1440;
+@mixin btn{
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin lilHeading{
+  color: $mainDark ;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+} 
+@mixin typo($color, $fsz, $fs, $lh, $ff) {
+  color: $color;
+  font-family: $ff;
+  font-size: $fsz;
+  font-style: $fs;
+  line-height: $lh;
+
+}
+@mixin h1{ 
+  color: $mainLight;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+@mixin heroSub{
+  color: $mainLight;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.4px;
+  text-transform: uppercase;
+}
+@mixin headerNav{
+  color: $mainLight;
+font-family: 'Source Sans 3', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+@mixin sub{
+  color: $mainDark ;
+font-family: 'Montserrat', sans-serif;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+@mixin textContent{
+  color: $mainDark ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;  
+}
+$mainDark : #2C4058;
+$mainLight:#ffffff;
+$primaryBlack:#000000;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
