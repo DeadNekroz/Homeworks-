@@ -249,6 +249,7 @@
 .news_slider_wrapp {
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
 
 .prev_arrow_button, .next_arrow_button {
@@ -312,4 +313,27 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
+}
+
+.gallery {
+  min-height: 722px;
+}
+
+.galleryHeading {
+  margin-top: 180px;
+  margin-bottom: 90px;
+}
+.galleryHeading::before {
+  content: " ";
+  position: absolute;
+  top: -30px;
+  left: 46%;
+  height: 2px;
+  width: 100px;
+  background-color: #2C4058;
+}
+
+.galleryWrapper {
+  width: 73, 1%;
+  min-height: 548px;
 }

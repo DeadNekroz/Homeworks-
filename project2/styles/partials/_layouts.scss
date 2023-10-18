@@ -236,7 +236,7 @@
 // #endregion
 // #region Latest News
 .latestNews {
-  
+ 
   width: 100%;
  
   min-height: 978px;
@@ -268,7 +268,7 @@
 .news_slider_wrapp {
   display: flex;
   width: 100%;
- 
+  overflow: hidden;
 }
 .prev_arrow_button, .next_arrow_button{
   position: absolute;
@@ -291,6 +291,7 @@ right: 60px;
   left: 0;
   transform: rotate(0deg);
   top: 109%;
+
 }
 .newsCard {
 
@@ -325,5 +326,34 @@ right: 60px;
   height: 60px;
 }
 .news_card_date {
+}
+// #endregion
+// #region Gallery
+.gallery {
+  min-height: 722px;
+  
+}
+.container {
+}
+.galleryHeading {
+  margin-top: 180px;
+  margin-bottom: 90px;
+ 
+ 
+  &::before{
+    content: " ";
+    position: absolute;
+    top: -30px;
+    left: 46%;
+    height: 2px;
+    width: 100px;
+    background-color: $mainDark;
+  }
+}
+.galleryWrapper {
+  width: 73,1%;
+  min-height: 548px;
+}
+.gallery_card {
 }
 // #endregion
