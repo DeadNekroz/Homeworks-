@@ -1,3 +1,4 @@
+// #region Sliders
 $('.motto_wrapp').slick({
   
   dotsClass: 'slick-dots hero__dots',
@@ -91,3 +92,26 @@ $('.news_slider_wrapp').slick({
     // instead of a settings object
   ]
 });
+// #endregion
+// #region MAP
+ 
+
+
+const marker =L.icon({
+  iconUrl: './assets/icons/marker-icon.png',
+  iconSize:[106, 106], 
+  shadowSize:[106, 106],  
+  iconAnchor:[22,94],
+  shadowAnchor:[22,94],
+  popupAnchor: [-3,-76]
+});
+
+var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
+
+L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
+}).addTo(map);
+L.marker([[40.683471, -73.903071] ]).addTo(map)
+.bindPopup('marker')
+.openPopup();
+// #endregion

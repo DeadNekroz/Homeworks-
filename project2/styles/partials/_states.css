@@ -29,7 +29,7 @@
   background-color: #ff8307;
 }
 
-.heroToScrollDown:focus, .heroToScrollDown:hover {
+.heroToScrollDown:hover {
   transform: scale(1.1);
   transition: all 0.4s linear;
   background-color: #ff8307;

@@ -8,8 +8,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital@0;1&family=Source+Sans+3&display=swap"
       rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js">
     <link rel="stylesheet" href="./styles/slick.css" />
     <link rel="stylesheet" href="./styles/slick-theme.css" />
+    <link rel="stylesheet" href="./styles/leaflet.css">
     <link rel="stylesheet" href="./styles/main.css" />
     <title>Monticello</title>
   </head>
@@ -309,21 +311,22 @@
       <section class="gallery">
         <div class="container">
           <h2 class="galleryHeading">gallery</h2>
-        </div>
+        
         <div class="galleryWrapper">
-          <div class="gallery_card"><img src="" alt=""></div>
-          <div class="gallery_card"><img src="" alt=""></div>
-          <div class="gallery_card"><img src="" alt=""></div>
-          <div class="gallery_card"><img src="" alt=""></div>
-          <div class="gallery_card"><img src="" alt=""></div>
+          <div class="gallery_card gallerySocket1"><img src="./assets/images/gallery/1st.jpg" alt="building photocard"></div>
+          <div class="gallery_card gallerySocket2"><img src="./assets/images/gallery/2nd.jpg" alt="building photocard"></div>
+          <div class="gallery_card gallerySocket3"><img src="./assets/images/gallery/3rd.jpg" alt="building photocard"></div>
+          <div class="gallery_card gallerySocket4"><img src="./assets/images/gallery/4th.jpg" alt="building photocard"></div>
+          <div class="gallery_card gallerySocket5"><img src="./assets/images/gallery/5th.jpg" alt="building photocard"></div>
         </div>
-        <button type="button btn">see more</button>
+        <button type="button " class="seeMoreButton btn">see more</button>
+      </div>
       </section>
       <!-- #endregion -->
       <!-- #region MAP -->
       <section class="map">
         <div class="container">
-          <div class="map_wrapper">
+          <div class="map_wrapper " id="map_wrapper">
 
           </div>
           <div class="get_in_touch_form_wrapp">
@@ -332,7 +335,7 @@
             <input type="tel">
             <input type="email">
             <input type="date">
-            <input type="text" name="" id=""> 
+            <input type="text" name="" id="" placeholder="Name"> 
             <input type="text" placeholder="Email">
             <button type="submit">submit</button>
 
@@ -347,7 +350,9 @@
    
     <script src="./js/jq.js"></script>
     <script src="./js/slick.min.js"></script>
+    
     <script src="./js/axios.js"></script>
+    <script src="./js/leaflet.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/scroll.js"></script>
   </body>
