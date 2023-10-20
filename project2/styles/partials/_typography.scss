@@ -116,6 +116,27 @@
 .get_in_touch_form {
   @include form;
 }
+.markerText{
+  @include mapMark;
+}
 .map_marker_wrapp {
+}
+ 
+.form_contacts {
+  @include form;
+}
+.contacts_pin {
+}
+.contacts_phone {
+}
+.contacts_mail {
+}
+.contacts_clock {
+}
+.toAuth {
+  button{
+   @include footerBtn
+ 
+  }
 }
 // #endregion

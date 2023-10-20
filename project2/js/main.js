@@ -66,27 +66,23 @@ $('.news_slider_wrapp').slick({
   arrows:true,
   responsive: [
     {
-      breakpoint: 768,
-      settings: {
-        width: 768,
-        height: 380,
-        slide: "div",
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
+      breakpoint: 1015,
+      settings:{
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: false,
       }
+  },
+  
+  {
+      breakpoint: 668,
+      settings:{
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+      }            
     },
     
-    {
-      breakpoint: 320,
-      settings: {
-        width: 320,
-        height: 384,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
@@ -95,33 +91,27 @@ $('.news_slider_wrapp').slick({
 // #endregion
 // #region MAP
  
-const customIcon = L.icon({
-  iconUrl: './assets/icons/marker-icon.png',
+
+
+var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
+var customMarker = L.icon({
+  iconUrl: '/marker.png',
   //shadowUrl: 'leaf-shadow.png',
 
   iconSize:     [80, 80], // size of the icon
   //shadowSize:   [50, 64], // size of the shadow
-  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+  iconAnchor:   [40, -73], // point of the icon which will correspond to marker's location
   //shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
  
-
-var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
-
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
 }).addTo(map);
-L.marker([[40.683471, -73.903071] ]).addTo(map)
-.bindPopup('marker')
-.openPopup();
-L.marker([22.313208922495647, 114.17263361075162], {icon: customIcon}).addTo(map)
-.bindPopup("Hong Kong")
-.openPopup();
-L.marker([40.78159296396248, -73.96915881456673], {icon: customIcon}).addTo(map)
-.bindPopup("New-York")
-.openPopup();
+L.marker([[40.683471, -73.903071] ]).addTo(map).bindPopup('customMarker').openPopup();
+// L.marker([22.313208922495647, 114.17263361075162], {icon:customMarker}).addTo(map).bindPopup("Hong Kong").openPopup();
+// L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup();
 // #endregion
 
 // #region Gallery

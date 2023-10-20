@@ -70,9 +70,8 @@
 
 .motto_wrapp {
   position: absolute;
-  top: 30%;
-  width: 90%;
-  height: 90%;
+  top: 50%;
+  width: 100%;
   max-width: 74%;
   margin: 0 auto;
   text-align: center;
@@ -90,7 +89,7 @@
 .heroToScrollDown {
   position: absolute;
   bottom: 3.3%;
-  left: 50%;
+  left: 49.3%;
   width: 40px;
   height: 40px;
   display: flex;
@@ -103,8 +102,7 @@
 }
 
 .hero__dots {
-  left: 53%;
-  top: 10%;
+  left: 55%;
 }
 
 .whatWeDO {
@@ -250,7 +248,6 @@
 .news_slider_wrapp {
   display: flex;
   width: 100%;
-  overflow: hidden;
 }
 
 .prev_arrow_button, .next_arrow_button {
@@ -270,7 +267,7 @@
   right: 60px;
 }
 
-.news__dots {
+.slick-dots.news__dots {
   position: absolute;
   bottom: 30px;
   left: 0;
@@ -469,13 +466,47 @@
 
 .get_in_touch_form {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .form_contacts {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 37%;
   gap: 30px;
+}
+.form_contacts a span {
+  padding-right: 4px;
+}
+.form_contacts a svg {
+  width: 15px;
+  height: 15px;
+}
+
+.toAuth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.toAuth input {
+  position: relative;
+  border-bottom: #2C4058 1px solid;
+  opacity: 0.2;
+  width: 310px;
+  height: 41px;
+}
+.toAuth input:hover {
+  border-bottom: 1px solid #2C4058;
+  opacity: 1;
+}
+.toAuth input:first-child {
+  margin-bottom: 26px;
+}
+.toAuth input:last-child {
+  margin-bottom: 30px;
+}
+.toAuth button {
+  margin-top: 41px;
+  align-self: flex-end;
+  text-transform: uppercase;
 }

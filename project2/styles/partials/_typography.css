@@ -170,3 +170,30 @@
   font-weight: 400;
   line-height: 28px;
 }
+
+.markerText {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form_contacts {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.toAuth button {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
