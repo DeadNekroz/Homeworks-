@@ -44,3 +44,13 @@
     border-width: .1px;
   }
 }
+.zoom_icon{
+  opacity: 0;
+}
+.gallery_card{
+   &:hover{
+    .zoom_icon{
+      opacity: 10;
+    }
+   }
+}

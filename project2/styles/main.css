@@ -152,6 +152,44 @@ img {
   color: #ffffff;
 }
 
+.news_card_title {
+  color: #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.news_card_text_content {
+  color: #2C4058;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.news_card_author {
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.news_card_date {
+  color: #55B7FF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .galleryHeading {
   color: #2C4058;
   text-align: center;
@@ -440,11 +478,13 @@ img {
   left: 0;
   transform: rotate(0deg);
   top: 109%;
+  z-index: 1;
 }
 
 .newsCard {
-  width: 100%;
+  float: none;
   max-width: 370px;
+  min-width: 370px;
   height: 514px;
   background-color: #ffffff;
 }
@@ -464,6 +504,7 @@ img {
 }
 
 .news_card_author_wrapp {
+  padding-left: 20px;
   display: flex;
   justify-content: start;
   min-height: 60px;
@@ -515,6 +556,12 @@ img {
   height: 548px;
   margin-bottom: 60px;
 }
+.galleryWrapper .gallery_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .galleryWrapper .gallery_card img {
   width: 100%;
   height: 100%;
@@ -549,6 +596,10 @@ img {
   display: block;
   margin: 0 auto;
   margin-top: 6%;
+}
+
+.zoom_icon {
+  z-index: 1;
 }
 
 .map_wrapper {
@@ -594,4 +645,12 @@ img {
   transition: all 0.4s linear;
   background-color: #ff8307;
   border-width: 0.1px;
+}
+
+.zoom_icon {
+  opacity: 0;
+}
+
+.gallery_card:hover .zoom_icon {
+  opacity: 10;
 }

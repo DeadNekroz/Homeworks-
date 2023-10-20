@@ -84,6 +84,22 @@ $mainDark : #2C4058;
 $mainLight:#ffffff;
 $primaryBlack:#000000;
 
+@mixin authorName{
+  color: #2C4058;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@mixin meta {
+  color: #55B7FF;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;

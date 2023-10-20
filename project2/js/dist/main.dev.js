@@ -49,11 +49,11 @@ $('.news_slider_wrapp').slick({
   infinite: true,
   verticalSwiping: true,
   dots: true,
-  width: 1600,
+  width: 1170,
   height: 514,
   centerPadding: '30px',
   autoplay: true,
-  waitForAnimate: false,
+  waitForAnimate: true,
   cssEase: 'ease',
   autoplaySpeed: 4000,
   speed: 900,
@@ -112,13 +112,7 @@ L.marker([40.78159296396248, -73.96915881456673], {
 }).addTo(map).bindPopup("New-York").openPopup(); // #endregion
 // #region Gallery
 
-var gallery = document.getElementById('lightgallery');
-lightGallery(gallery, {
-  controls: true,
-  counter: true,
-  download: true,
-  arrows: true,
-  escKey: true,
-  autoplay: true,
-  autoplaySpeed: 1000
+$jQuerry(document).ready(function ($) {
+  Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Your custom options
+  });
 }); // #endregion

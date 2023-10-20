@@ -78,14 +78,20 @@
 .news_image_wrapper {
 }
 .news_card_title {
+  @include sub;
+  font-weight: 700;
+  
 }
 .news_card_text_content {
+  @include textContent;
 }
 .news_card_author_wrapp {
 }
 .news_card_author {
+  @include authorName;
 }
 .news_card_date {
+  @include meta;
 }
 // #endregion
 // #region Gallery
