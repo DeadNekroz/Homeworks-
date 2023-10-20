@@ -99,3 +99,23 @@
   @include lilHeading;
 }
 // #endregion
+// #region Footer
+.policy{
+@include policy;
+}
+// #endregion
+
+// #region Form
+.form {
+}
+.get_in_touch_form_wrapp {
+}
+.formHeading {
+  @include lilHeading;
+}
+.get_in_touch_form {
+  @include form;
+}
+.map_marker_wrapp {
+}
+// #endregion

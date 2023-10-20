@@ -53,6 +53,7 @@
   line-height: normal;
   letter-spacing: 5.4px;
   text-transform: uppercase;
+  
 }
 @mixin headerNav{
   color: $mainLight;
@@ -86,7 +87,7 @@ $primaryBlack:#000000;
 
 @mixin authorName{
   color: #2C4058;
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -94,15 +95,25 @@ line-height: normal;
 }
 @mixin meta {
   color: #55B7FF;
-font-family: Montserrat;
+font-family: 'Montserrat', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-@mixin adaptiv-font($pcSize, $mobSize) {
-  $addSize: $pcSize - $mobSize;
-  $maxWidth: $maxWidth - 320;
-  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+@mixin policy{
+  color: #FFF;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
- 
+@mixin form {
+  color: $primaryBlack;
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}

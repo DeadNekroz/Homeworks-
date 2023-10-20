@@ -1,5 +1,6 @@
 *{
   transition: all 0.3s ease;
+  scroll-behavior: smooth;
 }
 .head_social_item, .logo_wrappper, .btn{
   &:focus, &:hover{
