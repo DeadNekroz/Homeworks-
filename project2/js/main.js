@@ -95,16 +95,18 @@ $('.news_slider_wrapp').slick({
 // #endregion
 // #region MAP
  
-
-
-const marker =L.icon({
+const customIcon = L.icon({
   iconUrl: './assets/icons/marker-icon.png',
-  iconSize:[106, 106], 
-  shadowSize:[106, 106],  
-  iconAnchor:[22,94],
-  shadowAnchor:[22,94],
-  popupAnchor: [-3,-76]
+  //shadowUrl: 'leaf-shadow.png',
+
+  iconSize:     [80, 80], // size of the icon
+  //shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+  //shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+
+ 
 
 var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
 
@@ -114,4 +116,19 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 L.marker([[40.683471, -73.903071] ]).addTo(map)
 .bindPopup('marker')
 .openPopup();
+L.marker([22.313208922495647, 114.17263361075162], {icon: customIcon}).addTo(map)
+.bindPopup("Hong Kong")
+.openPopup();
+L.marker([40.78159296396248, -73.96915881456673], {icon: customIcon}).addTo(map)
+.bindPopup("New-York")
+.openPopup();
+// #endregion
+
+// #region Gallery
+$jQuerry(document).ready(($)=>{
+
+  Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {
+    // Your custom options
+  });
+})
 // #endregion

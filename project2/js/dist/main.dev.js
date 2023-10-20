@@ -87,16 +87,38 @@ $('.news_slider_wrapp').slick({
 }); // #endregion
 // #region MAP
 
-var marker = L.icon({
+var customIcon = L.icon({
   iconUrl: './assets/icons/marker-icon.png',
-  iconSize: [106, 106],
-  shadowSize: [106, 106],
+  //shadowUrl: 'leaf-shadow.png',
+  iconSize: [80, 80],
+  // size of the icon
+  //shadowSize:   [50, 64], // size of the shadow
   iconAnchor: [22, 94],
-  shadowAnchor: [22, 94],
-  popupAnchor: [-3, -76]
+  // point of the icon which will correspond to marker's location
+  //shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+
 });
 var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
 }).addTo(map);
-L.marker([[40.683471, -73.903071]]).addTo(map).bindPopup('marker').openPopup(); // #endregion
+L.marker([[40.683471, -73.903071]]).addTo(map).bindPopup('marker').openPopup();
+L.marker([22.313208922495647, 114.17263361075162], {
+  icon: customIcon
+}).addTo(map).bindPopup("Hong Kong").openPopup();
+L.marker([40.78159296396248, -73.96915881456673], {
+  icon: customIcon
+}).addTo(map).bindPopup("New-York").openPopup(); // #endregion
+// #region Gallery
+
+var gallery = document.getElementById('lightgallery');
+lightGallery(gallery, {
+  controls: true,
+  counter: true,
+  download: true,
+  arrows: true,
+  escKey: true,
+  autoplay: true,
+  autoplaySpeed: 1000
+}); // #endregion
