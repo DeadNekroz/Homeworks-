@@ -324,17 +324,33 @@ img {
 }
 .heroSreen .container {
   width: 100%;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .motto_wrapp {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 100%;
-  max-width: 74%;
+  height: 200px;
   margin: 0 auto;
   text-align: center;
   align-items: center;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullet {
+  right: 5%;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  z-index: 111111;
 }
 
 .moto_card {

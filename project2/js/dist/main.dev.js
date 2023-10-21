@@ -1,47 +1,74 @@
 "use strict";
 
+var _ref;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 // #region Sliders
-$('.motto_wrapp').slick({
-  dotsClass: 'slick-dots hero__dots',
-  vertical: true,
-  infinite: false,
-  verticalSwiping: true,
-  dots: true,
-  width: 912,
-  height: 250,
+var swiper = new Swiper('.swiper', (_ref = {
+  autoHeight: true,
+  autoWidth: true,
   autoplay: true,
-  waitForAnimate: true,
-  cssEase: 'ease',
+  pagination: true,
   autoplaySpeed: 4000,
-  speed: 800,
-  slide: "div",
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      width: 768,
-      height: 380,
-      slide: "div",
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      infinite: true,
-      dots: true
-    }
-  }, {
-    breakpoint: 320,
-    settings: {
-      width: 320,
-      height: 384,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    }
-  } // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-  ]
-});
+  centeredSlides: true,
+  loop: true,
+  resizeObserver: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false
+  },
+  // Optional parameters
+  direction: 'vertical'
+}, _defineProperty(_ref, "loop", true), _defineProperty(_ref, "pagination", {
+  el: '.swiper-pagination',
+  clickable: true,
+  dynamicBullets: true
+}), _ref)); // $('.motto_wrapp').slick({
+//   dotsClass: 'slick-dots hero__dots',
+//   vertical:true,
+//   infinite:false,
+//   verticalSwiping:true,
+//   dots: true,
+//   width:912,
+//   height:250,
+//   autoplay:true,
+//   waitForAnimate:true,
+//   cssEase: 'ease',
+//   autoplaySpeed:4000,
+//   speed: 800,
+//   slide: "div",
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows:false,
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         width: 768,
+//         height: 380,
+//         slide: "div",
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 320,
+//       settings: {
+//         width: 320,
+//         height: 384,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+// You can unslick at a given breakpoint now by adding:
+// settings: "unslick"
+// instead of a settings object
+//   ]
+// });
+
 $('.news_slider_wrapp').slick({
   prevArrow: document.querySelector('.prev_arrow_button'),
   nextArrow: document.querySelector('.next_arrow_button'),
@@ -84,7 +111,7 @@ $('.news_slider_wrapp').slick({
 
 var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
 var customMarker = L.icon({
-  iconUrl: '/marker.png',
+  iconUrl: './assets/images/marker.png',
   //shadowUrl: 'leaf-shadow.png',
   iconSize: [80, 80],
   // size of the icon
