@@ -13,10 +13,7 @@
 .page_wrapper {
   font-size: 18px;
 }
-.more_details_btn {
-}
-.btn {
-}
+ 
 //  #region Hero typo
 .head_nav {
   @include headerNav;
@@ -34,49 +31,28 @@
 // #endregion
 
 // #region What we do typo
-.whatWeDO {
-}
-.container {
-}
+ 
+ 
 .weDoHeading {
   @include lilHeading;
 }
-.WeDoProjectCard {
-}
-.weDoImageWrapp {
-}
-.weDoTextWrapp {
-}
+ 
 .weDoSubTitle {
   @include sub;
 }
 .weDoTextTitle {
   @include lilHeading;
 }
-.weDoTextContent {
-}
-.weDoCartMarker {
-}
-.markerText {
-}
+ 
 // #endregion
 
 // #region Latest News typo
-.latestNews {
  
-}
-.container {
-}
 .latestNewsHeading {
   @include lilHeading;
   color: $mainLight;
 }
-.News_slider_wrapp {
-}
-.NewsCard {
-}
-.news_image_wrapper {
-}
+ 
 .news_card_title {
   @include sub;
   font-weight: 700;
@@ -85,8 +61,7 @@
 .news_card_text_content {
   @include textContent;
 }
-.news_card_author_wrapp {
-}
+ 
 .news_card_author {
   @include authorName;
 }
@@ -106,10 +81,7 @@
 // #endregion
 
 // #region Form
-.form {
-}
-.get_in_touch_form_wrapp {
-}
+ 
 .formHeading {
   @include lilHeading;
 }
@@ -119,20 +91,12 @@
 .markerText{
   @include mapMark;
 }
-.map_marker_wrapp {
-}
+ 
  
 .form_contacts {
   @include form;
 }
-.contacts_pin {
-}
-.contacts_phone {
-}
-.contacts_mail {
-}
-.contacts_clock {
-}
+ 
 .toAuth {
   button{
    @include footerBtn

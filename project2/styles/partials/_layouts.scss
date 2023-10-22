@@ -51,9 +51,7 @@
   border: 1px solid #ffffff;
   border-radius: 50%;
 }
-.head_social_icon {
-  
-}
+ 
 .heroSreen {
   position: relative;
   width: 100%;
@@ -99,11 +97,6 @@
 }
 .hero_motto {
  margin-bottom: 23px;
-}
-.hero_sub {
- 
-}
-.btn {
 }
  
 .heroToScrollDown{
@@ -236,10 +229,7 @@
   height: 81px;
   margin-bottom: 40px;
 }
-.weDoCartMarker {
-}
-.markerText {
-}
+ 
 .more_details_btn {
   margin-bottom: 60px;
  
@@ -248,7 +238,9 @@
 // #endregion
 // #region Latest News
 .latestNews {
- 
+ display: flex;
+ justify-content: center;
+ align-items: center;
   width: 100%;
  
   min-height: 978px;
@@ -260,6 +252,7 @@
   .container {
     max-width: 1600px;
     position: relative;
+     height: 100%;
       &::before{
     content: " ";
     position: absolute;
@@ -278,27 +271,12 @@
   margin-bottom: 90px;
 
 }
-// #region slider
-.swiper1 {
+ 
 
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  overflow: clip;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-  display: block
-  
-}
-.swiper-wrapper1{
-  display: inline-block;
-}
 .hero__dots{
   left: 55%;
  }
- // #endregion
+ 
  
  .prev_arrow_button, .next_arrow_button{
    position: absolute;
@@ -309,11 +287,12 @@
    border-radius: 50%;
  }
  .prev_arrow_button{
-   left:-60px;
+  left: 0;
+  margin-right: 60px;;
  }
- .next_arrow_button
- {
- right: 60px;
+ .next_arrow_button{
+  right: 0;
+ margin-left: 60px;
  }
  .slick-dots.news__dots{
    position: absolute;
@@ -323,6 +302,18 @@
    top: 109%;
    z-index: 1;
  }
+ .news_slick_slider{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+ 
+}
+.news_wrapper{
+ margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+ 
+}
  .newsCard {
    float: none;
    max-width: 370px;
@@ -358,8 +349,7 @@
   width: 60px;
   height: 60px;
 }
-.news_card_date {
-}
+ 
 // #endregion
 // #region Gallery
 .gallery {
@@ -448,20 +438,14 @@
 .map {
 margin: 0 auto;
 }
-.container {
-}
+ 
 .map_wrapper {
   width: 100%;
   max-width: 100%;
   height: 700px;
   aspect-ratio: 16/9;
 }
-.get_in_touch_form_wrapp {
-}
-.get_in_touch_form {
-}
-.map_marker_wrapp {
-}
+ 
 // #endregion
 
 // #region Footer
@@ -482,9 +466,7 @@ margin: 0 auto;
     justify-content: space-between;
   }
 }
-
-.logo_and_policy_wrapp {
-}
+ 
 .logo_wrappper {
   margin-bottom: 41px;
 }
@@ -492,13 +474,8 @@ margin: 0 auto;
   display: flex;
   gap: 20px;
 }
-.head_socials {
-}
-.footer_social_item {
-   
-}
-.head_social_icon {
-}
+ 
+ 
 // #endregion
 
 // #region Form

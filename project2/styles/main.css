@@ -489,6 +489,9 @@ img {
 }
 
 .latestNews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 978px;
   background-image: url(../assets/images/news_bg.jpg);
@@ -499,6 +502,7 @@ img {
 .latestNews .container {
   max-width: 1600px;
   position: relative;
+  height: 100%;
 }
 .latestNews .container::before {
   content: " ";
@@ -516,22 +520,6 @@ img {
   margin-bottom: 90px;
 }
 
-.swiper1 {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  overflow: clip;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
-  display: block;
-}
-
-.swiper-wrapper1 {
-  display: inline-block;
-}
-
 .hero__dots {
   left: 55%;
 }
@@ -546,11 +534,13 @@ img {
 }
 
 .prev_arrow_button {
-  left: -60px;
+  left: 0;
+  margin-right: 60px;
 }
 
 .next_arrow_button {
-  right: 60px;
+  right: 0;
+  margin-left: 60px;
 }
 
 .slick-dots.news__dots {
@@ -560,6 +550,18 @@ img {
   transform: rotate(0deg);
   top: 109%;
   z-index: 1;
+}
+
+.news_slick_slider {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+
+.news_wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
 }
 
 .newsCard {
@@ -822,7 +824,7 @@ img {
 }
 
 .btn:focus, .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.4s ease;
   border-radius: 10px;
   border-width: 1px;
@@ -843,4 +845,8 @@ img {
 
 .gallery_card:hover .zoom_icon {
   opacity: 10;
+}
+
+.form_contacts a:hover, .form_contacts a:focus {
+  color: #734ef6;
 }

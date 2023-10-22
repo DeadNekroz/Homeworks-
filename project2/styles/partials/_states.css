@@ -23,7 +23,7 @@
 }
 
 .btn:focus, .btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.4s ease;
   border-radius: 10px;
   border-width: 1px;
@@ -44,4 +44,8 @@
 
 .gallery_card:hover .zoom_icon {
   opacity: 10;
+}
+
+.form_contacts a:hover, .form_contacts a:focus {
+  color: #734ef6;
 }

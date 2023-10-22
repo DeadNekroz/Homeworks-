@@ -76,7 +76,7 @@ $(".news_slick_slider").slick((_$$slick = {
   autoplay: true,
   autoplaySpeed: 4000,
   dots: true
-}, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $('prev_arrow_button ')), _defineProperty(_$$slick, "nextArrow", $('next_arrow_button ')), _defineProperty(_$$slick, "responsive", [(_ref2 = {
+}, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $('.prev_arrow_button')), _defineProperty(_$$slick, "nextArrow", $('.next_arrow_button')), _defineProperty(_$$slick, "responsive", [(_ref2 = {
   breakpoint: 980,
   settings: {
     slidesToShow: 2,
@@ -109,13 +109,32 @@ L.marker([40.683471, -73.903071], {
 }).addTo(map).openPopup();
 var markHK = L.marker([22.313208922495647, 114.17263361075162], {
   icon: customMarker
-}).addTo(map).bindPopup("Hong Kong").openPopup();
+}).addTo(map).bindPopup("Hong Kong").openPopup([22.313208922495647, 114.17263361075162]);
 var markNY = L.marker([40.78159296396248, -73.96915881456673], {
   icon: customMarker
-}).addTo(map).bindPopup("New-York").openPopup(); // #endregion
+}).addTo(map).bindPopup("New-York").openPopup([40.78159296396248, -73.96915881456673]); // #endregion
 // #region Gallery
 
 $jQuerry(document).ready(function ($) {
   Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Your custom options
   });
 }); // #endregion
+// #region valide form
+
+var EMAIL_MIN_LENGTH = 5;
+
+function checkEmailLenght() {
+  var valueLenght = window.inputEmail.value.length;
+  var diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
+
+  if (diff) {
+    window.emailDiffCount.textContent = diff;
+    window.emailLenghtHelp.classList.remove('d-none');
+  } else {
+    window.emailLenghtHelp.classList.add('d-none');
+  }
+}
+
+;
+window.inputEmail.addEventListener('input', checkEmailLenght);
+document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion

@@ -91,9 +91,9 @@ $(".news_slick_slider").slick({
   autoplaySpeed: 4000,
   dots: true,
   dots:true,
-  prevArrow:$('prev_arrow_button '),
-     
-  nextArrow:$('next_arrow_button '),
+  prevArrow:$('.prev_arrow_button'),
+  
+  nextArrow:$('.next_arrow_button'),
     
     responsive: [
       {
@@ -137,8 +137,8 @@ L.marker([40.683471, -73.903071], {icon: customMarker})
   .addTo(map)
   .openPopup();
  
-const markHK = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("Hong Kong").openPopup();
-const markNY =L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup();
+const markHK = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("Hong Kong").openPopup([22.313208922495647, 114.17263361075162]);
+const markNY =L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup([40.78159296396248, -73.96915881456673]);
 // #endregion
 
 // #region Gallery
@@ -149,3 +149,23 @@ $jQuerry(document).ready(($)=>{
   });
 })
 // #endregion
+
+// #region valide form
+const EMAIL_MIN_LENGTH = 5;
+
+function checkEmailLenght() {
+    const valueLenght = window.inputEmail.value.length;
+    const diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
+
+    if(diff) {
+        window.emailDiffCount.textContent = diff;
+        window.emailLenghtHelp.classList.remove('d-none');
+    } else {
+        window.emailLenghtHelp.classList.add('d-none');
+    }
+};
+
+  window.inputEmail.addEventListener('input', checkEmailLenght)
+  document.addEventListener('DOMContentLoaded', checkEmailLenght)
+
+  // #endregion
