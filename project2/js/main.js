@@ -1,10 +1,23 @@
+// #region Menu
+function toggleMenu(e){
+  // e.preventDefault();
+  // e.target.classList.toggle('active');
+  document.querySelector('.header').classList.toggle('active');
+  document.querySelector('.burger').classList.toggle('active'); 
+  document.querySelector('.page_wrapper').classList.toggle('menu_open');
+  // document.querySelector('.burger').classList.toggle('mobile');
+}
+
+// #endregion
+
 // #region Sliders
 const swiper = new Swiper('.swiper', {
-  autoHeight:true,
-  autoWidth:true,
+  setWrapperSize:true,
+   Height:1000,
+   autoWidth:true,
   autoplay:true,
   pagination:true,
-  autoplaySpeed:4000,
+  autoplaySpeed:6000,
   centeredSlides:true,
   loop:true,
   resizeObserver:true,
@@ -12,6 +25,7 @@ const swiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: false,
   },
+  
   // Optional parameters
   direction: 'vertical',
   loop: true,
@@ -31,7 +45,11 @@ const swiper = new Swiper('.swiper', {
   pagination:{
     el: '.swiper-pagination',
     clickable:true,
+    type:'bullets',
+    dynamicMainBullets:5,
     dynamicBullets:true,
+ 
+  
   }
 });
  

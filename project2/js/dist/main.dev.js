@@ -4,13 +4,24 @@ var _ref, _ref2, _$$slick;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+// #region Menu
+function toggleMenu(e) {
+  // e.preventDefault();
+  // e.target.classList.toggle('active');
+  document.querySelector('.header').classList.toggle('active');
+  document.querySelector('.burger').classList.toggle('active');
+  document.querySelector('.page_wrapper').classList.toggle('menu_open'); // document.querySelector('.burger').classList.toggle('mobile');
+} // #endregion
 // #region Sliders
+
+
 var swiper = new Swiper('.swiper', (_ref = {
-  autoHeight: true,
+  setWrapperSize: true,
+  Height: 1000,
   autoWidth: true,
   autoplay: true,
   pagination: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 6000,
   centeredSlides: true,
   loop: true,
   resizeObserver: true,
@@ -23,6 +34,8 @@ var swiper = new Swiper('.swiper', (_ref = {
 }, _defineProperty(_ref, "loop", true), _defineProperty(_ref, "pagination", {
   el: '.swiper-pagination',
   clickable: true,
+  type: 'bullets',
+  dynamicMainBullets: 5,
   dynamicBullets: true
 }), _ref)); // $('.motto_wrapp').slick({
 //   dotsClass: 'slick-dots hero__dots',

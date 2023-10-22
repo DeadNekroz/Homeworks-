@@ -3,6 +3,12 @@
   border: 1px solid #2C4058;
 }
 
+.open_menu {
+  display: block;
+  height: 80%;
+  width: 100%;
+}
+
 .header {
   margin-bottom: 137px;
   width: 100%;
@@ -78,20 +84,20 @@
   align-items: center;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  width: 20px;
-  height: 20px;
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  right: 5%;
 }
 
-.swiper-pagination-bullet {
-  right: 5%;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  z-index: 111111;
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  top: 45%;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.swiper-pagination-bullets-dynamic {
+  font-size: 30px;
 }
 
 .moto_card {
@@ -151,6 +157,15 @@
   height: 527px;
   background-color: #55B7FF;
 }
+.weDoImageWrapp.project1:before {
+  content: "";
+  position: absolute;
+  width: 9999px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #55B7FF;
+}
 .weDoImageWrapp.project1 img {
   position: absolute;
   top: 8.2%;
@@ -205,6 +220,15 @@
   height: 527px;
   background-color: #7E5AFF;
 }
+.weDoImageWrapp.project2:before {
+  content: "";
+  position: absolute;
+  width: 9999px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #7E5AFF;
+}
 .weDoImageWrapp.project2 img {
   position: absolute;
   top: 8.2%;
@@ -248,7 +272,7 @@
 .latestNews .container::before {
   content: " ";
   position: absolute;
-  top: 130px;
+  top: 121px;
   left: 47%;
   height: 2px;
   width: 100px;
@@ -259,10 +283,6 @@
 .latestNewsHeading {
   padding-top: 150px;
   margin-bottom: 90px;
-}
-
-.hero__dots {
-  left: 55%;
 }
 
 .prev_arrow_button, .next_arrow_button {
@@ -276,21 +296,14 @@
 
 .prev_arrow_button {
   left: 0;
-  margin-right: 60px;
 }
 
 .next_arrow_button {
   right: 0;
-  margin-left: 60px;
 }
 
-.slick-dots.news__dots {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  transform: rotate(0deg);
-  top: 109%;
-  z-index: 1;
+.slick-dots {
+  bottom: -50px;
 }
 
 .news_slick_slider {
@@ -299,10 +312,11 @@
   max-width: 1170px;
 }
 
-.news_wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1170px;
+.arrows_wrapp {
+  position: absolute;
+  top: 62%;
+  width: 85%;
+  left: 7%;
 }
 
 .newsCard {
@@ -538,4 +552,15 @@
   margin-top: 41px;
   align-self: flex-end;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
 }
