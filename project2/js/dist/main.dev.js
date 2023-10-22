@@ -1,6 +1,6 @@
 "use strict";
 
-var _ref;
+var _ref, _ref2, _$$slick;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -69,44 +69,23 @@ var swiper = new Swiper('.swiper', (_ref = {
 //   ]
 // });
 
-$('.news_slider_wrapp').slick({
-  prevArrow: document.querySelector('.prev_arrow_button'),
-  nextArrow: document.querySelector('.next_arrow_button'),
-  dotsClass: 'slick-dots news__dots',
+$(".news_slick_slider").slick((_$$slick = {
   infinite: true,
-  verticalSwiping: true,
-  dots: true,
-  width: 1170,
-  height: 514,
-  centerPadding: '30px',
-  autoplay: true,
-  waitForAnimate: true,
-  cssEase: 'ease',
-  autoplaySpeed: 4000,
-  speed: 900,
-  slide: "div",
   slidesToShow: 3,
   slidesToScroll: 1,
-  arrows: true,
-  responsive: [{
-    breakpoint: 1015,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: false
-    }
-  }, {
-    breakpoint: 668,
-    settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: false
-    }
-  } // You can unslick at a given breakpoint now by adding:
-  // settings: "unslick"
-  // instead of a settings object
-  ]
-}); // #endregion
+  autoplay: true,
+  autoplaySpeed: 4000,
+  dots: true
+}, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $('prev_arrow_button ')), _defineProperty(_$$slick, "nextArrow", $('next_arrow_button ')), _defineProperty(_$$slick, "responsive", [(_ref2 = {
+  breakpoint: 980,
+  settings: {
+    slidesToShow: 2,
+    slidesToScroll: 1
+  }
+}, _defineProperty(_ref2, "breakpoint", 700), _defineProperty(_ref2, "settings", {
+  slidesToShow: 1,
+  slidesToScroll: 1
+}), _ref2)]), _$$slick)); // #endregion
 // #region MAP
 
 var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
@@ -128,10 +107,10 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 L.marker([40.683471, -73.903071], {
   icon: customMarker
 }).addTo(map).openPopup();
-L.marker([22.313208922495647, 114.17263361075162], {
+var markHK = L.marker([22.313208922495647, 114.17263361075162], {
   icon: customMarker
 }).addTo(map).bindPopup("Hong Kong").openPopup();
-L.marker([40.78159296396248, -73.96915881456673], {
+var markNY = L.marker([40.78159296396248, -73.96915881456673], {
   icon: customMarker
 }).addTo(map).bindPopup("New-York").openPopup(); // #endregion
 // #region Gallery

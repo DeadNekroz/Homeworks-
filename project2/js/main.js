@@ -82,49 +82,35 @@ const swiper = new Swiper('.swiper', {
     // instead of a settings object
 //   ]
 // });
-$('.news_slider_wrapp').slick({
-  prevArrow: document.querySelector('.prev_arrow_button'),
-  nextArrow: document.querySelector('.next_arrow_button'),
-  dotsClass: 'slick-dots news__dots',
-  infinite:true,
-  verticalSwiping:true,
-  dots: true,
-  width:1170,
-  height:514,
-  centerPadding: '30px',
-  autoplay:true,
-  waitForAnimate:true,
-  cssEase: 'ease',
-  autoplaySpeed:4000,
-  speed: 900,
-  slide: "div",
+
+$(".news_slick_slider").slick({
+  infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
-  arrows:true,
-  responsive: [
-    {
-      breakpoint: 1015,
-      settings:{
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          autoplay: false,
-      }
-  },
-  
-  {
-      breakpoint: 668,
-      settings:{
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: false,
-      }            
-    },
+  autoplay: true,
+  autoplaySpeed: 4000,
+  dots: true,
+  dots:true,
+  prevArrow:$('prev_arrow_button '),
+     
+  nextArrow:$('next_arrow_button '),
     
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+    responsive: [
+      {
+        breakpoint: 980, 
+        settings: {
+          slidesToShow: 2, 
+          slidesToScroll: 1
+        },
+        breakpoint: 700, 
+        settings: {
+          slidesToShow: 1, 
+          slidesToScroll: 1
+        }
+      }
+    ]
 });
+
 // #endregion
 // #region MAP
  
@@ -151,8 +137,8 @@ L.marker([40.683471, -73.903071], {icon: customMarker})
   .addTo(map)
   .openPopup();
  
-L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("Hong Kong").openPopup();
-L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup();
+const markHK = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("Hong Kong").openPopup();
+const markNY =L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup();
 // #endregion
 
 // #region Gallery

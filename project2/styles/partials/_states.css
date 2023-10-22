@@ -27,7 +27,8 @@
   transition: all 0.4s ease;
   border-radius: 10px;
   border-width: 1px;
-  background-color: #ff8307;
+  background-color: #55B7FF;
+  border-color: #48aef6;
 }
 
 .heroToScrollDown:hover {

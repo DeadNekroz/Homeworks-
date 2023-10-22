@@ -376,10 +376,6 @@ img {
   align-self: center;
 }
 
-.hero__dots {
-  left: 55%;
-}
-
 .whatWeDO {
   margin-bottom: 150px;
 }
@@ -520,9 +516,24 @@ img {
   margin-bottom: 90px;
 }
 
-.news_slider_wrapp {
-  display: flex;
-  width: 100%;
+.swiper1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  overflow: clip;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+.swiper-wrapper1 {
+  display: inline-block;
+}
+
+.hero__dots {
+  left: 55%;
 }
 
 .prev_arrow_button, .next_arrow_button {
@@ -815,7 +826,8 @@ img {
   transition: all 0.4s ease;
   border-radius: 10px;
   border-width: 1px;
-  background-color: #ff8307;
+  background-color: #55B7FF;
+  border-color: #48aef6;
 }
 
 .heroToScrollDown:hover {
