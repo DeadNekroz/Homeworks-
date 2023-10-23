@@ -683,6 +683,18 @@ img {
   width: 100%;
   height: 100%;
 }
+.galleryWrapper .gallery_card svg {
+  position: absolute;
+  top: 43%;
+  left: 43%;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
+}
+.galleryWrapper .gallery_card svg:hover {
+  opacity: 9;
+}
 
 .gallerySocket1 {
   grid-row: 1/3;

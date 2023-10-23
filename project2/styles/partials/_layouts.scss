@@ -436,7 +436,18 @@
       height: 100%;
    
     }
-   
+    svg{
+      position: absolute;
+      top: 43%;
+      left: 43%;
+      z-index: 3;
+      width: 70px;  
+      height: 70px;
+      opacity: 0;
+      &:hover{
+        opacity: 9;
+      }
+    }
   }
  
 }
