@@ -38,9 +38,9 @@
 }
 .head_nav_item {
   padding-left: 14px;
-  list-style: url(../assets/icons/listStyleNonAct.svg);
+  list-style: url(../../assets/icons/listStyleNonAct.svg);
   &:active, :focus{
-    list-style: url(../assets/icons/listStyleHead.svg);
+    list-style: url(../../assets/icons/listStyleHead.svg);
   }
 }
 .head_socials {
@@ -324,6 +324,22 @@
   max-width: 1170px;
  
 }
+.slick-dots li button:before {
+  content: "";
+  border: #fff 1px solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+.slick-dots li.slick-active button:before {
+  content: "";
+  border: #fff 1px solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
  .arrows_wrapp{
   position: absolute;
   top: 62%;
@@ -374,7 +390,7 @@
  max-width: 73%;
  margin: 0 auto;
   margin-bottom: 150px;
-
+ 
 .container { 
   position: relative;
   margin: 0 auto;
@@ -397,7 +413,7 @@
 
 }
 .galleryWrapper {
-
+ 
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -408,19 +424,23 @@
   margin-bottom: 60px;
 
   .gallery_card {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+  
     
     img{
       width: 100%;
       height: 100%;
+   
     }
    
   }
  
 }
+ 
 .gallerySocket1{
   grid-row: 1 / 3;
   grid-column:1 / 3;

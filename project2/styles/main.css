@@ -298,10 +298,10 @@ img {
 
 .head_nav_item {
   padding-left: 14px;
-  list-style: url(../assets/icons/listStyleNonAct.svg);
+  list-style: url(../../assets/icons/listStyleNonAct.svg);
 }
 .head_nav_item:active, .head_nav_item :focus {
-  list-style: url(../assets/icons/listStyleHead.svg);
+  list-style: url(../../assets/icons/listStyleHead.svg);
 }
 
 .head_socials {
@@ -572,6 +572,24 @@ img {
   max-width: 1170px;
 }
 
+.slick-dots li button:before {
+  content: "";
+  border: #fff 1px solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  content: "";
+  border: #fff 1px solid;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
 .arrows_wrapp {
   position: absolute;
   top: 62%;
@@ -655,6 +673,7 @@ img {
   margin-bottom: 60px;
 }
 .galleryWrapper .gallery_card {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
