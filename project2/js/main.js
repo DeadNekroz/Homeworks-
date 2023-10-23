@@ -182,3 +182,28 @@ function checkEmailLenght() {
   window.inpEmail.addEventListener('input', checkEmailLenght)
   document.addEventListener('DOMContentLoaded', checkEmailLenght)
   // #endregion
+  async function formSubmit(event) {
+    const email = window.inpEmail.value;
+    const name = window.inpName.value;
+
+    event.preventDefault();
+
+ 
+    if(!email || !name) {
+        return false;
+    }
+
+    let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+    let chatId = "-4066219312";
+
+    let text = `
+    Email: ${email}    
+    Name: ${name}
+    `;
+
+    let urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
+
+    let request = new XMLHttpRequest();
+    request.open("GET", urlString);
+    request.send();
+  }

@@ -145,3 +145,37 @@ function checkEmailLenght() {
 ;
 window.inpEmail.addEventListener('input', checkEmailLenght);
 document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
+
+function formSubmit(event) {
+  var email, name, apiToken, chatId, text, urlString, request;
+  return regeneratorRuntime.async(function formSubmit$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          email = window.inpEmail.value;
+          name = window.inpName.value;
+          event.preventDefault();
+
+          if (!(!email || !name)) {
+            _context.next = 5;
+            break;
+          }
+
+          return _context.abrupt("return", false);
+
+        case 5:
+          apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+          chatId = "-4066219312";
+          text = "\n    Email: ".concat(email, "    \n    Name: ").concat(name, "\n    ");
+          urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage?chat_id=").concat(chatId, "&text=").concat(text);
+          request = new XMLHttpRequest();
+          request.open("GET", urlString);
+          request.send();
+
+        case 12:
+        case "end":
+          return _context.stop();
+      }
+    }
+  });
+}
