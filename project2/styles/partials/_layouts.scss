@@ -665,6 +665,13 @@ min-height: 549px;
 @media (min-width: 992px) { 
   .hamburger{
     display: none;
+    &:active {
+      .head_nav_item{
+        position: fixed;
+        top: 5%;
+        right: 20px;
+      }
+    }
   }
  }
 

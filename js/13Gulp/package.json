@@ -12,6 +12,9 @@
     "jquerry": "^0.0.1-security"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.4"
   }
 }
