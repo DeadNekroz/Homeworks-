@@ -19,3 +19,15 @@ document.querySelector('.footerSlider').addEventListener('click', nextBg); // fu
 //     Y.value = targetFooter.pageY;
 //   addEventListener('mousemove', mouseFind, false);
 // }
+
+var bgToChange = document.querySelector('.latestNews').style.background;
+var gradient1 = 126;
+var gradient2 = 85;
+
+function changeGradient() {
+  gradient1 + 5;
+  gradient2 += 5;
+  document.querySelector('.latestNews').style.background = "linear-gradient(251deg, rgb(".concat(gradient1, ", 90, 255) -2.19%, rgb(").concat(gradient2, ", 183, 255) 103.21%)");
+}
+
+document.querySelector('.latestNews').addEventListener('click', changeGradient);

@@ -24,3 +24,14 @@ document.querySelector('.footerSlider').addEventListener('click', nextBg);
   
 //   addEventListener('mousemove', mouseFind, false);
 // }
+let bgToChange = document.querySelector('.latestNews').style.background;
+let gradient1 = 126;
+let gradient2 =85;
+function changeGradient(){
+  gradient1 +5;
+  gradient2+=5;
+  document.querySelector('.latestNews').style.background=`linear-gradient(251deg, rgb(${gradient1}, 90, 255) -2.19%, rgb(${gradient2}, 183, 255) 103.21%)`;
+
+  
+}
+document.querySelector('.latestNews').addEventListener('click', changeGradient);
