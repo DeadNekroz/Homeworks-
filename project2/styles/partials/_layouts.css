@@ -11,14 +11,15 @@
 
 .header {
   z-index: 10000;
+  align-items: center;
   position: fixed;
   top: 0px;
-  background: linear-gradient(243deg, #7e5affad 16.9%, #55b8ffa7 83.27%);
+  background: linear-gradient(243deg, #7e5aff84 16.9%, #55b8ff6c 83.27%);
   margin-bottom: 137px;
   width: 100%;
-  padding-top: 53px;
 }
 .header .container {
+  margin-top: 54px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -648,5 +649,15 @@
     position: fixed;
     top: 5%;
     right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .hamburger {
+    display: none;
   }
 }
