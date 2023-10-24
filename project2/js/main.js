@@ -53,57 +53,11 @@ const swiper = new Swiper('.swiper', {
     dynamicBullets:true,
  
   
-  }
+  },
+ 
 });
  
-
-// $('.motto_wrapp').slick({
-  
-//   dotsClass: 'slick-dots hero__dots',
-//   vertical:true,
-//   infinite:false,
-//   verticalSwiping:true,
-//   dots: true,
-//   width:912,
-//   height:250,
-//   autoplay:true,
-//   waitForAnimate:true,
-//   cssEase: 'ease',
-//   autoplaySpeed:4000,
-//   speed: 800,
-//   slide: "div",
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows:false,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         width: 768,
-//         height: 380,
-//         slide: "div",
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-    
-//     {
-//       breakpoint: 320,
-//       settings: {
-//         width: 320,
-//         height: 384,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-//   ]
-// });
-
+ 
 $(".news_slick_slider").slick({
   infinite: true,
   slidesToShow: 3,
@@ -118,15 +72,22 @@ $(".news_slick_slider").slick({
     
     responsive: [
       {
-        breakpoint: 980, 
+        breakpoint: 989, 
         settings: {
-          slidesToShow: 2, 
-          slidesToScroll: 1
+          centerPadding:50,
+          autoplay:false,
+          arrows:false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+      
         },
         breakpoint: 700, 
         settings: {
-          slidesToShow: 1, 
-          slidesToScroll: 1
+          arrows:false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+                  
         }
       }
     ]

@@ -37,51 +37,7 @@ var swiper = new Swiper('.swiper', (_ref = {
   type: 'bullets',
   dynamicMainBullets: 5,
   dynamicBullets: true
-}), _ref)); // $('.motto_wrapp').slick({
-//   dotsClass: 'slick-dots hero__dots',
-//   vertical:true,
-//   infinite:false,
-//   verticalSwiping:true,
-//   dots: true,
-//   width:912,
-//   height:250,
-//   autoplay:true,
-//   waitForAnimate:true,
-//   cssEase: 'ease',
-//   autoplaySpeed:4000,
-//   speed: 800,
-//   slide: "div",
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows:false,
-//   responsive: [
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         width: 768,
-//         height: 380,
-//         slide: "div",
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         dots: true
-//       }
-//     },
-//     {
-//       breakpoint: 320,
-//       settings: {
-//         width: 320,
-//         height: 384,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-// You can unslick at a given breakpoint now by adding:
-// settings: "unslick"
-// instead of a settings object
-//   ]
-// });
-
+}), _ref));
 $(".news_slick_slider").slick((_$$slick = {
   infinite: true,
   slidesToShow: 3,
@@ -90,14 +46,19 @@ $(".news_slick_slider").slick((_$$slick = {
   autoplaySpeed: 4000,
   dots: true
 }, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $('.prev_arrow_button')), _defineProperty(_$$slick, "nextArrow", $('.next_arrow_button')), _defineProperty(_$$slick, "responsive", [(_ref2 = {
-  breakpoint: 980,
+  breakpoint: 989,
   settings: {
+    centerPadding: 50,
+    autoplay: false,
+    arrows: false,
     slidesToShow: 2,
     slidesToScroll: 1
   }
 }, _defineProperty(_ref2, "breakpoint", 700), _defineProperty(_ref2, "settings", {
+  arrows: false,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  autoplay: false
 }), _ref2)]), _$$slick)); // #endregion
 // #region MAP
 

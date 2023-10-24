@@ -1,18 +1,37 @@
 "use strict";
 
 var footerSlider = document.querySelector('.footerSlider');
+var x = +0;
 var allSlides = document.querySelectorAll('.footerSlide');
 var slideWidth = parseInt(getComputedStyle(allSlides[0]).width);
 var bgnow = 0;
 var lastBg = allSlides.length;
+var currentWidth = 0;
+var minusWidth = 0;
 
 function nextBg() {
   bgnow < allSlides.length - 1 ? bgnow++ : bgnow;
+  minusWidth = (bgnow - (bgnow - 1)) * slideWidth;
   footerSlider.style.transform = "translateX(-".concat(bgnow * slideWidth, "px)");
-  bgnow === 4 ? bgnow = -1 : bgnow;
+  currentWidth = bgnow * slideWidth; // bgnow === 4? bgnow=-1:bgnow;
 }
 
-document.querySelector('.footerSlider').addEventListener('click', nextBg); // let mouseHere = footerSlider.pageX 
+function prevBg() {
+  bgnow > 0 ? bgnow-- : bgnow;
+  footerSlider.style.transform = "translateX(-".concat(currentWidth - minusWidth, "px");
+}
+
+document.querySelector('.footerSlider').onmousemove = function (event) {
+  console.log(event); // вывод в консоль
+
+  x = event.offsetX;
+};
+
+function slideBg() {
+  x < window.innerWidth / 2 ? prevBg() : nextBg();
+}
+
+document.querySelector('.footerSlider').addEventListener('click', slideBg); // let mouseHere = footerSlider.pageX 
 // function cursorLocation(event){
 //  mouseX = event.clientX;
 //  let mouseX=0;
