@@ -20,6 +20,10 @@
 }
 .head_nav_item {
   @include headerNav;
+  a{
+    @include headerNav;
+    
+  }
 }
  
 .hero_motto {

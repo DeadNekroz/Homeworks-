@@ -13,7 +13,7 @@ function toggleMenu(e){
 // #region Sliders
 const swiper = new Swiper('.swiper', {
   setWrapperSize:true,
-   Height:1000,
+   autoHeight:true,
    autoWidth:true,
   autoplay:true,
   pagination:true,
