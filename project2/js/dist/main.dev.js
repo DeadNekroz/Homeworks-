@@ -5,10 +5,10 @@ var _ref, _ref2, _$$slick;
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // #region Menu
-function toggleMenu(e) {} // document.querySelector('.burger').classList.toggle('active'); 
-// document.querySelector('.header').classList.toggle('menu_open');
-// document.querySelector('.header').classList.toggle('menu_open');
-// #endregion
+function toggleMenu(e) {
+  document.querySelector('.burger').classList.toggle('active'); // document.querySelector('.header').classList.toggle('menu_open');
+  // document.querySelector('.header').classList.toggle('menu_open');
+} // #endregion
 // #region Sliders
 
 

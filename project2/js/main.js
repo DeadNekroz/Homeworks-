@@ -1,7 +1,7 @@
 // #region Menu
 function toggleMenu(e){
  
-  // document.querySelector('.burger').classList.toggle('active'); 
+  document.querySelector('.burger').classList.toggle('active'); 
   // document.querySelector('.header').classList.toggle('menu_open');
   // document.querySelector('.header').classList.toggle('menu_open');
  
