@@ -12,13 +12,12 @@ function nextBg() {
   bgnow === 4 ? bgnow = 0 : bgnow;
 }
 
-document.querySelector('.footerSlider').addEventListener('click', nextBg); // function mouseFind(targetFooter){
-//   var X = document.getElementById('targetFooter');
-//   var Y = document.getElementById('targetFooter');
-//     X.value = targetFooter.pageX;
-//     Y.value = targetFooter.pageY;
-//   addEventListener('mousemove', mouseFind, false);
+document.querySelector('.footerSlider').addEventListener('click', nextBg); // let mouseHere = footerSlider.pageX 
+// function cursorLocation(event){
+//  mouseX = event.clientX;
+//  let mouseX=0;
 // }
+// document.querySelector('.footerSlider').addEventListener('mousemove', cursorLocation);
 
 var bgToChange = document.querySelector('.latestNews').style.background;
 var gradient1 = 126;

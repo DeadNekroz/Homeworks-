@@ -122,9 +122,7 @@ var mark = L.marker([22.313208922495647, 114.17263361075162], {
 }).addTo(map).bindPopup("residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]); // #endregion
 // #region Gallery
 
-$jQuerry(document).ready(function ($) {
-  Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Your custom options
-  });
+Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Your custom options
 }); // #endregion
 // #region valide form
 

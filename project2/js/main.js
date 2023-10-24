@@ -156,12 +156,11 @@ const mark = L.marker([22.313208922495647, 114.17263361075162], {icon: customMar
 // #endregion
 
 // #region Gallery
-$jQuerry(document).ready(($)=>{
-
+ 
   Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {
     // Your custom options
   });
-})
+ 
 // #endregion
 
 // #region valide form
