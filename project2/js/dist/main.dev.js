@@ -6,11 +6,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 // #region Menu
 function toggleMenu(e) {
-  document.querySelector('.burger').classList.toggle('active'); // document.querySelector('.header').classList.toggle('menu_open');
-  // document.querySelector('.header').classList.toggle('menu_open');
-} // #endregion
-// #region Sliders
+  document.querySelector('.head_nav').classList.toggle('menu_open');
+  document.querySelector('.hamburger').classList.toggle('active');
+  document.querySelector('.header').classList.toggle('open_menu');
+}
 
+var e = document.querySelector('.hamburger');
+e.addEventListener('click', toggleMenu, false); // #endregion
+// #region Sliders
 
 var swiper = new Swiper('.swiper', (_ref = {
   setWrapperSize: true,
@@ -142,7 +145,7 @@ window.inpEmail.addEventListener('input', checkEmailLenght);
 document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
 
 function formSubmit(event) {
-  var email, name, apiToken, chatId, text, urlString, request;
+  var email, name, apiToken, chatId, text;
   return regeneratorRuntime.async(function formSubmit$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
@@ -162,12 +165,8 @@ function formSubmit(event) {
           apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
           chatId = "-4066219312";
           text = "\n    Email: ".concat(email, "    \n    Name: ").concat(name, "\n    ");
-          urlString = "https://api.telegram.org/bot".concat(apiToken, "/sendMessage?chat_id=").concat(chatId, "&text=").concat(text);
-          request = new XMLHttpRequest();
-          request.open("GET", urlString);
-          request.send();
 
-        case 12:
+        case 8:
         case "end":
           return _context.stop();
       }

@@ -1,11 +1,15 @@
 // #region Menu
+
+
 function toggleMenu(e){
  
-  document.querySelector('.burger').classList.toggle('active'); 
-  // document.querySelector('.header').classList.toggle('menu_open');
-  // document.querySelector('.header').classList.toggle('menu_open');
+  document.querySelector('.head_nav').classList.toggle('menu_open');
+  document.querySelector('.hamburger').classList.toggle('active'); 
+  document.querySelector('.header').classList.toggle('open_menu');
  
 }
+var e = document.querySelector('.hamburger');
+e.addEventListener('click',toggleMenu,false)
 
 // #endregion
 
@@ -198,10 +202,5 @@ function checkEmailLenght() {
     Email: ${email}    
     Name: ${name}
     `;
-
-    let urlString = `https://api.telegram.org/bot${apiToken}/sendMessage?chat_id=${chatId}&text=${text}`;
-
-    let request = new XMLHttpRequest();
-    request.open("GET", urlString);
-    request.send();
+ 
   }
