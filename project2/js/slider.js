@@ -10,7 +10,7 @@ function nextBg(){
 
   bgnow < allSlides.length-1 ? bgnow++ : bgnow;
   footerSlider.style.transform = `translateX(-${bgnow * slideWidth}px)`;
-  bgnow === 4? bgnow=0:bgnow;
+  bgnow === 4? bgnow=-1:bgnow;
   
 }
 

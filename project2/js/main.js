@@ -164,7 +164,7 @@ const mark = L.marker([22.313208922495647, 114.17263361075162], {icon: customMar
 // #endregion
 
 // #region valide form
-const EMAIL_MIN_LENGTH = 5;
+const EMAIL_MIN_LENGTH = 6;
 
 function checkEmailLenght() {
     const valueLenght = window.inpEmail.value.length;

@@ -17,7 +17,7 @@ function toggleMenu(e) {
 
 var swiper = new Swiper('.swiper', (_ref = {
   setWrapperSize: true,
-  Height: 1000,
+  autoHeight: true,
   autoWidth: true,
   autoplay: true,
   pagination: true,
@@ -126,7 +126,7 @@ Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Yo
 }); // #endregion
 // #region valide form
 
-var EMAIL_MIN_LENGTH = 5;
+var EMAIL_MIN_LENGTH = 6;
 
 function checkEmailLenght() {
   var valueLenght = window.inpEmail.value.length;

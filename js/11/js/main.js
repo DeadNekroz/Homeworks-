@@ -18,4 +18,4 @@
  let kyivGeo=axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=a21fea6fed5276f6e3a9d5217dd2f45f`);
  console.log(kyivGeo);
 
- https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+// https:api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
