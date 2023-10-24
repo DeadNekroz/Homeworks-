@@ -26,6 +26,15 @@
   line-height: normal;
   text-transform: uppercase;
 }
+.head_nav_item a {
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
 .hero_motto {
   color: #ffffff;

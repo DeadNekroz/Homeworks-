@@ -189,9 +189,25 @@
   max-width: 473px;
   margin-left: 70px;
 }
+.weDoCartMarker{
+  display: flex;
+  gap: 10px;
+}
+.pin_wrapper{
+width: 9px;
+height: 17px;
+svg{
+  width: 100%;
+  height: 100%;
+}
+}
+.markerText{
+  &:hover{
+    color:#55B7FF; 
+  }
+}
 .weDoTextWrapp.project1 {
   position: absolute;
-
   left: 29.3%;
   top: 41.7%;
  
