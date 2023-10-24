@@ -1,11 +1,10 @@
 // #region Menu
 function toggleMenu(e){
-  // e.preventDefault();
-  // e.target.classList.toggle('active');
-  document.querySelector('.header').classList.toggle('active');
-  document.querySelector('.burger').classList.toggle('active'); 
-  document.querySelector('.page_wrapper').classList.toggle('menu_open');
-  // document.querySelector('.burger').classList.toggle('mobile');
+ 
+  // document.querySelector('.burger').classList.toggle('active'); 
+  // document.querySelector('.header').classList.toggle('menu_open');
+  // document.querySelector('.header').classList.toggle('menu_open');
+ 
 }
 
 // #endregion
