@@ -158,6 +158,14 @@ img {
   height: 100%;
 }
 
+.hero .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  margin-top: 50px;
+}
+
 .movies_slideflow {
   position: absolute;
   top: 200px;
@@ -177,23 +185,18 @@ img {
 }
 
 .mov_slide_wrapper {
+  overflow: hidden;
   position: relative;
 }
 
-.mov_prev_arrow {
+.arrows_wrapp {
+  width: 100px;
+  left: 48%;
   position: absolute;
-  top: 199px;
-  left: 0;
-  width: 50px;
-  height: 50px;
-}
-
-.mov_next_arrow {
-  position: absolute;
-  top: 200px;
-  right: 0;
-  width: 50px;
-  height: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .movies_slider {

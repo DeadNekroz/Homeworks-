@@ -122,12 +122,12 @@ function formSubmit(event) {
               return false;
             }
 
-            if (!password) {
+            if (!name) {
               window.nameHelp.classList.remove('d-none');
               return false;
             }
 
-            if (!testNameRegex(password)) {
+            if (!testNameRegex(name)) {
               window.nameHelp.classList.remove('d-none');
               window.nameHelpDescription.classList.remove('d-none');
             }
@@ -173,7 +173,7 @@ function formSubmit(event) {
           ;
           ; // window.inputEmail.addEventListener('input', checkEmailLenght);
 
-          window.form.addEventListener('submit', formSubmit); // document.addEventListener('DOMContentLoaded', checkEmailLenght);
+          document.form.addEventListener('submit', formSubmit); // document.addEventListener('DOMContentLoaded', checkEmailLenght);
 
         case 15:
         case "end":

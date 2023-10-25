@@ -197,12 +197,12 @@ function validateForm(event) {
         window.emailHelp.classList.remove('d-none');
         return false;
     }
-    if(!password) {
+    if(!name) {
         window.nameHelp.classList.remove('d-none');
         return false;
     }
 
-    if(!testNameRegex(password)) {
+    if(!testNameRegex(name)) {
         window.nameHelp.classList.remove('d-none');
         window.nameHelpDescription.classList.remove('d-none');
     }
@@ -211,7 +211,7 @@ function validateForm(event) {
 
 
 // window.inputEmail.addEventListener('input', checkEmailLenght);
-window.form.addEventListener('submit', formSubmit);
+document.form.addEventListener('submit', formSubmit);
 // document.addEventListener('DOMContentLoaded', checkEmailLenght);
  
   }

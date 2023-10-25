@@ -24,6 +24,13 @@ function prevBg(){
   bgnow>0?bgnow--: bgnow;
   footerSlider.style.transform=`translateX(-${currentWidth-minusWidth}px`;
 }
+ 
+document.querySelector('.footerSlider').touch = function(event) {
+ 
+  console.log(event);  
+  x = changedTouches[0].pageX
+ 
+}
 document.querySelector('.footerSlider').onmousemove = function(event) {
  
   console.log(event);  

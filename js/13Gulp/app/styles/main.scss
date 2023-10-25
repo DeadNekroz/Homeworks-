@@ -3,4 +3,11 @@
   margin: 0;
   width: 100%;
   color: #000000;
+
+  ::placeholder{
+    color: red;
+   }
 }
+::placeholder{
+  color: red;
+ }

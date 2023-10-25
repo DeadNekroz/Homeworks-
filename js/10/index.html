@@ -37,16 +37,19 @@
               <div class="nav_wrapper">
                <ul class="head_navigation nav">
                     <li class="helper"><span>choose type to search:</span> </li>
-                    <li class="head_nav_item" onclick="toSearchMovies()">movies</li>
-                    <li class="head_nav_item" onclick="toSearchSeries()">series</li>
-                    <li class="head_nav_item" onclick="toSearchEpisods()">episods</li>
+                    <li class="head_nav_item">
+                      <input type="checkbox" name="movies" id="movies">movies</li>
+                    <li class="head_nav_item">
+                      <input type="checkbox" name="series" id="series">series</li>
+                    <li class="head_nav_item">
+                      <input type="checkbox" name="episods" id="episods">episods</li>
                </ul>
               
               </div>
               <div class="search_n_acc_wrapper">
                 <div class="search_wrapp">
                  
-                    <input type="text" name="search" class="search" id="search" placeholder="search" onchange="searchMovie(event)">
+                    <input type="text" name="search" class="search" id="search" placeholder="search" onchange="searchMovie(event)" value="Star Wars">
                     <button type="submit" class="toSearch" > 
                       <svg class="search_icon" fill="var(--logo-color, #f3edec;)" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                          viewBox="0 0 502.173 502.173" xml:space="preserve">
@@ -170,29 +173,34 @@
           <!-- #endregion -->
       <section class="hero">
       <div class="container">
- 
+        <div class="arrows_wrapp">   
+          <div class=mov_prev_arrow">
+          <svg class="prev_arrow" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="48" rx="24" transform="matrix(-1 0 0 1 50 0)" fill="#4B0601"/>
+            <path d="M35.2175 22.7087C36.046 22.7087 36.7175 23.3803 36.7175 24.2087C36.7175 25.0372 36.046 25.7087 35.2175 25.7087L35.2175 22.7087ZM13.2873 25.2694C12.7015 24.6836 12.7015 23.7339 13.2873 23.1481L22.8332 13.6021C23.419 13.0164 24.3688 13.0164 24.9546 13.6021C25.5404 14.1879 25.5404 15.1377 24.9546 15.7235L16.4693 24.2087L24.9546 32.694C25.5404 33.2798 25.5404 34.2296 24.9546 34.8153C24.3688 35.4011 23.419 35.4011 22.8332 34.8153L13.2873 25.2694ZM35.2175 25.7087L14.348 25.7087L14.348 22.7087L35.2175 22.7087L35.2175 25.7087Z" fill="white"/>
+            </svg>
+            
+        </div> 
+        <div class="mov_next_arrow">
+          <svg class="next_arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
+            <rect width="50" height="48" rx="24" fill="#4B0601"/>
+            <path d="M14.7826 22.7087C13.9542 22.7087 13.2826 23.3803 13.2826 24.2087C13.2826 25.0372 13.9542 25.7087 14.7826 25.7087L14.7826 22.7087ZM36.7128 25.2694C37.2986 24.6836 37.2986 23.7339 36.7128 23.1481L27.1669 13.6021C26.5811 13.0164 25.6313 13.0164 25.0456 13.6021C24.4598 14.1879 24.4598 15.1377 25.0456 15.7235L33.5308 24.2087L25.0456 32.694C24.4598 33.2798 24.4598 34.2296 25.0456 34.8153C25.6313 35.4011 26.5811 35.4011 27.1669 34.8153L36.7128 25.2694ZM14.7826 25.7087L35.6522 25.7087L35.6522 22.7087L14.7826 22.7087L14.7826 25.7087Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
       </div>
     </section>
     <!-- #endregion -->
   <!-- #region Movies-slider -->
     <section class="movies_slideflow">
+
       <div class="mov_slide_wrapper">
-      <div class=mov_prev_arrow">
-        <svg class="prev_arrow" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="50" height="48" rx="24" transform="matrix(-1 0 0 1 50 0)" fill="#4B0601"/>
-          <path d="M35.2175 22.7087C36.046 22.7087 36.7175 23.3803 36.7175 24.2087C36.7175 25.0372 36.046 25.7087 35.2175 25.7087L35.2175 22.7087ZM13.2873 25.2694C12.7015 24.6836 12.7015 23.7339 13.2873 23.1481L22.8332 13.6021C23.419 13.0164 24.3688 13.0164 24.9546 13.6021C25.5404 14.1879 25.5404 15.1377 24.9546 15.7235L16.4693 24.2087L24.9546 32.694C25.5404 33.2798 25.5404 34.2296 24.9546 34.8153C24.3688 35.4011 23.419 35.4011 22.8332 34.8153L13.2873 25.2694ZM35.2175 25.7087L14.348 25.7087L14.348 22.7087L35.2175 22.7087L35.2175 25.7087Z" fill="white"/>
-          </svg>
-          
-      </div> 
+      
+   
      <div class="movies_slider" id="movies_slider">
       
      </div>
-     <div class="mov_next_arrow">
-      <svg class="next_arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
-        <rect width="50" height="48" rx="24" fill="#4B0601"/>
-        <path d="M14.7826 22.7087C13.9542 22.7087 13.2826 23.3803 13.2826 24.2087C13.2826 25.0372 13.9542 25.7087 14.7826 25.7087L14.7826 22.7087ZM36.7128 25.2694C37.2986 24.6836 37.2986 23.7339 36.7128 23.1481L27.1669 13.6021C26.5811 13.0164 25.6313 13.0164 25.0456 13.6021C24.4598 14.1879 24.4598 15.1377 25.0456 15.7235L33.5308 24.2087L25.0456 32.694C24.4598 33.2798 24.4598 34.2296 25.0456 34.8153C25.6313 35.4011 26.5811 35.4011 27.1669 34.8153L36.7128 25.2694ZM14.7826 25.7087L35.6522 25.7087L35.6522 22.7087L14.7826 22.7087L14.7826 25.7087Z" fill="white"/>
-      </svg>
-    </div>
+ 
   </div>
     </section>
   <!-- #endregion -->
