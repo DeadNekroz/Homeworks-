@@ -677,6 +677,7 @@
   }
 
   .galleryWrapper {
+    border-radius: 55px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     overflow: scroll;

