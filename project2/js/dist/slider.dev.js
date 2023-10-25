@@ -1,7 +1,7 @@
 "use strict";
 
 var footerSlider = document.querySelector('.footerSlider');
-var x = +0;
+var x = 0;
 var allSlides = document.querySelectorAll('.footerSlide');
 var slideWidth = parseInt(getComputedStyle(allSlides[0]).width);
 var bgnow = 0;
@@ -22,8 +22,7 @@ function prevBg() {
 }
 
 document.querySelector('.footerSlider').onmousemove = function (event) {
-  console.log(event); // вывод в консоль
-
+  console.log(event);
   x = event.offsetX;
 };
 

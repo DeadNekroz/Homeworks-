@@ -1,7 +1,7 @@
  
 
 let footerSlider = document.querySelector('.footerSlider');
-let x = +0;
+let x = 0;
 const allSlides = document.querySelectorAll('.footerSlide');
 
 const slideWidth = parseInt(getComputedStyle(allSlides[0]).width);
@@ -26,10 +26,11 @@ function prevBg(){
 }
 document.querySelector('.footerSlider').onmousemove = function(event) {
  
-  console.log(event); // вывод в консоль
+  console.log(event);  
   x = event.offsetX;
  
 }
+ 
 function slideBg(){
   x<window.innerWidth/2?prevBg() :nextBg();
  }
