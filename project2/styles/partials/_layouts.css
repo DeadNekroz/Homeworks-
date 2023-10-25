@@ -677,7 +677,7 @@
   }
 
   .galleryWrapper {
-    border-radius: 55px;
+    border-radius: 5px;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     overflow: scroll;
@@ -736,9 +736,11 @@
     left: 5%;
   }
   header.open_menu .head_nav {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    transform: translateX(15%);
+    transform: translate(36%, 18%);
+    gap: 46px;
     height: 50%;
     width: 100%;
     justify-content: start;
@@ -797,6 +799,7 @@
     top: -82px;
     left: 0%;
     height: 527px;
+    font-size: 20px;
   }
 
   .WeDoProjectCard.project2 {
@@ -804,6 +807,7 @@
   }
   .WeDoProjectCard.project2 .weDoTextCard.project2 {
     top: -40px;
+    font-size: 20px;
   }
   .WeDoProjectCard.project2 .weDoTextCard.project2 .weDoTextWrapp.project2 {
     top: 40px;

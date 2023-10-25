@@ -730,7 +730,7 @@ min-height: 549px;
       
     }}
   .galleryWrapper{
-    border-radius: 55px;
+    border-radius: 5px;
     grid-template-columns:1fr;
     grid-template-rows:2fr;
     overflow: scroll;
@@ -787,9 +787,11 @@ min-height: 549px;
     }
     transform: translateX(0%);
     .head_nav{
+      list-style: none;
       display: flex;
       flex-direction: column;
-    transform: translateX(15%);
+    transform: translate(36%,18%);
+    gap: 46px;
       height: 50%;
       width: 100%;
       justify-content: start;
@@ -847,13 +849,14 @@ min-height: 549px;
    top:-82px ;
    left: 0%;
    height: 527px;
+   font-size: 20px;
  }
 }
 
  .WeDoProjectCard.project2{
   .weDoTextCard.project2{
     top: -40px;
-
+    font-size: 20px;
   }
   max-width: 510px;
    .weDoTextCard.project2{
