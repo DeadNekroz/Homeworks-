@@ -679,7 +679,7 @@ img {
   content: " ";
   position: absolute;
   top: -30px;
-  left: 46%;
+  left: 47%;
   height: 1px;
   width: 100px;
   background-color: #2C4058;
@@ -927,6 +927,11 @@ img {
   }
 }
 @media (max-width: 1270px) {
+  .gallery .container::before {
+    content: " ";
+    left: 46%;
+  }
+
   .form .get_in_touch_form {
     font-size: 16px;
   }
@@ -935,6 +940,17 @@ img {
   }
 }
 @media (max-width: 1150px) {
+  .gallery .container::before {
+    content: " ";
+    left: 44%;
+  }
+
+  .galleryWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    overflow: scroll;
+  }
+
   .form {
     width: 570px;
     left: 15%;
@@ -1093,6 +1109,16 @@ img {
   }
 }
 @media (max-width: 768px) {
+  .gallery .container::before {
+    content: " ";
+    left: 39%;
+  }
+
+  .galleryWrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+  }
+
   .slick-track {
     display: flex;
     gap: 2%;
@@ -1112,6 +1138,12 @@ img {
 
   .form {
     left: 1%;
+  }
+
+  .galleryWrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    overflow: hidden;
   }
 }
 @media (max-width: 576px) {
