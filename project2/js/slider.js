@@ -11,7 +11,7 @@ const slideWidth = parseInt(getComputedStyle(allSlides[0]).width);
  let minusWidth=0;
  
 function nextBg(){
-  bgnow < allSlides.length-1 ? bgnow++ : bgnow;
+  bgnow < allSlides.length-1 ? bgnow++ : bgnow=0;
   
 
 
@@ -25,14 +25,21 @@ function nextBg(){
   console.log(bgnow)
 }
 function prevBg(){
-  bgnow>0?bgnow--: bgnow;
-  
+  bgnow>0?bgnow--: bgnow=lastBg-1;
+
+
+
+
   footerSlider.style.transform=`translateX(-${minusWidth}px`;
   currentWidth=bgnow*slideWidth;
-  minusWidth=(bgnow-1)*slideWidth;
+  bgnow>0?minusWidth=(bgnow-1)*slideWidth:minusWidth=(bgnow+1)*slideWidth-currentWidth;
+  currentWidth=bgnow*slideWidth;
+  minusWidth=(bgnow )*slideWidth
+  footerSlider.style.transform=`translateX(-${minusWidth}px`;
   console.log(currentWidth)
   console.log(minusWidth)
   console.log(bgnow)
+  
 }
  
 document.querySelector('.footerSlider').touch = function(event) {
