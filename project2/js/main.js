@@ -98,8 +98,9 @@ $(".news_slick_slider").slick({
  
 
 
-var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 13);
-
+var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 2);
+map.scrollWheelZoom.disable();
+ 
 var customMarker = L.icon({
   iconUrl:'./assets/images/marker.png',
   //shadowUrl: 'leaf-shadow.png',
@@ -123,7 +124,8 @@ var customMarker2 = L.icon({
   
 });
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors',
+  interactive:false
 }).addTo(map);
 const NYcustomMarker= L.marker([40.7815929639621, -73.96915881456673], {icon: customMarker2}).addTo(map).bindPopup("Residence is New-York").openPopup([40.7815929639621, -73.96915881456673]);
 

@@ -62,25 +62,42 @@ $(".news_slick_slider").slick((_$$slick = {
 }), _ref2)]), _$$slick)); // #endregion
 // #region MAP
 
-var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 13);
+var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 2);
+map.scrollWheelZoom.disable();
 var customMarker = L.icon({
   iconUrl: './assets/images/marker.png',
   //shadowUrl: 'leaf-shadow.png',
   iconSize: [80, 80],
   // size of the icon
   //shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [40, -73],
+  iconAnchor: [45, 87],
+  // point of the icon which will correspond to marker's location
+  //shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+
+});
+var customMarker2 = L.icon({
+  iconUrl: './assets/images/marker.png',
+  //shadowUrl: 'leaf-shadow.png',
+  iconSize: [80, 80],
+  // size of the icon
+  //shadowSize:   [50, 64], // size of the shadow
+  iconAnchor: [45, 87],
   // point of the icon which will correspond to marker's location
   //shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 
 });
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors',
+  interactive: false
 }).addTo(map);
+var NYcustomMarker = L.marker([40.7815929639621, -73.96915881456673], {
+  icon: customMarker2
+}).addTo(map).bindPopup("Residence is New-York").openPopup([40.7815929639621, -73.96915881456673]);
 var mark = L.marker([22.313208922495647, 114.17263361075162], {
   icon: customMarker
-}).addTo(map).bindPopup("residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]); // #endregion
+}).addTo(map).bindPopup("Residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]); // #endregion
 // #region Gallery
 
 Fancybox.bind(document.getElementById("gallery-wrap"), "[data-fancybox]", {// Your custom options
