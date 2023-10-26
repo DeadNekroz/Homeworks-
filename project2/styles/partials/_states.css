@@ -54,3 +54,7 @@
 .form_contacts a:hover, .form_contacts a:focus {
   color: #734ef6;
 }
+
+.footerSlider {
+  transition: all 0.8 ease-out;
+}

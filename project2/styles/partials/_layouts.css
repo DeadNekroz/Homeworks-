@@ -537,7 +537,6 @@
   min-height: 549px;
   position: relative;
   will-change: transform;
-  transition: transform 0.3s ease;
 }
 
 .footerSlide {

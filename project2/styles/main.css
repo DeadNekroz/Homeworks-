@@ -806,7 +806,6 @@ img {
   min-height: 549px;
   position: relative;
   will-change: transform;
-  transition: transform 0.3s ease;
 }
 
 .footerSlide {
@@ -1243,4 +1242,8 @@ img {
 
 .form_contacts a:hover, .form_contacts a:focus {
   color: #734ef6;
+}
+
+.footerSlider {
+  transition: all 0.8 ease-out;
 }
