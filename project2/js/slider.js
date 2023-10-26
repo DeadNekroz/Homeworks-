@@ -13,33 +13,43 @@ const slideWidth = parseInt(getComputedStyle(allSlides[0]).width);
 function nextBg(){
   bgnow < allSlides.length-1 ? bgnow++ : bgnow;
   
-  minusWidth=((bgnow)-(bgnow-1))*slideWidth;
+
 
 
   footerSlider.style.transform = `translateX(-${bgnow * slideWidth}px)`;
   currentWidth=bgnow*slideWidth;
+  minusWidth=(bgnow-1)*slideWidth;
   // bgnow === 4? bgnow=-1:bgnow;
-  
+  console.log(currentWidth)
+  console.log(minusWidth)
+  console.log(bgnow)
 }
 function prevBg(){
   bgnow>0?bgnow--: bgnow;
   
-  footerSlider.style.transform=`translateX(-${currentWidth-minusWidth}px`;
+  footerSlider.style.transform=`translateX(-${minusWidth}px`;
+  currentWidth=bgnow*slideWidth;
+  minusWidth=(bgnow-1)*slideWidth;
+  console.log(currentWidth)
+  console.log(minusWidth)
+  console.log(bgnow)
 }
  
 document.querySelector('.footerSlider').touch = function(event) {
  
-  console.log(event);  
   x = changedTouches[0].pageX;
  
 }
 document.querySelector('.footerSlider').onmousemove = function(event) {
  
-  console.log(event);  
+  
   x = event.offsetX;
  
 }
  
+
+
+
 function slideBg(){
   x<window.innerWidth/2?prevBg() :nextBg();
  }
