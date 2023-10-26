@@ -732,17 +732,18 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 40%;
-    left: 5%;
+    top: 135px;
+    left: 20px;
   }
   header.open_menu .head_nav {
     list-style: none;
     display: flex;
     flex-direction: column;
-    transform: translate(36%, 18%);
+    position: absolute;
+    right: 5%;
+    top: 100px;
     gap: 46px;
     height: 50%;
-    width: 100%;
     justify-content: start;
   }
   header.open_menu .head_nav .head_nav_item {

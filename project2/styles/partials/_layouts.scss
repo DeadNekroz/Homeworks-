@@ -780,9 +780,8 @@ min-height: 549px;
       position: absolute;
       display: flex;
       flex-direction: column;
-      top: 40%;
-      left: 5%;
- 
+      top: 135px;
+      left: 20px;
 
     }
     transform: translateX(0%);
@@ -790,10 +789,13 @@ min-height: 549px;
       list-style: none;
       display: flex;
       flex-direction: column;
-    transform: translate(36%,18%);
+      position: absolute;
+      right: 5%;
+      top: 100px;
+    // transform: translate(36%,18%);
     gap: 46px;
       height: 50%;
-      width: 100%;
+ 
       justify-content: start;
       .head_nav_item{
         line-height: 0px;
