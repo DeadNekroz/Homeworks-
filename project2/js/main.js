@@ -106,7 +106,7 @@ var customMarker = L.icon({
 
   iconSize:     [80, 80], // size of the icon
   //shadowSize:   [50, 64], // size of the shadow
-  iconAnchor:   [40, -73], // point of the icon which will correspond to marker's location
+  iconAnchor:   [45, 87], // point of the icon which will correspond to marker's location
   //shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -115,7 +115,7 @@ var customMarker = L.icon({
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors'
 }).addTo(map);
-const mark = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup("residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]);
+const mark = L.marker([22.313208922495647, 114.17263361075162], {icon: customMarker}).addTo(map).bindPopup(" Residence in Kowloon").openPopup([22.313208922495647, 114.17263361075162]);
  
 // #endregion
 
