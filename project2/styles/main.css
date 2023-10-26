@@ -1245,5 +1245,5 @@ img {
 }
 
 .footerSlider {
-  transition: all 0.8 ease-out;
+  transition: all 0.8s ease-out;
 }
