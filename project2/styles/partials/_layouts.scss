@@ -844,8 +844,8 @@
   }
 
   .form {
-    width: 570px;
-    left: 15%;
+    display: flex;
+    justify-content: center;
 
     .form_contacts {
       min-width: 235px;
@@ -1046,6 +1046,15 @@
       }
     }
   }
+
+  .form {
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1074,9 +1083,7 @@
     left: -7%;
   }
 
-  .form {
-    left: 3%;
-  }
+
 }
 
 @media (max-width:700px) {
@@ -1088,9 +1095,6 @@
 
   }
 
-  .form {
-    left: 1%;
-  }
 
   .galleryWrapper {
     grid-template-columns: 100%;
@@ -1108,13 +1112,12 @@
   }
 
   .form {
-    left: -1%;
-    width: 550px;
+    min-width: 400px;
+    min-height: 600px;
 
     .get_in_touch_form {
       display: flex;
-      margin: 0;
-      padding: 0;
+
       flex-direction: column;
     }
 
@@ -1123,18 +1126,14 @@
     }
 
     .toAuth {
-      transform: translateX(-19%);
+
 
       input {
         margin-bottom: 5px;
         width: 250px;
       }
 
-      button {
-        position: absolute;
-        right: -45px;
-        top: -105px;
-      }
+
     }
 
   }
