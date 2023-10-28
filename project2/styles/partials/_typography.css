@@ -90,6 +90,26 @@
   text-transform: uppercase;
 }
 
+.weDoTextContent {
+  color: #2C4058;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.more_details_btn {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .latestNewsHeading {
   color: #2C4058;
   text-align: center;

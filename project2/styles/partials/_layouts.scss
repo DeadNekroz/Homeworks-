@@ -1,7 +1,8 @@
 @import './vars';
 
 .btn {
-  padding: 16px 41px 17px 41px;
+  max-width: 190px;
+  padding: 16px 40px;
   border: 1px solid $mainDark;
 
 }
@@ -158,12 +159,16 @@
 
   .container {
     position: relative;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+    flex-direction: column;
   }
 }
 
 .weDoHeading {
-
+  text-align: center;
   margin-bottom: 90px;
 
   &::before {
@@ -172,7 +177,7 @@
     top: -30px;
     left: 50%;
 
-    height: 2px;
+    height: 1px;
     width: 100px;
     background-color: $mainDark;
     z-index: 2;
@@ -180,50 +185,58 @@
   }
 }
 
-.WeDoProjectCard.project1 {
+.WeDoProjectCard {
   display: flex;
-
+  justify-content: center;
+  gap: 70px;
   position: relative;
-  max-height: 527;
+
 
 }
 
 .weDoImageWrapp.project1 {
-  flex-basis: 50%;
-  margin-bottom: 294px;
+
   position: relative;
-  min-width: 630px;
-  height: 527px;
-  background-color: #55B7FF;
+
 
   &:before {
     content: '';
     position: absolute;
     width: 9999px;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    right: 260px;
+
+    top: -57px;
     background-color: #55B7FF;
+    height: 470px;
+    z-index: -1;
+
+
   }
 
+
+
   img {
-    position: absolute;
-    top: 8.2%;
-    left: 27%;
-    max-width: 90%;
-    min-height: 470px;
-    max-height: 115%;
+    width: 100%;
+    max-width: 100%;
+    height: 470px;
+
+
   }
+}
+
+
+
+.weDoTextCard.project1 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  max-width: 473px;
 
 }
 
-.weDoTextCard.project1 {
-  position: absolute;
-  right: 15.5%;
-  top: 28.6%;
-  width: 100%;
-  max-width: 473px;
-  margin-left: 70px;
+.weDoTextContent {
+  max-width: 470px;
 }
 
 .weDoCartMarker {
@@ -247,65 +260,47 @@
   }
 }
 
-.weDoTextWrapp.project1 {
-  position: absolute;
-  left: 29.3%;
-  top: 41.7%;
 
-}
+
+
 
 .WeDoProjectCard.project2 {
   display: flex;
   flex-direction: row-reverse;
-  position: relative;
-  max-height: 527px;
-
-
-}
-
-.weDoTextCard.project2 {
-  position: absolute;
-  left: 15.5%;
-  top: 28.6%;
-  width: 100%;
-  max-width: 473px;
-  margin-right: 70px;
-}
-
-.weDoTextWrapp.project2 {
-  position: absolute;
-  right: 29.3%;
-  top: 41.7%;
-
 }
 
 .weDoImageWrapp.project2 {
-  flex-basis: 50%;
-  margin-bottom: 294px;
+
+
   position: relative;
-  min-width: 630px;
-  height: 527px;
-  background-color: #7E5AFF;
+  min-height: 470px;
+
 
   &:before {
     content: '';
     position: absolute;
     width: 9999px;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    left: 260px;
+    top: -57px;
+    height: 470px;
     background-color: #7E5AFF;
+    z-index: -1;
   }
 
   img {
-    position: absolute;
-    top: 8.2%;
-    right: 27%;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     min-height: 470px;
-    max-height: 115%;
   }
 
+}
+
+.weDoTextCard.project2 {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  width: 100%;
+  max-width: 473px;
 }
 
 .weDoTextTitle {
@@ -322,6 +317,8 @@
 }
 
 .more_details_btn {
+  display: inline-block;
+  padding: 16px 40px;
   margin-bottom: 60px;
 
 }
@@ -886,7 +883,7 @@
     background: linear-gradient(243deg, #7e5aff 16.9%, #55b8ffff 83.27%);
     opacity: 9;
     width: 100%;
-    height: 60%;
+    height: 35%;
 
     .logo_wrappper {
       position: absolute;
@@ -945,75 +942,75 @@
     line-height: 16px;
   }
 
-  .WeDoProjectCard.project1,
+  .WeDoProjectCard {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .project1 {}
+
+  .weDoImageWrapp {
+    width: 100%;
+    max-width: 100%;
+
+    &::before {
+      display: none;
+    }
+
+    img {
+      height: 400px;
+    }
+  }
+
+  .weDoTextCard.project1,
+  .weDoTextCard.project2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+
+  }
+
+  .weDoSubTitle {}
+
+  .weDoTextTitle {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .weDoTextContent {
+    width: 100%;
+    max-width: 100%;
+
+    text-align: center;
+  }
+
+  .more_details_btn {}
+
+  .btn {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .weDoCartMarker {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .pin_wrapper {}
+
+  .markerText {
+    text-align: center;
+  }
+
   .WeDoProjectCard.project2 {
-    display: inline-block;
-    top: 40px;
 
-    .weDoImageWrapp.project1,
-    .weDoImageWrapp.project2 {
-      display: inline-block;
-
-      &:before {
-        right: 0;
-        left: 0;
-      }
-
-      img {
-        height: 100%;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-      }
-
-    }
+    flex-direction: column;
 
   }
-
-  .weDoTextCard.project1 {
-    max-width: 510px;
-    top: 10%;
-    left: 0%;
-
-    .weDoTextWrapp.project1 {
-      width: 510px;
-      background-color: #5ab4f4e1;
-
-      position: absolute;
-      top: -82px;
-      left: 0%;
-      height: 527px;
-      font-size: 20px;
-    }
-  }
-
-  .WeDoProjectCard.project2 {
-    .weDoTextCard.project2 {
-      top: -40px;
-      font-size: 20px;
-    }
-
-    max-width: 510px;
-
-    .weDoTextCard.project2 {
-
-      .weDoTextWrapp.project2 {
-        top: 40px;
-        width: 510px;
-        background-color: #ab9be7db;
-        position: absolute;
-        left: 0%;
-        height: 527px;
-
-
-      }
-    }
-  }
-
-
-
 
   .latestNews {
     .news-card {
