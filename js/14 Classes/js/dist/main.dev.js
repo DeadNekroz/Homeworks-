@@ -1,53 +1,48 @@
 "use strict";
 
-var _circle;
+var _Circle = _interopRequireDefault(require("./classes/Circle.js"));
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+var _Rectangle = _interopRequireDefault(require("./classes/Rectangle.js"));
 
-//  #region КОЛО
-var circle = (_circle = {
-  setRadius: function setRadius(radius) {
-    this.radius = radius;
-  },
-  p: Math.PI,
-  getRadius: function getRadius() {
-    console.log(this.radius); // return this.radius;
-  }
-}, _defineProperty(_circle, "setRadius", function setRadius(radius) {
-  return this.radius = radius;
-}), _defineProperty(_circle, "getSize", function getSize() {
-  console.log(this.p * Math.pow(this.radius, 2));
-}), _defineProperty(_circle, "getDiameter", function getDiameter() {
-  this.diameter = this.radius * 2;
-  console.log(this.diameter);
-}), _defineProperty(_circle, "getLength", function getLength() {
-  this.length = 2 * this.p * this.radius;
-  console.log(this.length);
-}), _circle); // #endregion
+var _Square = _interopRequireDefault(require("./classes/Square.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var rect1 = new _Rectangle["default"](100, 200, 'pink', 20, 50);
+rect1.draw();
+var sq1 = new _Square["default"](300, 'blue', 200, 150);
+sq1.draw();
+var sr1 = new _Circle["default"](400, 'green', 400, 350);
+sr1.draw();
+
+function hiddenExample() {
+  var password = 12;
+} //  const circle = {
+//   setRadius:function(radius){
+//     this.radius=radius
+//   },
+//   p:Math.PI,
+//   getRadius: function(){
+//     console.log(this.radius)
+//       // return this.radius;
+//   },
+//   setRadius: function (radius){
+//     return  this.radius = radius;
+//   },
+//   getSize:function(){
+//     console.log(this.p*(this.radius**2))
+//   },
+//   getDiameter: function(){
+//     this.diameter= this.radius*2
+//     console.log(this.diameter)
+//   },
+//   getLength: function(){
+//     this.length = 2*this.p*this.radius
+//     console.log(this.length)
+//   }
+//  }
+// #endregion
 // #region Marker
-
-var marker = {
-  color: 'black',
-  amountOfInk: '100%',
-  textField: document.querySelector('.textField'),
-  SetColor: function SetColor(color) {
-    this.color = "\"".concat(color, "\"");
-  },
-  SetAmountOfInk: function SetAmountOfInk(ink) {
-    this.amountOfInk = "\"".concat(ink, "\"");
-  },
-  SetText: function SetText(str) {
-    this.textToWrite = str;
-  }
-};
-
-function canWrite() {
-  var inksLeft = parseInt(this.amountOfInk);
-  var noSpaceText = this.textToWrite.replace(/ /g, '');
-  console.log(noSpaceText);
-  var symbolsCanWrite = noSpaceText.length / 0.5;
-  console.log(symbolsCanWrite);
-  document.querySelector('.textField').innerHtml = "\n    <p style=\"color:".concat(this.color, "\">").concat(symbolsCanWrite, "</p>");
-} // #endregion
+// #endregion
 // Bank
 // #endregion

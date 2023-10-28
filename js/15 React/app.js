@@ -41,14 +41,17 @@ class App extends React.Component{
                 </div>
 
                 </div>
-                <div className="row mt-2">
-               
-                <div className="col-4">
-                      <h1>Results for:{this.state.length} <span className="badge bg-secondary">{this.state.searchResults.length}</span> </h1> 
-                 </div>
-
-                </div>
+           
             </div>
+              <div className="row mt-2">     <div className="row mt-2">
+               <div className="col-4">
+                     <h1>Results for:{this.state.length} <span className="badge bg-secondary">{this.state.searchResults.length}</span> </h1> 
+                </div>
+                <div className="col-4">
+                  
+                </div>
+               </div>
+               </div>
         </div>
       )
     }

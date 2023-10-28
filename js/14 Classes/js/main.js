@@ -1,61 +1,52 @@
-//  #region КОЛО
- const circle = {
-  setRadius:function(radius){
-    this.radius=radius
-  },
-  p:Math.PI,
-  getRadius: function(){
-    console.log(this.radius)
-      // return this.radius;
+import Circle from "./classes/Circle.js";
+import Rectangle from "./classes/Rectangle.js";
+import Square from "./classes/Square.js";
 
-  },
+const rect1 = new Rectangle(100, 200, 'pink', 20, 50);
 
-  setRadius: function (radius){
-    return  this.radius = radius;
+rect1.draw()
+
+const sq1 = new Square(300, 'blue', 200, 150);
+sq1.draw()
+
+const sr1 = new Circle(400, 'green', 400, 350);
+sr1.draw();
+
+function hiddenExample() {
+    const password = 12;
+}
+//  const circle = {
+//   setRadius:function(radius){
+//     this.radius=radius
+//   },
+//   p:Math.PI,
+//   getRadius: function(){
+//     console.log(this.radius)
+//       // return this.radius;
+
+//   },
+
+//   setRadius: function (radius){
+//     return  this.radius = radius;
        
-  },
-  getSize:function(){
+//   },
+//   getSize:function(){
 
-    console.log(this.p*(this.radius**2))
-  },
-  getDiameter: function(){
-    this.diameter= this.radius*2
-    console.log(this.diameter)
-  },
-  getLength: function(){
-    this.length = 2*this.p*this.radius
-    console.log(this.length)
-  }
+//     console.log(this.p*(this.radius**2))
+//   },
+//   getDiameter: function(){
+//     this.diameter= this.radius*2
+//     console.log(this.diameter)
+//   },
+//   getLength: function(){
+//     this.length = 2*this.p*this.radius
+//     console.log(this.length)
+//   }
 
- }
+//  }
 // #endregion
 
 // #region Marker
-
-const marker = {
-  color:'black',
-  amountOfInk:'100%',
-  textField:document.querySelector('.textField'),
-  SetColor: function(color){
-    this.color=`"${color}"`;
-  },
-  SetAmountOfInk: function(ink){
-    this.amountOfInk=`"${ink}"`
-  },
-  SetText: function(str){
-    this.textToWrite = str
-  },
-  
-  } 
-  function canWrite(){ 
-    let inksLeft = parseInt(this.amountOfInk);
-    let noSpaceText= this.textToWrite.replace(/ /g,'');
-    console.log(noSpaceText);
-    let symbolsCanWrite =noSpaceText.length/0.5;
-    console.log(symbolsCanWrite);
-    document.querySelector('.textField').innerHtml =`
-    <p style="color:${this.color}">${symbolsCanWrite}</p>`
-  }
  
       
   
