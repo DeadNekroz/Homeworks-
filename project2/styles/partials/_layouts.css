@@ -89,15 +89,18 @@
   align-items: center;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   right: 5%;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   top: 45%;
 }
 
-.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-pagination-vertical.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   background-color: #ffffff;
 }
 
@@ -134,18 +137,20 @@
 .whatWeDO .container {
   position: relative;
 }
-.whatWeDO .container::before {
-  content: " ";
-  position: absolute;
-  top: -30px;
-  left: 47%;
-  height: 2px;
-  width: 100px;
-  background-color: #2C4058;
-}
 
 .weDoHeading {
   margin-bottom: 90px;
+}
+.weDoHeading::before {
+  content: " ";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  height: 2px;
+  width: 100px;
+  background-color: #2C4058;
+  z-index: 2;
+  transform: translate(-50%, -50%);
 }
 
 .WeDoProjectCard.project1 {
@@ -288,23 +293,25 @@
   position: relative;
   height: 100%;
 }
-.latestNews .container::before {
-  content: " ";
-  position: absolute;
-  top: 121px;
-  left: 47%;
-  height: 2px;
-  width: 100px;
-  background-color: #ffffff;
-  z-index: 2;
-}
 
 .latestNewsHeading {
   padding-top: 150px;
   margin-bottom: 90px;
 }
+.latestNewsHeading::before {
+  content: " ";
+  position: absolute;
+  top: 121px;
+  left: 50%;
+  height: 2px;
+  width: 100px;
+  background-color: #ffffff;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
 
-.prev_arrow_button, .next_arrow_button {
+.prev_arrow_button,
+.next_arrow_button {
   position: absolute;
   top: 66%;
   width: 40px;
@@ -406,19 +413,21 @@
   position: relative;
   margin: 0 auto;
 }
-.gallery .container::before {
-  content: " ";
-  position: absolute;
-  top: -30px;
-  left: 47%;
-  height: 1px;
-  width: 100px;
-  background-color: #2C4058;
-}
 
 .galleryHeading {
   margin-top: 180px;
   margin-bottom: 90px;
+}
+.galleryHeading::before {
+  content: " ";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  height: 2px;
+  width: 100px;
+  background-color: #2C4058;
+  z-index: 2;
+  transform: translate(-50%, -50%);
 }
 
 .galleryWrapper {
@@ -585,15 +594,6 @@
   min-width: 600px;
   background-color: #ffffff;
 }
-.form::before {
-  content: " ";
-  position: absolute;
-  top: 40px;
-  left: 43%;
-  height: 2px;
-  width: 100px;
-  background-color: #2C4058;
-}
 
 .get_in_touch_form_wrapp {
   margin: 90px 60px 68px 60px;
@@ -602,6 +602,17 @@
 
 .formHeading {
   margin-bottom: 42px;
+}
+.formHeading::before {
+  content: " ";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  height: 2px;
+  width: 100px;
+  background-color: #2C4058;
+  z-index: 2;
+  transform: translate(-50%, -50%);
 }
 
 .get_in_touch_form {
@@ -767,18 +778,28 @@
     line-height: 16px;
   }
 
-  .WeDoProjectCard.project1, .WeDoProjectCard.project2 {
+  .WeDoProjectCard.project1,
+.WeDoProjectCard.project2 {
     display: inline-block;
     top: 40px;
   }
-  .WeDoProjectCard.project1 .weDoImageWrapp.project1, .WeDoProjectCard.project1 .weDoImageWrapp.project2, .WeDoProjectCard.project2 .weDoImageWrapp.project1, .WeDoProjectCard.project2 .weDoImageWrapp.project2 {
+  .WeDoProjectCard.project1 .weDoImageWrapp.project1,
+.WeDoProjectCard.project1 .weDoImageWrapp.project2,
+.WeDoProjectCard.project2 .weDoImageWrapp.project1,
+.WeDoProjectCard.project2 .weDoImageWrapp.project2 {
     display: inline-block;
   }
-  .WeDoProjectCard.project1 .weDoImageWrapp.project1:before, .WeDoProjectCard.project1 .weDoImageWrapp.project2:before, .WeDoProjectCard.project2 .weDoImageWrapp.project1:before, .WeDoProjectCard.project2 .weDoImageWrapp.project2:before {
+  .WeDoProjectCard.project1 .weDoImageWrapp.project1:before,
+.WeDoProjectCard.project1 .weDoImageWrapp.project2:before,
+.WeDoProjectCard.project2 .weDoImageWrapp.project1:before,
+.WeDoProjectCard.project2 .weDoImageWrapp.project2:before {
     right: 0;
     left: 0;
   }
-  .WeDoProjectCard.project1 .weDoImageWrapp.project1 img, .WeDoProjectCard.project1 .weDoImageWrapp.project2 img, .WeDoProjectCard.project2 .weDoImageWrapp.project1 img, .WeDoProjectCard.project2 .weDoImageWrapp.project2 img {
+  .WeDoProjectCard.project1 .weDoImageWrapp.project1 img,
+.WeDoProjectCard.project1 .weDoImageWrapp.project2 img,
+.WeDoProjectCard.project2 .weDoImageWrapp.project1 img,
+.WeDoProjectCard.project2 .weDoImageWrapp.project2 img {
     height: 100%;
     width: 100%;
     left: 0;
