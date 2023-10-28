@@ -594,6 +594,7 @@
 
 // #region Footer
 .footer {
+  transform: translateY(-82%);
 
   position: relative;
   width: 100%;
@@ -610,6 +611,7 @@
     max-width: 48%;
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
   }
 }
 
@@ -686,23 +688,24 @@
 
 // #region Form
 .form {
-  position: absolute;
+  position: relative;
   z-index: 666666;
-  top: -40%;
+  transform: translateY(-50%);
+  padding: 0px 60px 0px 60px;
   left: 26%;
   width: 100%;
   max-width: 48%;
-  max-height: 450px;
+  height: 450px;
   min-width: 600px;
   background-color: $mainLight;
 
 }
 
 .get_in_touch_form_wrapp {
+  padding-top: 30px;
 
-  margin: 90px 60px 68px 60px;
   position: relative;
-
+  top: 90px;
 }
 
 .formHeading {
@@ -711,7 +714,7 @@
   &::before {
     content: " ";
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 50%;
 
     height: 2px;
@@ -844,6 +847,7 @@
   }
 
   .form {
+    left: auto;
     display: flex;
     justify-content: center;
 
@@ -857,6 +861,12 @@
     left: 10%;
     gap: 1%;
 
+  }
+
+  .form {
+    top: -40%;
+    left: 25%;
+    right: 25%;
   }
 }
 
@@ -1042,8 +1052,9 @@
       justify-content: space-between;
 
       .footer_socials {
-        margin-top: 20px;
+        display: none;
       }
+
     }
   }
 
