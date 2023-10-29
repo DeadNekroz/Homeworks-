@@ -690,8 +690,6 @@
   }
 
   .slick-track {
-    display: flex;
-    left: 10%;
     gap: 1%;
   }
 }
@@ -853,6 +851,11 @@
     display: flex;
   }
 
+  .slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+
   .newsCard {
     width: 300px;
     max-width: 300px;
@@ -878,7 +881,6 @@
 }
 @media (max-width: 576px) {
   .slick-track {
-    left: 0%;
     gap: 1%;
   }
 
