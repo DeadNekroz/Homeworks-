@@ -6,17 +6,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 // #region Menu
 function toggleMenu(e) {
-  document.querySelector('.head_nav').classList.toggle('menu_open');
-  document.querySelector('.hamburger').classList.toggle('active');
-  document.querySelector('.header').classList.toggle('open_menu');
+  document.querySelector(".head_nav").classList.toggle("menu_open");
+  document.querySelector(".hamburger").classList.toggle("active");
+  document.querySelector(".header").classList.toggle("open_menu");
 }
 
-var e = document.querySelector('.hamburger');
-e.addEventListener('click', toggleMenu, false); // #endregion
+var e = document.querySelector(".hamburger");
+e.addEventListener("click", toggleMenu, false); // #endregion
 // #region Sliders
 
-var swiper = new Swiper('.swiper', (_ref = {
-  setWrapperSize: true,
+var swiper = new Swiper(".swiper", (_ref = {
   autoHeight: true,
   autoWidth: true,
   autoplay: true,
@@ -24,19 +23,27 @@ var swiper = new Swiper('.swiper', (_ref = {
   autoplaySpeed: 6000,
   centeredSlides: true,
   loop: true,
-  resizeObserver: true,
   keyboard: {
     enabled: true,
     onlyInViewport: false
   },
   // Optional parameters
-  direction: 'vertical'
+  direction: "vertical"
 }, _defineProperty(_ref, "loop", true), _defineProperty(_ref, "pagination", {
-  el: '.swiper-pagination',
+  el: ".swiper-pagination",
   clickable: true,
-  type: 'bullets',
+  type: "bullets",
   dynamicMainBullets: 5,
   dynamicBullets: true
+}), _defineProperty(_ref, "breakpoints", {
+  // when window width is >= 320px
+  750: {
+    pagination: {
+      el: "swiper-pagination swiper-pagination-mobile"
+    }
+  } // when window width is >= 480px
+  // when window width is >= 640px
+
 }), _ref));
 $(".news_slick_slider").slick((_$$slick = {
   infinite: true,
@@ -45,16 +52,17 @@ $(".news_slick_slider").slick((_$$slick = {
   autoplay: true,
   autoplaySpeed: 4000,
   dots: true
-}, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $('.prev_arrow_button')), _defineProperty(_$$slick, "nextArrow", $('.next_arrow_button')), _defineProperty(_$$slick, "responsive", [(_ref2 = {
+}, _defineProperty(_$$slick, "dots", true), _defineProperty(_$$slick, "prevArrow", $(".prev_arrow_button")), _defineProperty(_$$slick, "nextArrow", $(".next_arrow_button")), _defineProperty(_$$slick, "responsive", [(_ref2 = {
   breakpoint: 989,
   settings: {
-    centerPadding: 50,
+    centerPadding: 150,
     autoplay: false,
     arrows: false,
     slidesToShow: 2,
     slidesToScroll: 1
   }
 }, _defineProperty(_ref2, "breakpoint", 700), _defineProperty(_ref2, "settings", {
+  centerPadding: 10,
   arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -62,10 +70,10 @@ $(".news_slick_slider").slick((_$$slick = {
 }), _ref2)]), _$$slick)); // #endregion
 // #region MAP
 
-var map = L.map('map_wrapper').setView([22.313208922495647, 114.17263361075162], 2);
+var map = L.map("map_wrapper").setView([22.313208922495647, 114.17263361075162], 2);
 map.scrollWheelZoom.disable();
 var customMarker = L.icon({
-  iconUrl: './assets/images/marker.png',
+  iconUrl: "./assets/images/marker.png",
   //shadowUrl: 'leaf-shadow.png',
   iconSize: [80, 80],
   // size of the icon
@@ -77,7 +85,7 @@ var customMarker = L.icon({
 
 });
 var customMarker2 = L.icon({
-  iconUrl: './assets/images/marker.png',
+  iconUrl: "./assets/images/marker.png",
   //shadowUrl: 'leaf-shadow.png',
   iconSize: [80, 80],
   // size of the icon
@@ -88,7 +96,7 @@ var customMarker2 = L.icon({
   popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 
 });
-L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> contributors',
   interactive: false
 }).addTo(map);
@@ -112,15 +120,14 @@ function checkEmailLenght() {
 
   if (diff) {
     window.emailDiffCount.textContent = diff;
-    window.emailLenghtHelp.classList.remove('d-none');
+    window.emailLenghtHelp.classList.remove("d-none");
   } else {
-    window.emailLenghtHelp.classList.add('d-none');
+    window.emailLenghtHelp.classList.add("d-none");
   }
 }
 
-;
-window.inpEmail.addEventListener('input', checkEmailLenght);
-document.addEventListener('DOMContentLoaded', checkEmailLenght); // #endregion
+window.inpEmail.addEventListener("input", checkEmailLenght);
+document.addEventListener("DOMContentLoaded", checkEmailLenght); // #endregion
 
 function formSubmit(event) {
   var apiToken, chatId, text, EMAIL_MIN_LENGHT, mediumRegex, testNameRegex, checkEmailLenght, resetValidation, validateForm;
@@ -135,25 +142,25 @@ function formSubmit(event) {
             var name = window.inputName.value;
 
             if (!email) {
-              window.emailHelp.classList.remove('d-none');
+              window.emailHelp.classList.remove("d-none");
               return false;
             }
 
             if (!name) {
-              window.nameHelp.classList.remove('d-none');
+              window.nameHelp.classList.remove("d-none");
               return false;
             }
 
             if (!testNameRegex(name)) {
-              window.nameHelp.classList.remove('d-none');
-              window.nameHelpDescription.classList.remove('d-none');
+              window.nameHelp.classList.remove("d-none");
+              window.nameHelpDescription.classList.remove("d-none");
             }
           };
 
           resetValidation = function _ref5() {
-            window.emailHelp.classList.add('d-none');
-            window.nameHelp.classList.add('d-none');
-            window.nameHelpDescription.classList.add('d-none');
+            window.emailHelp.classList.add("d-none");
+            window.nameHelp.classList.add("d-none");
+            window.nameHelpDescription.classList.add("d-none");
           };
 
           checkEmailLenght = function _ref4() {
@@ -162,9 +169,9 @@ function formSubmit(event) {
 
             if (diff) {
               window.emailDiffCount.textContent = diff;
-              window.emailLenghtHelp.classList.remove('d-none');
+              window.emailLenghtHelp.classList.remove("d-none");
             } else {
-              window.emailLenghtHelp.classList.add('d-none');
+              window.emailLenghtHelp.classList.add("d-none");
             }
           };
 
@@ -187,12 +194,10 @@ function formSubmit(event) {
           text = "\n    Email: ".concat(email, "    \n    Name: ").concat(name, "\n    ");
           EMAIL_MIN_LENGHT = 5;
           mediumRegex = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{8,})");
-          ;
-          ; // window.inputEmail.addEventListener('input', checkEmailLenght);
+          // window.inputEmail.addEventListener('input', checkEmailLenght);
+          document.form.addEventListener("submit", formSubmit); // document.addEventListener('DOMContentLoaded', checkEmailLenght);
 
-          document.form.addEventListener('submit', formSubmit); // document.addEventListener('DOMContentLoaded', checkEmailLenght);
-
-        case 15:
+        case 13:
         case "end":
           return _context.stop();
       }
