@@ -344,14 +344,14 @@
 .arrows_wrapp {
   position: absolute;
   top: 62%;
-  width: 89%;
-  left: 5%;
+  height: 40px;
+  left: 77px;
+  right: 77px;
 }
 
 .newsCard {
   float: none;
   max-width: 370px;
-  min-width: 370px;
   height: 514px;
   background-color: #ffffff;
 }
@@ -674,6 +674,10 @@
     left: 44%;
   }
 
+  .arrows_wrapp {
+    display: none;
+  }
+
   .galleryWrapper {
     border-radius: 5px;
     grid-template-columns: 1fr;
@@ -848,6 +852,12 @@
   .slick-track {
     display: flex;
   }
+
+  .newsCard {
+    width: 300px;
+    max-width: 300px;
+  }
+
   .footer .container {
     gap: 20px;
   }

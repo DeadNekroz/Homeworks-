@@ -62,7 +62,7 @@ $(".news_slick_slider").slick({
       },
       breakpoint: 700,
       settings: {
-        centerPadding: 10,
+        centerPadding: 0,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,

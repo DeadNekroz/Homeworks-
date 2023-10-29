@@ -54,7 +54,7 @@ $(".news_slick_slider").slick((_$$slick = {
     slidesToScroll: 1
   }
 }, _defineProperty(_ref2, "breakpoint", 700), _defineProperty(_ref2, "settings", {
-  centerPadding: 10,
+  centerPadding: 0,
   arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
