@@ -847,6 +847,10 @@
     grid-template-rows: 1fr;
   }
 
+  .news_slick_slider {
+    max-width: 310px;
+  }
+
   .slick-track {
     display: flex;
   }
@@ -873,10 +877,6 @@
   }
 }
 @media (max-width: 700px) {
-  .news_slick_slider {
-    max-width: 400px;
-  }
-
   .galleryWrapper {
     grid-template-columns: 100%;
     grid-template-rows: 2fr;
