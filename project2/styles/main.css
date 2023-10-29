@@ -1115,12 +1115,6 @@ img {
     font-size: 14px;
   }
 
-  .slick-track {
-    display: flex;
-    gap: 3%;
-    left: -7%;
-  }
-
   .footer .container {
     max-width: 90%;
     flex-direction: column;
@@ -1136,30 +1130,21 @@ img {
   }
 
   .galleryWrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: 100%;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
   }
 
   .slick-track {
     display: flex;
-    gap: 2%;
-    left: -7%;
   }
-
   .footer .container {
     gap: 20px;
   }
 }
 @media (max-width: 700px) {
-  .slick-track {
-    display: flex;
-    left: 50%;
-    gap: 1%;
-  }
-
   .galleryWrapper {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
     overflow: hidden;
   }
 }
