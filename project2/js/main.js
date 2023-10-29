@@ -12,6 +12,7 @@ e.addEventListener("click", toggleMenu, false);
 
 // #region Sliders
 const swiper = new Swiper(".swiper", {
+  crossFade: true,
   autoHeight: true,
   autoWidth: true,
   autoplay: true,
@@ -34,17 +35,6 @@ const swiper = new Swiper(".swiper", {
     type: "bullets",
     dynamicMainBullets: 5,
     dynamicBullets: true,
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    750: {
-      pagination: {
-        el: "swiper-pagination swiper-pagination-mobile",
-      },
-    },
-    // when window width is >= 480px
-
-    // when window width is >= 640px
   },
 });
 

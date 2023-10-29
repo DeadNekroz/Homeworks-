@@ -16,6 +16,7 @@ e.addEventListener("click", toggleMenu, false); // #endregion
 // #region Sliders
 
 var swiper = new Swiper(".swiper", (_ref = {
+  crossFade: true,
   autoHeight: true,
   autoWidth: true,
   autoplay: true,
@@ -35,15 +36,6 @@ var swiper = new Swiper(".swiper", (_ref = {
   type: "bullets",
   dynamicMainBullets: 5,
   dynamicBullets: true
-}), _defineProperty(_ref, "breakpoints", {
-  // when window width is >= 320px
-  750: {
-    pagination: {
-      el: "swiper-pagination swiper-pagination-mobile"
-    }
-  } // when window width is >= 480px
-  // when window width is >= 640px
-
 }), _ref));
 $(".news_slick_slider").slick((_$$slick = {
   infinite: true,
