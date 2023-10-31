@@ -125,4 +125,4 @@ function WeatherCard(props) {
     const root = ReactDOM.createRoot(app);
     root.render(React.createElement(App));
 
- 
+    <React.StrictMode></React.StrictMode>
