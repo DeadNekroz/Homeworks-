@@ -609,7 +609,7 @@ img {
 .news_slick_slider {
   margin: 0 auto;
   width: 100%;
-  max-width: 1165px;
+  max-width: 90%;
 }
 
 .slick-dots li button:before {
@@ -1137,11 +1137,12 @@ img {
   }
 
   .news_slick_slider {
-    max-width: 310px;
+    max-width: 100%;
   }
 
   .slick-track {
     display: flex;
+    gap: 0%;
   }
 
   .slick-initialized .slick-slide {
@@ -1174,7 +1175,7 @@ img {
 }
 @media (max-width: 576px) {
   .slick-track {
-    gap: 1%;
+    gap: 0%;
   }
 
   .gallery {
