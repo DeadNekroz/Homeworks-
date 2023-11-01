@@ -436,27 +436,28 @@
 }
 
 
-.news_image_wrapper {
-  margin-bottom: 30px;
-}
+ 
 .news_text_wrapper{
-padding: 0px 20px 0px 20px;
+padding: 30px 20px 0px 20px;
+display: block;
+min-height: 90px;
 }
 .news_card_title {
-  margin-bottom: 15px;
-  min-height: 50px;
+ 
+  min-height: 80px;
 }
 
 .news_card_text_content {
-  min-height: 50px;
-  margin-bottom: 39px;
+  min-height: 80px;
+ 
+
 }
 
 .news_card_author_wrapp {
-  padding-left: 20px;
+ 
   display: flex;
   justify-content: start;
-  min-height: 60px;
+  min-height: 90px;
 }
 
 .news_card_author {
@@ -576,6 +577,7 @@ padding: 0px 20px 0px 20px;
   display: block;
   margin: 0 auto;
   margin-top: 6%;
+  text-transform:uppercase ;
 }
 
 .zoom_icon {
@@ -1025,7 +1027,7 @@ padding: 0px 20px 0px 20px;
 
   .latestNews {
     .news-card {
-      padding: 0px 20px 0px 20px;
+      padding: 30px 20px;
       margin: 0 auto;
 
       max-width: 300px;
