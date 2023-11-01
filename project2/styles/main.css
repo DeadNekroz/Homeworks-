@@ -649,6 +649,10 @@ img {
   margin-bottom: 30px;
 }
 
+.news_text_wrapper {
+  padding: 0px 20px 0px 20px;
+}
+
 .news_card_title {
   margin-bottom: 15px;
   min-height: 50px;
@@ -1111,6 +1115,7 @@ img {
   }
   .latestNews .news_card_text_content {
     font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .footer .container {
