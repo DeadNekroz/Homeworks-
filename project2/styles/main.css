@@ -312,9 +312,10 @@ img {
   background: linear-gradient(243deg, #7e5aff84 16.9%, #55b8ff6c 83.27%);
   margin-bottom: 137px;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .header .container {
-  margin-top: 54px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -322,7 +323,6 @@ img {
 
 .logo_wrappper {
   width: 241px;
-  height: 54px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -847,10 +847,6 @@ img {
 }
 .footerSlide:nth-child(5) {
   background: linear-gradient(#13f8e1, #f66134);
-}
-
-.logo_wrappper {
-  margin-bottom: 41px;
 }
 
 .footer_socials {

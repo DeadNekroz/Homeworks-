@@ -31,10 +31,11 @@
 
   margin-bottom: 137px;
   width: 100%;
-
+  padding-top: 50px;
+  padding-bottom:50px;
 
   .container {
-    padding-bottom:50px;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -43,7 +44,7 @@
 
 .logo_wrappper {
   width: 241px;
-  height: 54px;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,9 +678,7 @@
   }
 }
 
-.logo_wrappper {
-  margin-bottom: 41px;
-}
+ 
 
 .footer_socials {
   display: flex;
