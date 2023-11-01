@@ -15,14 +15,19 @@
   display: inline-block;
 }
 
+.heroSreen {
+  position: relative;
+}
+
 .header {
   z-index: 10000;
   align-items: center;
   position: fixed;
-  top: 0px;
+  top: 0;
+  overflow: hidden;
   background: linear-gradient(243deg, #7e5aff84 16.9%, #55b8ff6c 83.27%);
   margin-bottom: 137px;
-  width: 100%;
+  width: 100vw;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -515,6 +520,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .footer .container {
   position: relative;
