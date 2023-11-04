@@ -1,17 +1,12 @@
-const url = 'http://www.omdbapi.com/?apikey=9581d720';
+const url = 'http://www.omdbapi.com/?apikey=eb5a2aa0';
  
-const API_KEY = '9581d720';
+const API_KEY = 'eb5a2aa0';
 const BASE_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
 const options ={
     method: 'GET'
 }
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  
-  }
-
-  render() {
+function App(){
+ 
     return (
       <div className='container'>
           <Header/>
@@ -20,30 +15,19 @@ class App extends React.Component {
     )
   
 }
-}
+ 
 // #region header main tags
-class Header extends React.Component{
-  constructor(props){
-    super(props);
-    
-  }
-  
-  render(){
+function Header(){
+ const [topInputValue, setTOPInputValue] =React.useState('')
     return (
       <header className='header'>
         <Logo/>
-        <SearchAndAcc  />
+        <SearchAndAcc   setTopInputValue ={setTOPInputValue}  />
       </header>
     )
   }
-}
-class Logo extends React.Component{
-  constructor(props){
-    super(props);
-     
-  }
-
-  render(){
+ 
+function Logo() {
     return  (
       <div className='searchBar'>
    <div className="logo_wrapper header_logo">
@@ -81,104 +65,52 @@ class Logo extends React.Component{
 </div>
       </div>
     )
-}}
+}
 // #endregion 
 // #region Search
-class SearchAndAcc extends React.Component{
-  constructor(props){
-      super(props);
-       
-      }
-     
-    
-  render(){
+function SearchAndAcc (props){
+  const[value,setInputValue] =React.useState('')
+ 
     return (
       <div className='search_n_acc_wrapper'>
-          <SearchField   />
+          <SearchField  setUpperInputValue={props.setTopInputValue}  />
           <AccWrapp/>
-
-        
       </div>
     )
-  }}
-
-class SearchField  extends React.Component{
-  constructor(props){
-    super(props)
-    this.state={
-      searchValue:'',
-      searchResults:[],
   }
-  }
-  inputHandler =(value) =>{
-    this.setState({
-      searchValue:value
-    })
-  }
-   
-    searchHandler = () => {
-      let localUrl = `${url}&s=${this.inputHandler}`;
-    
-      fetch(localUrl, options)
-          .then(res => res.json())
-          .then(res => this.setState({searchResults:res.Search}))
-          .catch(err => console.error(err))
-    }
- 
- 
- 
 
+function SearchField (props){
+  const[upperInputValue,setUpperInputValue] = React.useState('')
 
- 
-  render(){
     return(
       <div className="search_wrapp">  
-      <Input type="search" onInputChange={this.inputHandler} value={this.props.Se} /> 
-      <Button  clicker={this.searchHandler}/>
+      <Input type="search" setInputValue={props.setUpperInputValue}  /> 
+      <Button />
       </div>)
     }
-   
-}
-class Input extends React.Component{
-  constructor(props){
-    super(props);
-  }
+  
+function Input(props){
  
- inputHandler =(e) =>{
-   e.preventDefault();
-   this.props.onInputChange&& this.props.onInputChange(e.target.value)
- }
+  const inputHandler =(e)=>{
+  props.setInputValue(e.target.value)
 
-render(){
+  }
   return(
   <input
    className="searchInput"
-  type={this.props.type}
+  type='text'
   name="search"
   id="search"
   placeholder="search"
-  // onchange="searchMovie(event)"
-  onChange={this.inputHandler }
-  value={this.props.value}
+  onChange={inputHandler}
          /> )
 }
 
-}
-class Button  extends React.Component{
-  constructor(props){
-    super(props);
-  }
-  clickHandler = (e) => {
-    e.preventDefault();
-    this.props.clicker && this.props.clicker();
-}
- searchHandler = () => {
-  this.props.searchHandler && this.props.searchHandler();
-}
+
+function Button() {
  
-  render(){
     return ( 
-  <button type="submit" className="toSearch" onClick={this.clickHandler}>
+  <button type="submit" className="toSearch">
     <svg
       className="search_icon"
       fill="var(--logo-color, #f3edec;)"
@@ -190,7 +122,7 @@ class Button  extends React.Component{
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 502.173 502.173"
       xmlSpace="preserve"
-      
+     
     >
       <g>
         <g>
@@ -281,13 +213,8 @@ class Button  extends React.Component{
    </svg>
  </button>)
   }
-}
-  class AccWrapp extends React.Component{
-    constructor(props){
-      super(props);
-    }
-  
-    render(){
+
+function AccWrapp (){
       return(
         <div className="acc_wrapp">
     <svg
@@ -383,18 +310,18 @@ class Button  extends React.Component{
   
       )
     }
-  }
 // #endregion
 const app = document.getElementById("app");
 const root = ReactDOM.createRoot(app);
 root.render(React.createElement(App));
-// class   extends React.Component{
-//   constructor(props){
-//     super(props){
 
-//     }
-//   }
-//   render(){
-//     return 
-//   }
-// }
+ 
+// let response =   fetch(BASE_URL,options)
+//                   .then((response) => {
+//                    return response.json();
+//                    })
+//                 .then((data)=>
+//                   data.map((item) =>{
+//                   const el = document.createElement('li');
+//                   const title = document.createElement('h1')
+//                   title.context = item.title
